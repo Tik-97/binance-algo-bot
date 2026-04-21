@@ -1,0 +1,4 @@
+family_name,definition,trade_count,share_of_reference_pct,net_pnl_usd,median_holding_minutes,median_return_pct
+family_a_flush_reversal,near_low + reversal_like + bearish_15m + bearish_1h + dump60<=-0.5,21,38.18,70383.9067,183.84,0.0053
+family_b_deep_flush_reversal,near_low + reversal_like + bearish_15m + dist15<=-0.5 + dist1h<=-1.0,18,32.73,71418.8468,466.35,0.013
+family_c_breakout_down_reclaim,breakout_down + bearish_15m + bearish_1h + dump60<=-1.0,7,12.73,28498.9556,108.52,0.0077

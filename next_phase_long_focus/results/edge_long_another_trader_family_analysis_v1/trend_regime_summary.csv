@@ -1,0 +1,5 @@
+trend_regime,trade_count,win_count,net_pnl_usd,median_holding_minutes,median_return_pct
+strong_bear,46,46,163671.0353,142.08,0.0058
+transition,6,6,14455.0412,284.95,0.0122
+weak_bear,2,2,697.8198,80.95,0.007
+weak_bull,1,1,1055.9457,297.42,0.0181

@@ -1,0 +1,18 @@
+EDGE LONG TIER1.5 SANITY CHECK V1
+=================================
+
+base_strategy = edge_long_tier15_core_plus_satellite3_v1.py
+
+full_trade_count = 14
+full_ending_balance = 529.80
+full_win_rate_pct = 100.00
+full_profit_factor = n/a
+
+nonempty_windows = 6
+positive_windows = 6
+both_halves_positive = True
+
+sanity_read:
+- check whether first half and second half are both profitable
+- check whether profit is spread across more than one quarter
+- check whether routes are concentrated in one late pocket or appear across time

@@ -1,0 +1,4 @@
+quarter,trade_count,net_pnl_usd,win_rate_pct,profit_factor,expectancy_usd
+q1,1,10.0806,100.0,inf,10.0806
+q2,5,50.0889,100.0,inf,10.0178
+q4,8,69.6318,100.0,inf,8.704

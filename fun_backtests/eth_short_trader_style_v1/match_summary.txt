@@ -1,0 +1,6 @@
+MATCH SUMMARY
+=============
+total_backtest_trades = 24
+matches_within_60m = 2
+same_result_direction = 1
+agreement_rate_pct = 50.00

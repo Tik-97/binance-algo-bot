@@ -1,0 +1,7 @@
+strategy,quarter,trade_count,net_pnl_usd,win_rate_pct,expectancy_usd
+tier14,q1,1,10.0806,100.0,10.0806
+tier14,q2,5,50.0889,100.0,10.0178
+tier14,q4,6,53.2109,100.0,8.8685
+tier15,q1,1,10.0806,100.0,10.0806
+tier15,q2,5,50.0889,100.0,10.0178
+tier15,q4,8,69.6318,100.0,8.704

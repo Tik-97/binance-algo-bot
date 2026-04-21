@@ -1,0 +1,36 @@
+COMBINED ETH PORTFOLIO T287 + T14 + F2 V1
+==========================================
+
+goal = test how survivable the current short and long branches are together inside one wallet
+wallet_model = one shared wallet, one ETH position at a time, exact same-trade duplicates deduped
+initial_balance = 1000.00
+window_start = 2025-03-27 15:23:00+00:00
+window_end = 2026-03-27 15:23:00+00:00
+
+included branches:
+- short_t287 = ETH Short Tier 2.87 realistic
+- long_t14 = Tier 1.4 Long baseline
+- long_f2 = Family 2 flush-reversal seed
+
+important overlap truth:
+- exact duplicate same-trade signals removed = 2
+- overlapping trades skipped because wallet was already in position = 0
+- in this tested window there were no real long-vs-short timing collisions
+- the only conflicts were duplicate same-direction long trades between Tier 1.4 and Family 2
+
+trade_count = 34
+win_rate_pct = 91.18
+profit_factor = 11.817
+max_drawdown_pct = 2.07
+ending_balance = 1512.97
+net_pnl_usd = 512.9701
+
+strategy contribution summary:
+- short_t287: trades=25, win_rate=88.00%, net_pnl=303.87, pf=7.408
+- long_t14: trades=7, win_rate=100.00%, net_pnl=163.43, pf=inf
+- long_f2: trades=2, win_rate=100.00%, net_pnl=45.67, pf=inf
+
+honest interpretation:
+- this is a conservative single-wallet merge, not a double-counted portfolio fantasy
+- duplicate same-entry Family 2 / Tier 1.4 longs were counted only once
+- combined survivability is driven mainly by Tier 2.87 shorts, with long branches adding selective upside

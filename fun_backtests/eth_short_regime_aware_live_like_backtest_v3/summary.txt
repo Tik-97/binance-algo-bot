@@ -1,0 +1,26 @@
+ETH SHORT REGIME AWARE LIVE-LIKE BACKTEST V3
+============================================
+
+pipeline = candidate_engine_v1 -> near_entry_breakdown_noise -> mild_noise_v1_live -> v1 execution
+upgrade = market-next-open fallback only when the mild-noise limit retest stays unfilled
+deduped_candidate_count = 477
+predicted_target_candidates = 5
+filled_trade_count = 3
+skipped_overlap = 0
+skipped_non_target = 472
+skipped_wrong_subtype = 2
+skipped_unfilled = 0
+fallback_market_entries = 1
+skipped_invalid_stop = 0
+ending_balance = 416.92
+win_rate_pct = 100.00
+profit_factor = nan
+expectancy_usd = 5.6404
+median_hold_minutes = 4.00
+median_candidate_score = 0.7564
+median_stop_distance_pct = 0.2496
+
+matches_within_60m = 0
+same_result_direction = 0
+agreement_rate_pct = n/a
+median_time_diff_minutes = 3017.59

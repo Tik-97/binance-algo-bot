@@ -1,0 +1,32 @@
+CLUSTER 1 SHORT BACKTEST V3
+===========================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Base context filter:
+- stretch above EMA20 5m >= 0.15%
+- trigger = small_body_rejection
+
+Cooldown between context entries: 240 minutes
+Trigger window: 5 minutes
+Initial stop: 0.70%
+Risk per trade: 1.00% of balance
+Leverage info: 10.0x
+
+Compared context variants:
+          context_variant                                                   label  trade_count  win_rate_pct  profit_factor  max_drawdown_pct  expectancy_usd  ending_balance  avg_hold_minutes  avg_mfe_pct  avg_mae_pct
+         combined_tighter Stronger bounce + closer 4h high + small body rejection          861     57.723577       0.448100         78.824152       -0.364981       85.751562        260.852497     0.866395     0.423553
+          stronger_bounce              Stronger 60m bounce + small body rejection         1021     57.296768       0.523601         84.576972       -0.326773       66.364711        247.368266     0.919361     0.420715
+           closer_4h_high                Closer to 4h high + small body rejection         1375     57.236364       0.519604         93.328074       -0.269865       28.936249        292.445818     0.914062     0.437529
+base_small_body_rejection                   Base Cluster 1 + small body rejection         1612     58.498759       0.582328         93.295715       -0.231461       26.884186        277.049007     0.932691     0.422676
+
+Best variant:
+- context_variant = combined_tighter
+- label = Stronger bounce + closer 4h high + small body rejection
+- trade_count = 861
+- win_rate = 57.72%
+- profit_factor = 0.448
+- max_drawdown = 78.82%
+- expectancy = -0.36 USD
+- ending_balance = 85.75 USD

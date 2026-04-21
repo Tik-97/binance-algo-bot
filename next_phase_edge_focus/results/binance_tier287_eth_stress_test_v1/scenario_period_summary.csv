@@ -1,0 +1,9 @@
+period,trade_count,win_rate_pct,profit_factor,net_pnl_usd,scenario,scenario_title
+pre_reference,19,84.21052631578947,9.15853738125084,118.75488634433444,baseline_realistic,Baseline realistic
+reference_window,23,91.30434782608695,6.989034917332024,127.11261702581831,baseline_realistic,Baseline realistic
+pre_reference,19,84.21052631578947,7.437039597692826,107.66448068651341,eth_adverse_light,ETH adverse light
+reference_window,24,87.5,5.713501932455434,112.33488155430103,eth_adverse_light,ETH adverse light
+pre_reference,19,73.68421052631578,5.249615531425892,88.62284629419665,eth_adverse_medium,ETH adverse medium
+reference_window,24,70.83333333333334,3.0051045621300827,73.7597722683725,eth_adverse_medium,ETH adverse medium
+pre_reference,19,42.10526315789473,2.313990004422384,45.18201312584125,eth_adverse_hard,ETH adverse hard
+reference_window,24,62.5,2.404487254478983,53.11197925705264,eth_adverse_hard,ETH adverse hard

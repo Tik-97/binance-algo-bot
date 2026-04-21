@@ -1,0 +1,9 @@
+BINANCE_API_KEY=your_demo_api_key
+BINANCE_API_SECRET=your_demo_api_secret
+TELEGRAM_BOT_TOKEN=telegram_bot_token
+TELEGRAM_CHAT_ID=default_chat_id
+TELEGRAM_EVENTS_CHAT_ID=optional_events_chat_id
+TELEGRAM_REPORTS_CHAT_ID=optional_reports_chat_id
+BINANCE_REST_BASE_URL=https://demo-fapi.binance.com
+BINANCE_WS_STREAM_BASE_URL=wss://demo-fstream.binance.com
+

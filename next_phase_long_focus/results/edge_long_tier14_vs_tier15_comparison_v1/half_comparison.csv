@@ -1,0 +1,5 @@
+strategy,half,trade_count,net_pnl_usd,win_rate_pct,expectancy_usd
+tier14,first_half,6,60.1695,100.0,10.0283
+tier14,second_half,6,53.2109,100.0,8.8685
+tier15,first_half,6,60.1695,100.0,10.0283
+tier15,second_half,8,69.6318,100.0,8.704

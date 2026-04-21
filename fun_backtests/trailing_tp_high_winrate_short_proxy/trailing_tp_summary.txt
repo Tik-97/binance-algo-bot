@@ -1,0 +1,28 @@
+TRAILING TP SANDBOX BACKTEST
+============================
+
+This is a standalone entertainment / exploratory wallet simulation.
+It is NOT part of the main reverse-analysis research conclusions.
+It is NOT proof that the proxy is safely tradable.
+It uses an approximate liquidation model, not exact exchange liquidation math.
+
+Source used: current practical Cluster 1 short model signals from `eth_cluster1_short_model_signals.csv`.
+Signals file used: C:\Users\Tigran\Desktop\Binance\Another Trader\analysis_output\eth_cluster1_short_model_signals.csv
+Candles file used: C:\Users\Tigran\Desktop\Binance\.cache\binance_klines\ETHUSDT_1m.csv
+
+Settings:
+- Entry hours filter: 00:00 to 24:00 UTC
+- Initial TP: 0.30%
+- Initial SL: 1.50%
+- First trigger: +0.50% favorable move -> SL to entry, TP to 1.50%
+- Second trigger: +1.00% favorable move -> SL to +0.50%, TP stays 1.50%
+- Max holding minutes: 720
+- Fee per side: 0.040%
+- Slippage per side: 0.025%
+
+Comparison by risk mode:
+     risk_mode  margin_fraction  starting_balance  ending_balance  total_return_pct  trade_count  win_count  loss_count  win_rate  average_win_usd  average_loss_usd  profit_factor  max_drawdown_pct  best_trade_usd  worst_trade_usd  ignored_overlapping_signals  skipped_by_time_filter  survived  liquidation_occurred
+   full_margin             1.00             400.0        0.627351        -99.843162          384        294          90  0.765625         1.114383         -8.077793       0.450658         99.846163       28.600726       -63.749467                          160                       0      True                 False
+   half_margin             0.50             400.0       21.626134        -94.593466          384        294          90  0.765625         1.432823         -8.884709       0.526810         94.645691       20.300534       -32.012405                          160                       0      True                 False
+quarter_margin             0.25             400.0       99.974663        -75.006334          384        294          90  0.765625         1.256364         -7.437737       0.551797         75.127634       11.944983       -16.032588                          160                       0      True                 False
+  tenth_margin             0.10             400.0      233.586737        -41.603316          384        294          90  0.765625         0.719249         -4.198583       0.559605         41.717011        5.249488        -6.418362                          160                       0      True                 False

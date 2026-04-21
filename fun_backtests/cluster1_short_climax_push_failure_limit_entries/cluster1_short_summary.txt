@@ -1,0 +1,35 @@
+CLUSTER 1 SHORT CLIMAX PUSH FAILURE BACKTEST
+============================================
+
+Idea: short after abnormal upside burst, then failure, with configurable entry style.
+
+ENTRY_MODE = limit_pullback_from_confirm_close
+ENTRY_WAIT_BARS = 8
+
+Context:
+- near 4h high <= 0.35%
+- 60m bounce >= 0.45%
+- stretch above EMA20 5m >= 0.15%
+
+Climax push conditions:
+- move_3m >= 0.45%
+- move_5m >= 0.70%
+- move_5m <= 2.50%
+- green_count_last_5 >= 3
+- bull_body_sum_5m >= 0.35%
+- distance above ema7_1m >= 0.20%
+
+Failure conditions:
+- upper wick ratio >= 0.35
+- confirm close below trigger close = True
+- confirm low below trigger low = True
+
+Trade count: 77
+Win rate: 58.44%
+Profit factor: 0.300
+Max drawdown: 19.98%
+Expectancy: -1.08 USD
+Ending balance: 316.99 USD
+Context without trigger count: 71742
+Rejected entry count: 0
+Expired limit count: 26

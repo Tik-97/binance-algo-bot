@@ -1,0 +1,44 @@
+# Large data files
+.cache/
+
+# Sensitive credentials
+.env
+.env.local
+.env.demo
+eth_unified_live_bot/.env
+eth_unified_live_bot/.env.local
+eth_unified_live_bot/.env.demo
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database and state
+*.db
+*.db.bak
+data/
+
+# Logs
+logs/
+*.log
+
+# Backups
+*.bak
+*.csv.bak
+
+# Claude internal
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large result CSVs (keep only code, not data)
+combined_results/portfolio_4yr_report/portfolio_trades.csv
+combined_results/stress_backtest/
+
+# Zip archives
+*.zip

@@ -1,0 +1,36 @@
+EDGE LONG FAMILY2 FLUSH REVERSAL SEED V1
+=========================================
+
+idea = take the Another Trader flush-reversal family and keep only the part that separated wins from losses inside the old-engine probe
+engine = old wickMick_long execution engine, but with a new independent family router
+
+family router:
+- strong_bear
+- high_vol
+- structure_regime = near_low
+- context_style = reversal_like
+- ema_alignment_15m = bearish
+- ema_alignment_1h = bearish
+- return_pre_60m_pct <= -0.5
+
+loss-cutting layer from win/loss analysis:
+- context_stretch_below_ema20_5m_pct <= 1.10
+- 0.14 <= trigger_body_ratio <= 0.26
+- rel_volume_1m >= 1.20
+
+honest interpretation:
+- old family_a router alone was noisy
+- losses clustered around too-thin trigger bodies and/or weaker local volume
+- this seed keeps the balanced-body, properly sponsored reversal pocket
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end = 2026-04-15 04:17:00+00:00
+trade_count = 8
+win_rate_pct = 100.00
+profit_factor = inf
+max_drawdown_pct = 0.00
+expectancy_usd = 8.3113
+ending_balance = 466.49
+context_without_trigger_count = 1063670
+rejected_entry_count = 0
+expired_limit_count = 3

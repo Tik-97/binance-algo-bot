@@ -1,0 +1,32 @@
+ETH SHORT TIMING SCORE PIPELINE V3
+==================================
+
+reference_trade_count = 33
+window_before_minutes = 60
+window_after_minutes = 60
+rerank_shortlist_k = 10
+
+Window ranking quality
+----------------------
+anchor_top1_share = 3.03%
+anchor_top3_share = 39.39%
+anchor_top5_share = 69.70%
+best_within_5m_share = 100.00%
+best_within_15m_share = 100.00%
+top5_contains_within_5m_share = 100.00%
+top5_contains_within_15m_share = 100.00%
+median_anchor_rank = 5.00
+
+Learned Shortlist Deltas
+------------------------
+ret_1m_pct: target_delta=0.3092, delta_scale=1.3136, weight=0.80
+ret_3m_pct: target_delta=0.6735, delta_scale=1.8656, weight=1.00
+ret_5m_pct: target_delta=0.7186, delta_scale=2.1932, weight=0.90
+rel_volume_1m: target_delta=0.7294, delta_scale=1.4532, weight=0.80
+upper_wick_ratio: target_delta=0.1771, delta_scale=0.9925, weight=1.10
+body_ratio: target_delta=0.1320, delta_scale=0.9042, weight=1.00
+close_position_in_range: target_delta=0.0563, delta_scale=1.0465, weight=1.10
+range_pct: target_delta=0.5256, delta_scale=1.3641, weight=0.70
+dist_1h_high_pct: target_delta=-0.1473, delta_scale=1.3352, weight=1.20
+dist_5m_high_pct: target_delta=-0.2171, delta_scale=0.8480, weight=1.10
+close_above_ema20_pct: target_delta=0.3606, delta_scale=1.5558, weight=0.80

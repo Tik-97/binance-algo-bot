@@ -1,0 +1,36 @@
+CLUSTER 1 SHORT UPPER WICK CONFIRMATION BACKTEST
+================================================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Context filter:
+- near 4h high <= 0.25%
+- 60m bounce >= 0.90%
+- stretch above EMA20 5m >= 0.15%
+
+Entry logic:
+- long upper wick ratio >= 0.45
+- body ratio <= 0.35
+- use current or previous candle wick = True
+- next bar down confirmation = True
+- next bar close below trigger close = True
+- next bar low breaks trigger low = False
+
+Risk / exit:
+- cooldown between context entries = 240 minutes
+- initial stop = 0.70%
+- risk per trade = 1.00% of balance
+- leverage info = 10.0x
+
+Trade count: 620
+Win rate: 55.81%
+Profit factor: 0.738
+Max drawdown: 44.61%
+Expectancy: -0.27 USD
+Ending balance: 230.96 USD
+Average hold: 341.69 min
+Average MFE: 1.07%
+Average MAE: 0.43%
+Current-candle trigger share: 99.03%
+Previous-candle trigger share: 0.97%

@@ -1,0 +1,5 @@
+label,trade_count,win_rate_pct,net_pnl_usd,ending_balance,expectancy_usd,median_hold_minutes
+tier14_recent_1y,7,100.0,63.2483,513.38,9.0355,27.0
+family21_recent_1y,8,100.0,58.1346,497.35,7.2668,20.5
+tier14_unique_recent_1y,4,100.0,42.0002,513.38,10.5,54.5
+family21_unique_recent_1y,5,100.0,37.4767,497.35,7.4953,25.0

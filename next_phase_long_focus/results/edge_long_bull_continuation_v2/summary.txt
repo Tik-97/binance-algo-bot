@@ -1,0 +1,31 @@
+EDGE LONG BULL CONTINUATION V2
+================================
+
+changes_from_v1:
+  - only strong_bull (removed weak_bull)
+  - rel_volume_1m >= 0.75 added (main v1 discriminator)
+  - move_15m_pct >= -0.20 at trigger
+  - confirm_range_pct <= 0.22
+  - market entry for all valid setups (not limit wait)
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end   = 2026-04-15 04:17:00+00:00
+trade_count       = 36
+win_rate_pct      = 58.33
+profit_factor     = 1.645
+max_drawdown_pct  = 7.03
+expectancy_usd    = 1.5722
+ending_balance    = 456.60
+context_no_trigger   = 30728
+rejected_entry_count = 0
+expired_limit_count  = 41
+
+parameters:
+  BULL_MIN_REL_VOLUME            = 0.8
+  BULL_MIN_PULLBACK_5M_PCT       = 0.2
+  BULL_MAX_PULLBACK_5M_PCT       = 1.2
+  BULL_MIN_LOWER_WICK_RATIO      = 0.28
+  BULL_MAX_RED_COUNT_LAST_5      = 3
+  BULL_MIN_DIST_4H_LOW_PCT       = 1.5
+  BULL_MIN_RALLY_60M_PCT         = 0.2
+  BULL_MAX_STRETCH_BELOW_EMA20   = 0.5

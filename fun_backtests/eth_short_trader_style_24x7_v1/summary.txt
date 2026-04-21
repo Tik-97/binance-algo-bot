@@ -1,0 +1,16 @@
+ETH SHORT TRADER STYLE SESSION MODEL V1
+=======================================
+
+BT_START = 2025-10-24 12:30:29.499000+00:00
+BT_END = 2026-04-08 14:35:24.605000+00:00
+session_utc = [0:00, 24:00)
+
+trade_count = 28
+win_rate_pct = 32.14
+profit_factor = 0.687
+expectancy_usd = -1.00
+ending_balance = 371.97
+
+expired_count = 11
+rejected_count = 0
+no_trigger_count = 238107

@@ -1,0 +1,4 @@
+route,trade_count,net_pnl_usd,win_rate_pct,profit_factor,expectancy_usd
+family2_seed,8,67.7938,100.0,inf,8.4742
+family2_satellite_highconfirm,2,16.1843,100.0,inf,8.0922
+family2_satellite_midbody,2,13.3754,100.0,inf,6.6877

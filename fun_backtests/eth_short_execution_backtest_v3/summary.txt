@@ -1,0 +1,27 @@
+ETH SHORT EXECUTION BACKTEST V3
+===============================
+
+entry_mode = candidate_limit_retest_15bp_15m_full_margin_10x_filtered
+use_full_margin = True
+leverage = 10.00
+max_candidate_abs_minute_distance = 10.00
+min_entry_vs_trader_price_pct = -1.00
+max_stop_distance_pct = 0.40
+candidate_count = 17
+filled_trade_count = 8
+skipped_far_candidate = 3
+skipped_bad_price = 6
+skipped_wide_stop = 0
+skipped_unfilled = 0
+skipped_invalid_stop = 0
+ending_balance = 349.93
+win_rate_pct = 12.50
+profit_factor = 0.408
+expectancy_usd = -6.2587
+median_hold_minutes = 3.00
+median_entry_vs_trader_price_pct = -0.3757
+median_candidate_abs_minute_distance = 0.33
+median_stop_distance_pct = 0.2447
+
+same_result_direction_share = 12.50%
+median_delta_vs_trader_return_pct = -1.1982

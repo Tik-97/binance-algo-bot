@@ -1,0 +1,31 @@
+ETH SHORT TIMING SCORE PIPELINE
+===============================
+
+reference_trade_count = 33
+window_before_minutes = 60
+window_after_minutes = 60
+
+Window ranking quality
+----------------------
+anchor_top1_share = 3.03%
+anchor_top3_share = 6.06%
+anchor_top5_share = 6.06%
+best_within_5m_share = 12.12%
+best_within_15m_share = 36.36%
+top5_contains_within_5m_share = 39.39%
+top5_contains_within_15m_share = 75.76%
+median_anchor_rank = 37.00
+median_anchor_percentile = 70.00%
+
+Reference medians
+-----------------
+ret_1m_pct: median=0.0464, scale=0.2032, weight=0.90
+ret_5m_pct: median=0.3205, scale=0.7440, weight=1.10
+ret_15m_pct: median=0.5863, scale=0.8406, weight=1.10
+ret_60m_pct: median=1.0485, scale=1.0508, weight=1.20
+rel_volume_1m: median=1.3189, scale=1.5870, weight=1.00
+upper_wick_ratio: median=0.2992, scale=0.2654, weight=0.70
+body_ratio: median=0.5377, scale=0.3709, weight=0.70
+dist_1h_high_pct: median=0.1844, scale=0.4705, weight=1.30
+dist_4h_high_pct: median=0.2307, scale=0.5439, weight=1.10
+close_above_ema20_pct: median=0.4666, scale=0.5065, weight=0.90

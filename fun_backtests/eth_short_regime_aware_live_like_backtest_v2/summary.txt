@@ -1,0 +1,25 @@
+ETH SHORT REGIME AWARE LIVE-LIKE BACKTEST V2
+============================================
+
+pipeline = candidate_engine_v1 -> near_entry_breakdown_noise -> mild_noise_v1_live -> v1 execution
+note = survivor branch only; mixed_transition and cooling_v3 are intentionally disabled
+deduped_candidate_count = 477
+predicted_target_candidates = 5
+filled_trade_count = 2
+skipped_overlap = 0
+skipped_non_target = 472
+skipped_wrong_subtype = 2
+skipped_unfilled = 1
+skipped_invalid_stop = 0
+ending_balance = 412.79
+win_rate_pct = 100.00
+profit_factor = nan
+expectancy_usd = 6.3973
+median_hold_minutes = 11.00
+median_candidate_score = 0.7916
+median_stop_distance_pct = 0.2465
+
+matches_within_60m = 0
+same_result_direction = 0
+agreement_rate_pct = n/a
+median_time_diff_minutes = 2913.29

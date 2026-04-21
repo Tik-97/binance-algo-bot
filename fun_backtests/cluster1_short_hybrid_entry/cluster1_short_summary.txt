@@ -1,0 +1,42 @@
+CLUSTER 1 SHORT HYBRID ENTRY BACKTEST
+=====================================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Context filter:
+- near 4h high <= 0.25%
+- 60m bounce >= 0.90%
+- stretch above EMA20 5m >= 0.15%
+
+Entry logic:
+- upper wick ratio >= 0.45
+- body ratio <= 0.35
+- current or previous trigger candle = True
+- next bar down confirmation = True
+- try limit retest first = True
+- limit placed inside upper wick, fraction from top = 0.35
+- max fill wait = 5 minutes
+- use market fallback = True
+- market fallback wait = 3 minutes
+
+Risk / exit:
+- cooldown between context entries = 240 minutes
+- initial stop above trigger high = 0.20%
+- risk per trade = 1.00% of balance
+- leverage info = 10.0x
+
+Trade count: 611
+Win rate: 45.50%
+Profit factor: 0.579
+Max drawdown: 76.52%
+Expectancy: -0.50 USD
+Ending balance: 94.30 USD
+Average hold: 266.73 min
+Average MFE: 0.90%
+Average MAE: 0.36%
+Current-candle trigger share: 98.53%
+Previous-candle trigger share: 1.47%
+Limit entry share: 51.06%
+Market fallback share: 48.94%
+Skipped no-fill/fallback setups: 69

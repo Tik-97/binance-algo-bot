@@ -1,0 +1,23 @@
+ETH SHORT CANDIDATE ENGINE V2
+=============================
+
+raw_candidate_count = 15484
+zone_count = 1380
+zone_gap_minutes = 15
+local_rerank_blend = 0.65
+median_zone_size = 8.00
+mean_zone_size = 11.22
+
+top_1_per_zone_candidate_count = 1380
+top_1_within_5m_share = 12.12%
+top_1_within_15m_share = 36.36%
+top_1_within_60m_share = 57.58%
+top_1_median_abs_minute_distance = 18.90
+top_1_median_abs_price_distance_pct = 1.0173
+
+top_2_per_zone_candidate_count = 2585
+top_2_within_5m_share = 15.15%
+top_2_within_15m_share = 42.42%
+top_2_within_60m_share = 57.58%
+top_2_median_abs_minute_distance = 18.65
+top_2_median_abs_price_distance_pct = 1.1130

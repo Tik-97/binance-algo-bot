@@ -1,0 +1,37 @@
+COMBINED ETH PORTFOLIO UNIFIED V1
+==================================
+
+strategies_included:
+- short_t287 (priority 1, SHORT)
+- long_t14 (priority 2, LONG)
+- long_f21 (priority 3, LONG)
+
+wallet_model = one shared wallet, one ETH position at a time
+arbitration = short beats long, long_t14 beats long_f21 on same minute
+initial_balance = 1000.00
+window_start = 2024-08-09 14:05:00+00:00
+window_end = 2026-03-27 15:23:00+00:00
+
+deduplication:
+- exact_duplicate_signals_removed = 7
+- overlapping_trades_skipped = 0
+- same_minute_long_conflicts_resolved = 0
+- short_beat_long_conflicts = 0
+
+trade_count = 59
+win_rate_pct = 91.53
+profit_factor = 12.649
+max_drawdown_pct = 2.07
+ending_balance = 2243.52
+net_pnl_usd = 1243.52
+
+strategy_contribution:
+- short_t287: trades=42, win_rate=88.1%, net_pnl=715.0372, pf=7.698
+- long_t14: trades=12, win_rate=100.0%, net_pnl=380.4051, pf=inf
+- long_f21: trades=5, win_rate=100.0%, net_pnl=148.0782, pf=inf
+
+honest_interpretation:
+- this is a conservative single-wallet merge
+- short_t287 priority means it blocks all longs when active
+- long_t14 and long_f21 were deduped on same-minute signals
+- results reflect realistic sequencing, not parallel fantasy

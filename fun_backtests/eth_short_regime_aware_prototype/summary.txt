@@ -1,0 +1,28 @@
+ETH SHORT REGIME AWARE PROTOTYPE
+================================
+
+routing = mixed_transition -> v1, near_entry_breakdown_noise -> v3
+candidate_count = 17
+filled_trade_count = 6
+skipped_non_target = 9
+skipped_unfilled = 1
+skipped_invalid_stop = 0
+skipped_bad_price = 0
+skipped_far_candidate = 1
+skipped_wide_stop = 0
+ending_balance = 420.38
+win_rate_pct = 50.00
+profit_factor = 1.534
+expectancy_usd = 3.3966
+median_hold_minutes = 2.50
+median_entry_vs_trader_price_pct = -0.6234
+median_candidate_abs_minute_distance = 0.23
+median_stop_distance_pct = 0.1909
+
+Engine Split
+------------
+v1: trade_count=3, win_rate_pct=66.67, median_pnl_usd=0.5417
+v3: trade_count=3, win_rate_pct=33.33, median_pnl_usd=-15.1400
+
+same_result_direction_share = 50.00%
+median_delta_vs_trader_return_pct = -0.9395

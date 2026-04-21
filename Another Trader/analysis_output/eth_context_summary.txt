@@ -1,0 +1,57 @@
+ETH CONTEXT ANALYSIS
+====================
+
+This section narrows the market-context analysis to ETHUSDT only. It does not infer a secret strategy. It only checks which pre-entry conditions appear more often before strong versus weak ETH entries.
+
+ETH sample:
+- Total ETH trades: 88
+- Strong ETH entries: 23
+- Medium ETH entries: 62
+- Weak ETH entries: 3
+- ETH Long strong/weak counts: 15 / 2
+- ETH Short strong/weak counts: 8 / 1
+
+ETH strong vs weak:
+- RSI 15m: strong 37.35 vs weak 67.65 (diff -30.30, p 0.138, overlap 39.43%, signal medium)
+- Pre-entry return 15m: strong -0.41 vs weak 0.53 (diff -0.94, p 0.245, overlap 39.59%, signal weak)
+- Relative volume 5m: strong 1.57 vs weak 2.75 (diff -1.18, p 0.100, overlap 24.27%, signal strong)
+- Abs distance to EMA20 15m: strong 0.70 vs weak 0.89 (diff -0.19, p 0.779, overlap 42.73%, signal minimal)
+- Pullback/Reversal context share: strong 69.57% vs weak 66.67% (diff 2.90 pp, signal minimal)
+- Breakout/Impulse context share: strong 17.39% vs weak 33.33% (diff -15.94 pp, signal weak)
+- Strongest separating ETH features: EMA20 slope 15m % (-0.07 vs 0.09, strong_lower); Distance to EMA20 15m % (-0.68 vs 0.89, strong_lower); Distance to EMA50 15m % (-1.00 vs 1.06, strong_lower); Relative volume 5m (1.57 vs 2.75, strong_lower)
+- Overall ETH reading: The ETH-only sample leans toward stronger entries appearing in calmer or slightly pulled-back contexts.
+- Overall confidence: low
+
+ETH Long strong vs weak:
+- RSI 15m: strong 35.97 vs weak 51.84 (diff -15.87, p 0.233, overlap 18.15%, signal weak)
+- Pre-entry return 15m: strong -0.52 vs weak 0.41 (diff -0.93, p 0.297, overlap 8.55%, signal weak)
+- Relative volume 5m: strong 1.57 vs weak 2.76 (diff -1.19, p 0.101, overlap 0.55%, signal medium)
+- Abs distance to EMA20 15m: strong 0.75 vs weak 0.63 (diff 0.12, p 0.371, overlap 18.62%, signal weak)
+- Pullback/Reversal context share: strong 73.33% vs weak 100.00% (diff -26.67 pp, signal weak)
+- Breakout/Impulse context share: strong 20.00% vs weak 0.00% (diff 20.00 pp, signal weak)
+- Strongest separating ETH Long features: Distance to EMA20 15m % (-0.75 vs 0.26, strong_lower); EMA20 slope 15m % (-0.08 vs 0.03, strong_lower); Distance to EMA50 15m % (-1.43 vs 0.52, strong_lower)
+- ETH Long reading: The ETH-only sample leans toward stronger entries appearing in calmer or slightly pulled-back contexts.
+- ETH Long confidence: low
+
+ETH Short strong vs weak:
+- RSI 15m: strong 55.93 vs weak 85.07 (diff -29.14, p n/a, overlap n/a, signal insufficient_data)
+- Pre-entry return 15m: strong 0.28 vs weak 0.53 (diff -0.24, p n/a, overlap n/a, signal insufficient_data)
+- Relative volume 5m: strong 1.75 vs weak 2.00 (diff -0.25, p n/a, overlap n/a, signal insufficient_data)
+- Abs distance to EMA20 15m: strong 0.33 vs weak 1.22 (diff -0.89, p n/a, overlap n/a, signal insufficient_data)
+- Pullback/Reversal context share: strong 62.50% vs weak 0.00% (diff 62.50 pp, signal strong)
+- Breakout/Impulse context share: strong 12.50% vs weak 100.00% (diff -87.50 pp, signal strong)
+- Strongest separating ETH Short features: Breakout/Impulse context share (12.50% vs 100.00%, strong_lower); Context label: breakout/continuation (12.50% vs 100.00%, strong_lower); 15m bearish EMA alignment share (12.50% vs 100.00%, strong_lower)
+- ETH Short reading: The ETH-only sample leans toward stronger entries appearing in calmer or slightly pulled-back contexts.
+- ETH Short confidence: low
+
+Interpretation:
+- The main question was whether strong ETH entries tend to appear after mild cooling or pullback rather than after overheated impulse. The data leans toward strong ETH entries happening more often after some cooling, pullback, or lower-overheat conditions than after pure breakout chase.
+- Where the strongest separation shows up: no single side clearly dominates.
+- The most useful features in this sample are: Relative volume 5m, RSI 15m, Pre-entry return 15m %, Abs distance to EMA20 5m %.
+- Side symmetry is limited: Long and Short do not separate in exactly the same way. Long differences concentrate more in Relative volume 5m, Pre-entry return 60m %, RSI 15m, Pre-entry return 15m %, while Short differences concentrate more in Breakout/Impulse context share, Pullback/Reversal context share, Near-high structure share.
+- Confidence is capped by sample size because weak ETH entries are only 3 trades in total.
+
+Candidate context filter
+------------------------
+Hypothesis for future testing only, not a strategy:
+- No candidate context filter is justified yet from this ETH-only sample.

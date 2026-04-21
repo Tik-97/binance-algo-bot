@@ -1,0 +1,18 @@
+CLUSTER 1 SHORT SOFT FAST-FAILURE BACKTEST
+==========================================
+
+Same entry logic as best baseline, but with soft early-kill rules.
+
+Trade count: 549
+Win rate: 38.07%
+Profit factor: 0.687
+Max drawdown: 64.96%
+Expectancy: -0.45 USD
+Ending balance: 151.27 USD
+Skipped filtered setups: 10176
+Soft fast-failed trades: 239
+
+Fast-failure logic:
+- hard fail if adverse_3m >= 0.18%
+- soft fail if favorable_3m < 0.05% and adverse_3m > 0.12%
+- second 5m check = True

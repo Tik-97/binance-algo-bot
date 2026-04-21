@@ -1,0 +1,16 @@
+EDGE LONG TIER14 VS TIER15 COMPARISON V1
+========================================
+
+strategies_compared:
+- Tier 1.4 = core + satellite1 + satellite2
+- Tier 1.5 = Tier 1.4 + micro satellite3
+
+headline:
+- Tier 1.4: 12 trades, ending_balance = 513.38
+- Tier 1.5: 14 trades, ending_balance = 529.80
+
+recommendation:
+- Tier 1.5 is wider and stronger on raw history: 14 trades vs 12, ending_balance 529.80 vs 513.38.
+- Tier 1.5 adds one extra route (`tier11_core` is still not dominant at 36.28% share for the top route overall).
+- Tier 1.4 is cleaner structurally: only 3 routes, no micro-satellite, and still 12 trades at 100% win rate.
+- Tier 1.5 is still acceptable, but its extra edge comes from a tiny late micro-route; treat it as the more aggressive version, not automatically the safer baseline.

@@ -1,0 +1,35 @@
+EDGE LONG TIER1.5 CORE PLUS SATELLITE3 V1
+==========================================
+
+idea = keep the clean long core, keep the first two winning satellites, then add one tiny high-conviction micro-satellite
+router = Tier1 bear-like high_vol long + core + satellite1 + satellite2 + satellite3
+source_engine = wickMick_long.py
+
+core = climax_drop_5m_pct >= 0.85
+core = context_stretch_below_ema20_5m_pct <= 1.30
+
+satellite1 = climax_drop_5m_pct < 0.85
+satellite1 = confirm_range_pct <= 0.25
+satellite1 = rel_volume_1m >= 1.40
+satellite1 = context_dump_60m_pct >= 1.10
+satellite1 = trigger_body_ratio <= 0.45
+
+satellite2 = confirm_range_pct >= 0.40
+satellite2 = trigger_body_ratio <= 0.35
+satellite2 = trigger_lower_wick_ratio >= 0.45
+
+satellite3 = rel_volume_1m >= 2.50
+satellite3 = trigger_body_ratio >= 0.40
+satellite3 = tiny high-conviction micro-cluster, not a broad expansion
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end = 2026-04-15 04:17:00+00:00
+trade_count = 14
+win_rate_pct = 100.00
+profit_factor = n/a
+max_drawdown_pct = 0.00
+expectancy_usd = 9.2715
+ending_balance = 529.80
+context_without_trigger_count = 20091
+rejected_entry_count = 0
+expired_limit_count = 9

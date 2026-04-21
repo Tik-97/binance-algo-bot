@@ -1,0 +1,44 @@
+EDGE LONG ANOTHER TRADER ROUTER PROBE V1
+=======================================
+
+goal = test whether Another Trader long-family pockets can be expressed by the old wickMick_long engine
+method = honest full-history reruns with live-safe context enrichment, but without changing the old entry/exit engine
+
+tested on old engine:
+- family_a_flush_reversal
+- family_b_deep_flush_reversal
+- family_c_breakout_down_reclaim
+
+family_a probe results:
+- f2a_core_sb_highvol
+  trades = 14, win_rate = 42.86%, profit_factor = 1.163, ending_balance = 407.05
+- f2a_core_sb_anyvol
+  trades = 17, win_rate = 41.18%, profit_factor = 1.058, ending_balance = 403.11
+- f2a_plus_d15
+  trades = 17, win_rate = 41.18%, profit_factor = 1.058, ending_balance = 403.11
+- f2a_plus_rv5
+  trades = 17, win_rate = 41.18%, profit_factor = 1.058, ending_balance = 403.11
+- f2a_core_sb_lowvol
+  trades = 3, win_rate = 33.33%, profit_factor = 0.617, ending_balance = 396.13
+- f2a_plus_rsi35
+  trades = 13, win_rate = 30.77%, profit_factor = 0.629, ending_balance = 382.54
+- f2a_plus_d1h
+  trades = 14, win_rate = 28.57%, profit_factor = 0.500, ending_balance = 374.56
+
+family_b / family_c probe results:
+- family_c_breakout_down_sb_anyvol
+  trades = 5, win_rate = 40.00%, profit_factor = 0.957, ending_balance = 399.39
+- family_c_breakout_down_sb_highvol
+  trades = 5, win_rate = 40.00%, profit_factor = 0.957, ending_balance = 399.39
+- family_b_deep_flush_sb_anyvol
+  trades = 15, win_rate = 26.67%, profit_factor = 0.460, ending_balance = 370.12
+
+honest read:
+- Another Trader long-family pockets do not transfer cleanly through the old wickMick_long engine
+- the problem is no longer only the top-level router
+- the current wickMick_long entry/exit logic is likely the wrong engine for this new family
+
+practical implication:
+- keep Tier 1.4 as the current main long baseline
+- stop trying to force Another Trader family_a/family_b/family_c through the old wickMick_long engine
+- the correct next step is a new independent long engine built for the flush-reversal family itself

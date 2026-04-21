@@ -1,0 +1,5 @@
+trade_count,win_rate_pct,profit_factor,max_drawdown_pct,ending_balance,net_pnl_usd,scenario,extra_slippage_pct,flip_win_pct,limit_miss_rate
+59,91.53,12.649,2.07,2243.52,1243.52,baseline,0.0,0.0,0.0
+58,86.21,7.956,2.49,1847.27,847.27,adverse_light,0.05,0.0,0.1
+57,59.65,2.631,3.33,1410.83,410.83,adverse_medium,0.1,0.1,0.2
+55,40.0,0.774,13.66,897.99,-102.01,adverse_hard,0.2,0.25,0.35

@@ -1,0 +1,4 @@
+variant,label,n,wr_pct,pf,expectancy,ending_balance,max_dd_pct
+A_strong_bull_highvol,Variant A — strong_bull + high_vol (v3 baseline),16,75.0,2.716,2.6087,441.74,2.04
+B_bull_highvol,Variant B — strong_bull|weak_bull + high_vol,18,72.2,2.284,2.2076,439.74,2.04
+C_bull_any_vol,Variant C — strong_bull|weak_bull + any vol,28,57.1,1.342,0.9121,425.54,8.7

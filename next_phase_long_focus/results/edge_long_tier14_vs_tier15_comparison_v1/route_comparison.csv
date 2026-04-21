@@ -1,0 +1,8 @@
+route,trade_count,net_pnl_usd,win_rate_pct,profit_factor,expectancy_usd,strategy
+tier11_core,5,46.0558,100.0,inf,9.2112,tier14
+satellite1_soft_flush_refined,4,40.9073,100.0,inf,10.2268,tier14
+satellite2_reclaim_extension,3,26.4173,100.0,inf,8.8058,tier14
+tier11_core,5,47.0952,100.0,inf,9.419,tier15
+satellite1_soft_flush_refined,4,40.9073,100.0,inf,10.2268,tier15
+satellite2_reclaim_extension,3,26.9399,100.0,inf,8.98,tier15
+satellite3_highconviction_micro,2,14.8589,100.0,inf,7.4295,tier15

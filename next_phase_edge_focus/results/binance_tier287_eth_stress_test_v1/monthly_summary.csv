@@ -1,0 +1,45 @@
+scenario,scenario_title,month,net_pnl_usd,trade_count
+baseline_realistic,Baseline realistic,2024-08,5.7441250864392535,5
+baseline_realistic,Baseline realistic,2024-09,53.67785159411972,4
+baseline_realistic,Baseline realistic,2025-01,7.2652185356351575,1
+baseline_realistic,Baseline realistic,2025-02,3.099280910618019,4
+baseline_realistic,Baseline realistic,2025-03,32.85652414955316,3
+baseline_realistic,Baseline realistic,2025-04,-0.26697289970557736,1
+baseline_realistic,Baseline realistic,2025-10,16.378858967674695,1
+baseline_realistic,Baseline realistic,2025-11,41.78506879020182,8
+baseline_realistic,Baseline realistic,2025-12,30.360031874441145,6
+baseline_realistic,Baseline realistic,2026-02,40.11242912781033,5
+baseline_realistic,Baseline realistic,2026-03,14.85508723336503,4
+eth_adverse_light,ETH adverse light,2024-08,2.1359159739517817,5
+eth_adverse_light,ETH adverse light,2024-09,49.82272077732659,4
+eth_adverse_light,ETH adverse light,2025-01,7.156402979335465,1
+eth_adverse_light,ETH adverse light,2025-02,1.336530899591735,4
+eth_adverse_light,ETH adverse light,2025-03,32.999235664028426,3
+eth_adverse_light,ETH adverse light,2025-04,-1.3729100206339926,1
+eth_adverse_light,ETH adverse light,2025-10,15.586584412913409,1
+eth_adverse_light,ETH adverse light,2025-11,37.755525820241246,9
+eth_adverse_light,ETH adverse light,2025-12,24.844651057947946,6
+eth_adverse_light,ETH adverse light,2026-02,38.16447870070901,5
+eth_adverse_light,ETH adverse light,2026-03,11.57022597540283,4
+eth_adverse_medium,ETH adverse medium,2024-08,-2.8882705946098612,5
+eth_adverse_medium,ETH adverse medium,2024-09,44.79359517364487,4
+eth_adverse_medium,ETH adverse medium,2025-01,6.568930496448571,1
+eth_adverse_medium,ETH adverse medium,2025-02,-1.7195796065126805,4
+eth_adverse_medium,ETH adverse medium,2025-03,29.815947579063966,3
+eth_adverse_medium,ETH adverse medium,2025-04,-2.7563716330142447,1
+eth_adverse_medium,ETH adverse medium,2025-10,14.808594879176027,1
+eth_adverse_medium,ETH adverse medium,2025-11,30.441355948852024,9
+eth_adverse_medium,ETH adverse medium,2025-12,8.524679998468708,6
+eth_adverse_medium,ETH adverse medium,2026-02,33.466319773051,5
+eth_adverse_medium,ETH adverse medium,2026-03,1.3274165480007767,4
+eth_adverse_hard,ETH adverse hard,2024-08,-8.365377685044823,5
+eth_adverse_hard,ETH adverse hard,2024-09,39.82575001426511,4
+eth_adverse_hard,ETH adverse hard,2025-01,6.412868753469092,1
+eth_adverse_hard,ETH adverse hard,2025-02,-5.099538433109344,4
+eth_adverse_hard,ETH adverse hard,2025-03,2.932158689343696,3
+eth_adverse_hard,ETH adverse hard,2025-04,-3.8277906707676097,1
+eth_adverse_hard,ETH adverse hard,2025-10,13.303942457685125,1
+eth_adverse_hard,ETH adverse hard,2025-11,28.358885597145562,9
+eth_adverse_hard,ETH adverse hard,2025-12,-0.48171911665166256,6
+eth_adverse_hard,ETH adverse hard,2026-02,26.957643126641866,5
+eth_adverse_hard,ETH adverse hard,2026-03,-1.7228303500831306,4

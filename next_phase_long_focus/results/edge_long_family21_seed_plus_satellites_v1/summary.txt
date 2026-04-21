@@ -1,0 +1,37 @@
+EDGE LONG FAMILY2.1 SEED PLUS SATELLITES V1
+============================================
+
+idea = keep the Family 2 seed intact, then add two clean residual pockets from the same flush-reversal family
+engine = old wickMick_long execution engine, but with the new Family 2 router and route-aware expansion
+
+base family context:
+- strong_bear
+- high_vol
+- near_low
+- reversal_like
+- bearish 15m EMA alignment
+- bearish 1h EMA alignment
+- return_pre_60m_pct <= -0.5
+
+route split:
+- family2_seed: stretch<= 1.10, 0.14 <= body <= 0.26, rel_volume_1m >= 1.20
+- family2_satellite_highconfirm: trigger_body_ratio >= 0.45, confirm_range_pct >= 0.45, context_dump_60m_pct <= 1.05
+- family2_satellite_midbody: 0.29 <= trigger_body_ratio <= 0.35, confirm_range_pct <= 0.45, rel_volume_1m >= 1.20
+
+honest interpretation:
+- the seed already removed the obvious losses
+- residual analysis found two more live-safe winning pockets
+- one is a stronger reclaim / high-confirm cluster
+- the other is a mid-body supported reclaim cluster
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end = 2026-04-15 04:17:00+00:00
+trade_count = 12
+win_rate_pct = 100.00
+profit_factor = inf
+max_drawdown_pct = 0.00
+expectancy_usd = 8.1128
+ending_balance = 497.35
+context_without_trigger_count = 1063444
+rejected_entry_count = 0
+expired_limit_count = 5

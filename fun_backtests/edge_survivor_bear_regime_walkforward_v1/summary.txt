@@ -1,0 +1,31 @@
+EDGE SURVIVOR BEAR REGIME WALK-FORWARD V1
+=========================================
+
+goal = validate the current bear-regime survivor baseline across chronological slices without adding new rules
+method = fixed-rule walk-forward style slice analysis on full available history
+
+history_start = 2024-08-09 14:05:00+00:00
+history_end = 2026-02-06 14:48:00+00:00
+reference_start = 2025-10-24 12:30:29.499000+00:00
+reference_end = 2026-04-08 14:35:24.605000+00:00
+
+filled_trade_count = 6
+net_pnl_usd = 44.1104
+win_rate_pct = 100.00
+profit_factor = nan
+
+Slice Summary
+-------------
+2024-08 -> 2025-02: trade_count=1, win_rate_pct=100.00
+2024-08 -> 2025-02: net_pnl_usd=5.7228, profit_factor=nan, first_trade=2024-08-09 14:05:00+00:00, last_trade=2024-08-09 14:05:00+00:00
+2025-02 -> 2025-08: trade_count=0, win_rate_pct=nan
+2025-02 -> 2025-08: net_pnl_usd=0.0000, profit_factor=nan, first_trade=NaT, last_trade=NaT
+2025-08 -> 2026-02: trade_count=5, win_rate_pct=100.00
+2025-08 -> 2026-02: net_pnl_usd=38.3875, profit_factor=nan, first_trade=2025-10-13 13:34:00+00:00, last_trade=2026-02-06 14:48:00+00:00
+
+Holdout Style Split
+------------------
+first_half: trade_count=1, win_rate_pct=100.00, net_pnl_usd=5.7228, profit_factor=nan
+second_half: trade_count=5, win_rate_pct=100.00, net_pnl_usd=38.3875, profit_factor=nan
+pre_reference: trade_count=2, win_rate_pct=100.00, net_pnl_usd=18.6967, profit_factor=nan
+reference_and_after: trade_count=4, win_rate_pct=100.00, net_pnl_usd=25.4137, profit_factor=nan

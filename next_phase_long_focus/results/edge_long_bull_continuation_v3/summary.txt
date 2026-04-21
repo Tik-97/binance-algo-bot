@@ -1,0 +1,33 @@
+EDGE LONG BULL CONTINUATION V3
+================================
+
+changes_from_v2:
+  - confirm_range_pct <= 0.16 (tight confirm gate)
+  - lower_wick_ratio >= 0.35 (raised from 0.28)
+
+post_hoc_basis: conf<=0.16 + wick>=0.35 on 36 v2 trades
+  → n=15, WR=73.3%, PF=2.437 (in-sample)
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end   = 2026-04-15 04:17:00+00:00
+trade_count       = 16
+win_rate_pct      = 75.00
+profit_factor     = 2.716
+max_drawdown_pct  = 2.04
+expectancy_usd    = 2.6087
+ending_balance    = 441.74
+context_no_trigger   = 31683
+rejected_entry_count = 0
+expired_limit_count  = 12
+
+parameters:
+  BULL_MIN_REL_VOLUME          = 0.8
+  BULL_MAX_CONFIRM_RANGE_PCT   = 0.16
+  BULL_MIN_LOWER_WICK_RATIO    = 0.35
+  BULL_MIN_PULLBACK_5M_PCT     = 0.2
+  BULL_MAX_PULLBACK_5M_PCT     = 1.2
+  BULL_MAX_BODY_RATIO          = 0.55
+  BULL_MAX_RED_COUNT_LAST_5    = 3
+  BULL_MIN_DIST_4H_LOW_PCT     = 1.5
+  BULL_MIN_RALLY_60M_PCT       = 0.2
+  BULL_MAX_STRETCH_BELOW_EMA20 = 0.5

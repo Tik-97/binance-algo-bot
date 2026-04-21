@@ -1,0 +1,673 @@
+rule_count,rule_combo,trade_count,share_of_reference_pct,net_pnl_usd,median_holding_minutes,median_return_pct
+4,bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,26,47.27,79066.2801,142.08,0.0052
+4,bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,25,45.45,77043.1799,183.84,0.0055
+4,bearish_15m + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,24,43.64,93232.256,130.33,0.005
+4,bearish_15m + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,24,43.64,91665.9139,197.16,0.0065
+4,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,24,43.64,56572.2415,117.69,0.0052
+4,reversal_like + bearish_15m + bearish_1h + dump60_le_-0.5,23,41.82,74552.9092,183.84,0.0049
+4,near_low + reversal_like + bearish_15m + dump60_le_-0.5,23,41.82,73989.2947,183.84,0.0053
+4,near_low + reversal_like + bearish_1h + dump60_le_-0.5,23,41.82,71585.231,150.66,0.0049
+4,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,23,41.82,57617.3117,126.85,0.0055
+4,dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,23,41.82,53354.7346,90.69,0.0048
+4,near_low + reversal_like + bearish_15m + bearish_1h,22,40.0,78775.2504,222.33,0.0054
+4,near_low + reversal_like + bearish_15m + dist15_le_-0.5,22,40.0,76548.2937,355.96,0.0056
+4,reversal_like + bearish_15m + bearish_1h + dist15_le_-0.5,22,40.0,75117.2401,280.95,0.0055
+4,bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,22,40.0,70447.9956,99.6,0.0042
+4,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,22,40.0,70378.043,117.69,0.0055
+4,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,22,40.0,68843.4443,117.69,0.005
+4,bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,22,40.0,55370.9172,130.18,0.0055
+4,dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,22,40.0,52075.4469,121.01,0.0057
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,22,40.0,55370.9172,130.18,0.0055
+4,reversal_like + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0,21,38.18,87794.0187,482.55,0.0118
+4,bearish_15m + bearish_1h + dist15_le_-0.5 + rsi15_le_35,21,38.18,78740.3117,260.81,0.0077
+4,bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,21,38.18,72692.9692,260.81,0.0059
+4,bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,21,38.18,71493.0657,108.52,0.0055
+4,dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,21,38.18,70700.0291,106.5,0.0059
+4,near_low + bearish_15m + bearish_1h + dump60_le_-0.5,21,38.18,70383.9067,183.84,0.0053
+4,bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,21,38.18,67213.6052,133.5,0.0049
+4,near_low + reversal_like + bearish_1h + dist15_le_-0.5,21,38.18,59943.3925,150.66,0.0049
+4,near_low + reversal_like + dump60_le_-0.5 + dist15_le_-0.5,21,38.18,53236.8918,150.66,0.0049
+4,reversal_like + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,21,38.18,51768.6488,133.5,0.0036
+5,near_low + reversal_like + bearish_15m + bearish_1h + dump60_le_-0.5,21,38.18,70383.9067,183.84,0.0053
+4,bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,20,36.36,87704.3795,355.96,0.0107
+4,bearish_15m + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,20,36.36,69246.6713,117.69,0.0052
+4,bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,20,36.36,69196.2318,197.16,0.0055
+4,bearish_15m + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,20,36.36,67642.12,130.18,0.0054
+4,bearish_15m + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0,20,36.36,65528.7622,130.18,0.0049
+4,bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,20,36.36,65528.7622,130.18,0.0049
+4,reversal_like + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5,20,36.36,52252.1675,205.74,0.0052
+4,near_low + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,20,36.36,51552.0488,142.08,0.0043
+4,reversal_like + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,20,36.36,49745.5486,158.67,0.0051
+4,dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,20,36.36,48937.828,99.59,0.0057
+4,near_low + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,20,36.36,31694.9995,130.18,0.0052
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,20,36.36,69246.6713,117.69,0.0052
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,20,36.36,67642.12,130.18,0.0054
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,20,36.36,65528.7622,130.18,0.0049
+5,near_low + reversal_like + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,20,36.36,51552.0488,142.08,0.0043
+4,bearish_15m + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,19,34.55,83131.7504,133.5,0.0077
+4,reversal_like + bearish_15m + bearish_1h + dist1h_le_-1.0,19,34.55,79213.7019,301.09,0.0076
+4,bearish_15m + bearish_1h + dump60_le_-0.5 + rsi15_le_35,19,34.55,68761.7318,260.81,0.0055
+4,reversal_like + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,19,34.55,65934.6246,127.16,0.0039
+4,near_low + bearish_15m + bearish_1h + dist15_le_-0.5,19,34.55,58742.0682,260.81,0.0055
+4,near_low + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5,19,34.55,52035.5675,260.81,0.0055
+4,near_low + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,19,34.55,50275.504,260.81,0.0055
+4,dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,19,34.55,47440.2917,90.66,0.0055
+4,bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,19,34.55,47171.1816,90.69,0.0048
+4,near_low + reversal_like + bearish_1h + dump60_le_-1.0,19,34.55,45793.1461,133.5,0.0053
+4,near_low + reversal_like + dump60_le_-0.5 + dump60_le_-1.0,19,34.55,45793.1461,133.5,0.0053
+4,near_low + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,19,34.55,45793.1461,133.5,0.0053
+4,dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,19,34.55,43626.2669,126.85,0.0049
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,19,34.55,68761.7318,260.81,0.0055
+5,near_low + reversal_like + bearish_15m + bearish_1h + dist15_le_-0.5,19,34.55,58742.0682,260.81,0.0055
+5,near_low + reversal_like + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5,19,34.55,52035.5675,260.81,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,19,34.55,50567.3245,150.66,0.0049
+5,dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,19,34.55,47440.2917,90.66,0.0055
+5,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,19,34.55,47171.1816,90.69,0.0048
+5,near_low + reversal_like + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,19,34.55,45793.1461,133.5,0.0053
+4,near_low + reversal_like + bearish_15m + rv5_ge_1.0,18,32.73,78606.2253,142.08,0.0054
+4,reversal_like + bearish_15m + bearish_1h + rv5_ge_1.0,18,32.73,73959.209,142.08,0.0047
+4,near_low + reversal_like + bearish_15m + dist1h_le_-1.0,18,32.73,71418.8468,466.35,0.013
+4,near_low + reversal_like + dist15_le_-0.5 + dist1h_le_-1.0,18,32.73,71418.8468,466.35,0.013
+4,near_low + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0,18,32.73,71418.8468,466.35,0.013
+4,near_low + reversal_like + dist15_le_-0.5 + rsi15_le_35,18,32.73,70477.1232,355.96,0.0086
+4,reversal_like + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,18,32.73,69987.7932,355.96,0.0065
+4,reversal_like + bearish_15m + dump60_le_-0.5 + rv5_ge_1.0,18,32.73,66653.8453,130.33,0.004
+4,near_low + reversal_like + dump60_le_-0.5 + rv5_ge_1.0,18,32.73,63686.1671,127.0,0.0039
+4,dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,18,32.73,62907.4148,279.12,0.0075
+4,reversal_like + bearish_15m + bearish_1h + dump60_le_-1.0,18,32.73,48544.2243,229.59,0.0054
+4,reversal_like + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0,18,32.73,48544.2243,229.59,0.0054
+4,bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,18,32.73,48216.2517,99.59,0.0055
+4,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,18,32.73,48019.2334,121.01,0.0057
+4,bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,18,32.73,48019.2334,121.01,0.0057
+4,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,18,32.73,46207.3389,121.01,0.0055
+4,bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,18,32.73,46207.3389,121.01,0.0055
+5,near_low + reversal_like + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0,18,32.73,71418.8468,466.35,0.013
+5,reversal_like + bearish_15m + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,18,32.73,69987.7932,355.96,0.0065
+5,near_low + bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,18,32.73,50350.7245,205.74,0.0052
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,18,32.73,48544.2243,229.59,0.0054
+5,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,18,32.73,48216.2517,99.59,0.0055
+5,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,18,32.73,48019.2334,121.01,0.0057
+5,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,18,32.73,46207.3389,121.01,0.0055
+4,bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,17,30.91,76036.0262,126.85,0.0055
+4,near_low + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,17,30.91,70911.5343,410.82,0.0142
+4,near_low + reversal_like + bearish_15m + rsi15_le_35,17,30.91,70042.6232,410.82,0.0118
+4,near_low + bearish_15m + dist15_le_-0.5 + rsi15_le_35,17,30.91,70042.6232,410.82,0.0118
+4,reversal_like + bearish_15m + dist15_le_-0.5 + rsi15_le_35,17,30.91,70042.6232,410.82,0.0118
+4,bearish_15m + bearish_1h + dist1h_le_-1.0 + rsi15_le_35,17,30.91,69898.154,260.81,0.0082
+4,bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,17,30.91,69898.154,260.81,0.0082
+4,bearish_15m + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,17,30.91,67010.3679,108.52,0.0059
+4,bearish_1h + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,17,30.91,65198.4734,108.52,0.0055
+4,bearish_1h + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,17,30.91,65198.4734,108.52,0.0055
+4,near_low + reversal_like + bearish_1h + rv5_ge_1.0,17,30.91,61765.6221,127.16,0.0039
+4,near_low + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,17,30.91,61765.6221,127.16,0.0039
+4,near_low + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,17,30.91,48209.1182,297.42,0.0055
+4,bearish_15m + bearish_1h + dump60_le_-1.0 + rsi15_le_35,17,30.91,45772.8389,133.5,0.0055
+4,near_low + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,17,30.91,44987.6012,106.5,0.0039
+4,near_low + reversal_like + bearish_15m + dump60_le_-1.0,17,30.91,44591.8218,183.84,0.0055
+4,near_low + bearish_15m + bearish_1h + dump60_le_-1.0,17,30.91,44591.8218,183.84,0.0055
+4,near_low + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0,17,30.91,44591.8218,183.84,0.0055
+4,bearish_15m + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+4,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+4,bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+4,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+4,bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+4,near_low + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,17,30.91,40455.3902,112.18,0.0053
+4,near_low + reversal_like + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+4,near_low + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+4,reversal_like + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+4,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+5,near_low + reversal_like + bearish_15m + dist15_le_-0.5 + rsi15_le_35,17,30.91,70042.6232,410.82,0.0118
+5,bearish_15m + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,17,30.91,69898.154,260.81,0.0082
+5,bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,17,30.91,67010.3679,108.52,0.0059
+5,bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,17,30.91,65198.4734,108.52,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,17,30.91,64733.3003,133.5,0.0041
+5,near_low + reversal_like + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,17,30.91,61765.6221,127.16,0.0039
+5,bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,17,30.91,45969.8573,108.52,0.0055
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,17,30.91,45772.8389,133.5,0.0055
+5,bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,17,30.91,45772.8389,133.5,0.0055
+5,near_low + reversal_like + bearish_15m + bearish_1h + dump60_le_-1.0,17,30.91,44591.8218,183.84,0.0055
+5,near_low + reversal_like + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0,17,30.91,44591.8218,183.84,0.0055
+5,near_low + bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,17,30.91,44591.8218,183.84,0.0055
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+5,bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+5,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+5,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,17,30.91,42323.2693,126.85,0.0049
+5,near_low + reversal_like + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+5,near_low + reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+5,near_low + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,17,30.91,28073.2859,126.85,0.0049
+4,bearish_15m + bearish_1h + dist1h_le_-1.0 + rv5_ge_1.0,16,29.09,69140.5523,117.69,0.0052
+4,bearish_15m + bearish_1h + rsi15_le_35 + rv5_ge_1.0,16,29.09,64763.9734,121.01,0.0066
+4,near_low + bearish_15m + dump60_le_-0.5 + rv5_ge_1.0,16,29.09,62484.8428,130.33,0.0046
+4,bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,16,29.09,61604.4172,280.95,0.0075
+4,dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,16,29.09,60161.6956,98.43,0.0043
+4,near_low + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,16,29.09,59658.3394,120.0,0.0061
+4,near_low + reversal_like + dist15_le_-0.5 + rv5_ge_1.0,16,29.09,57853.8224,130.18,0.0046
+4,reversal_like + bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0,16,29.09,47122.7206,280.95,0.0052
+4,reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,16,29.09,47122.7206,280.95,0.0052
+4,bearish_15m + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,16,29.09,44440.0239,99.59,0.0057
+4,bearish_1h + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,16,29.09,42628.1294,98.43,0.0055
+4,near_low + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,16,29.09,26409.9109,122.84,0.0055
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,16,29.09,64763.9734,121.01,0.0066
+5,bearish_15m + bearish_1h + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,16,29.09,64763.9734,121.01,0.0066
+5,near_low + reversal_like + bearish_15m + dump60_le_-0.5 + rv5_ge_1.0,16,29.09,62484.8428,130.33,0.0046
+5,bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,16,29.09,61604.4172,280.95,0.0075
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,16,29.09,47122.7206,280.95,0.0052
+5,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,16,29.09,44440.0239,99.59,0.0057
+5,bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,16,29.09,44440.0239,99.59,0.0057
+5,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,16,29.09,42628.1294,98.43,0.0055
+5,bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,16,29.09,42628.1294,98.43,0.0055
+4,dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,15,27.27,72290.2502,133.5,0.0096
+4,near_low + reversal_like + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+4,near_low + bearish_15m + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+4,reversal_like + bearish_15m + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+4,reversal_like + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+4,near_low + bearish_15m + bearish_1h + rv5_ge_1.0,15,27.27,60564.2978,133.5,0.0053
+4,bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,59919.5742,260.81,0.0055
+4,bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,15,27.27,59914.6437,108.52,0.0048
+4,bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,15,27.27,59914.6437,108.52,0.0048
+4,bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,15,27.27,59914.6437,108.52,0.0048
+4,reversal_like + bearish_15m + dist15_le_-0.5 + rv5_ge_1.0,15,27.27,56869.0981,133.5,0.0055
+4,near_low + reversal_like + bearish_1h + dist1h_le_-1.0,15,27.27,53612.6214,301.09,0.0055
+4,near_low + bearish_15m + bearish_1h + dist1h_le_-1.0,15,27.27,53612.6214,301.09,0.0055
+4,near_low + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,15,27.27,53612.6214,301.09,0.0055
+4,near_low + reversal_like + bearish_1h + rsi15_le_35,15,27.27,52670.8977,260.81,0.0055
+4,near_low + bearish_1h + dist15_le_-0.5 + rsi15_le_35,15,27.27,52670.8977,260.81,0.0055
+4,reversal_like + bearish_1h + dist15_le_-0.5 + rsi15_le_35,15,27.27,52670.8977,260.81,0.0055
+4,reversal_like + bearish_15m + bearish_1h + rsi15_le_35,15,27.27,52307.8277,301.09,0.0055
+4,near_low + reversal_like + dump60_le_-0.5 + dist1h_le_-1.0,15,27.27,46906.1206,301.09,0.0055
+4,near_low + bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0,15,27.27,46906.1206,301.09,0.0055
+4,near_low + reversal_like + dump60_le_-0.5 + rsi15_le_35,15,27.27,45964.397,260.81,0.0055
+4,reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,15,27.27,45964.397,260.81,0.0055
+4,reversal_like + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0,15,27.27,45437.8776,260.81,0.0049
+4,near_low + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,15,27.27,45034.4931,106.5,0.0055
+4,reversal_like + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,15,27.27,41949.0399,90.69,0.0035
+4,reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,15,27.27,41949.0399,90.69,0.0035
+4,reversal_like + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,15,27.27,40344.4886,126.85,0.0041
+4,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,15,27.27,40344.4886,126.85,0.0041
+4,dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,38233.6789,133.5,0.0055
+4,dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,38233.6789,133.5,0.0055
+4,near_low + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5,15,27.27,26871.9616,133.5,0.0055
+4,reversal_like + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5,15,27.27,26871.9616,133.5,0.0055
+4,near_low + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,15,27.27,24912.3747,133.5,0.0055
+5,near_low + reversal_like + bearish_15m + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+5,near_low + reversal_like + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+5,near_low + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+5,reversal_like + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,69608.5367,521.88,0.0142
+5,near_low + reversal_like + bearish_15m + bearish_1h + rv5_ge_1.0,15,27.27,60564.2978,133.5,0.0053
+5,near_low + bearish_15m + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,15,27.27,60564.2978,133.5,0.0053
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,59919.5742,260.81,0.0055
+5,bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,59919.5742,260.81,0.0055
+5,bearish_15m + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,15,27.27,59914.6437,108.52,0.0048
+5,bearish_15m + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,15,27.27,59914.6437,108.52,0.0048
+5,bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,15,27.27,59914.6437,108.52,0.0048
+5,bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,15,27.27,59914.6437,108.52,0.0048
+5,near_low + reversal_like + bearish_15m + bearish_1h + dist1h_le_-1.0,15,27.27,53612.6214,301.09,0.0055
+5,near_low + reversal_like + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,15,27.27,53612.6214,301.09,0.0055
+5,near_low + bearish_15m + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,15,27.27,53612.6214,301.09,0.0055
+5,near_low + reversal_like + bearish_1h + dist15_le_-0.5 + rsi15_le_35,15,27.27,52670.8977,260.81,0.0055
+5,near_low + reversal_like + bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0,15,27.27,46906.1206,301.09,0.0055
+5,near_low + reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,15,27.27,46906.1206,301.09,0.0055
+5,near_low + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,15,27.27,46906.1206,301.09,0.0055
+5,near_low + reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,15,27.27,45964.397,260.81,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0,15,27.27,45437.8776,260.81,0.0049
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,15,27.27,45437.8776,260.81,0.0049
+5,bearish_15m + bearish_1h + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,15,27.27,42193.6294,108.52,0.0055
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,15,27.27,41949.0399,90.69,0.0035
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,15,27.27,40344.4886,126.85,0.0041
+5,dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,15,27.27,38233.6789,133.5,0.0055
+5,near_low + reversal_like + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5,15,27.27,26871.9616,133.5,0.0055
+5,near_low + bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,15,27.27,26871.9616,133.5,0.0055
+5,near_low + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,15,27.27,26871.9616,133.5,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,15,27.27,26871.9616,133.5,0.0055
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,15,27.27,26871.9616,133.5,0.0055
+5,near_low + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,15,27.27,24912.3747,133.5,0.0055
+4,bearish_15m + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,14,25.45,72043.1983,217.3,0.0107
+4,near_low + bearish_15m + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,56652.4981,142.08,0.0055
+4,near_low + bearish_15m + bearish_1h + rsi15_le_35,14,25.45,52236.3977,280.95,0.0055
+4,near_low + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,14,25.45,46398.8081,299.26,0.0099
+4,near_low + bearish_15m + dump60_le_-0.5 + rsi15_le_35,14,25.45,45529.897,280.95,0.0055
+4,reversal_like + bearish_15m + dump60_le_-0.5 + rsi15_le_35,14,25.45,45529.897,280.95,0.0055
+4,near_low + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0,14,25.45,45221.2776,280.95,0.0052
+4,near_low + bearish_1h + dump60_le_-0.5 + rsi15_le_35,14,25.45,44279.554,197.16,0.0045
+4,reversal_like + bearish_1h + dump60_le_-0.5 + rsi15_le_35,14,25.45,44279.554,197.16,0.0045
+4,near_low + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,41732.4399,108.77,0.0036
+4,dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,14,25.45,37374.7516,98.43,0.0043
+4,dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,14,25.45,37374.7516,98.43,0.0043
+4,near_low + reversal_like + dump60_le_-1.0 + rv5_ge_1.0,14,25.45,36392.0861,108.77,0.0044
+4,near_low + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,14,25.45,36392.0861,108.77,0.0044
+4,near_low + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,14,25.45,23535.3824,215.46,0.0052
+4,near_low + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,14,25.45,23535.3824,215.46,0.0052
+4,near_low + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,21237.9938,89.51,0.0038
+5,bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,14,25.45,72043.1983,217.3,0.0107
+5,near_low + reversal_like + bearish_15m + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,56652.4981,142.08,0.0055
+5,near_low + reversal_like + bearish_15m + bearish_1h + rsi15_le_35,14,25.45,52236.3977,280.95,0.0055
+5,near_low + bearish_15m + bearish_1h + dist15_le_-0.5 + rsi15_le_35,14,25.45,52236.3977,280.95,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dist15_le_-0.5 + rsi15_le_35,14,25.45,52236.3977,280.95,0.0055
+5,near_low + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,14,25.45,46398.8081,299.26,0.0099
+5,near_low + reversal_like + bearish_15m + dump60_le_-0.5 + rsi15_le_35,14,25.45,45529.897,280.95,0.0055
+5,near_low + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,14,25.45,45529.897,280.95,0.0055
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,14,25.45,45529.897,280.95,0.0055
+5,near_low + reversal_like + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0,14,25.45,45221.2776,280.95,0.0052
+5,near_low + bearish_15m + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0,14,25.45,45221.2776,280.95,0.0052
+5,near_low + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0,14,25.45,45221.2776,280.95,0.0052
+5,near_low + reversal_like + bearish_1h + dump60_le_-0.5 + rsi15_le_35,14,25.45,44279.554,197.16,0.0045
+5,near_low + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,14,25.45,44279.554,197.16,0.0045
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,14,25.45,44279.554,197.16,0.0045
+5,near_low + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,14,25.45,43536.9569,97.42,0.0055
+5,near_low + reversal_like + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,41732.4399,108.77,0.0036
+5,near_low + reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,41732.4399,108.77,0.0036
+5,near_low + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,41732.4399,108.77,0.0036
+5,dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,14,25.45,37374.7516,98.43,0.0043
+5,near_low + reversal_like + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,14,25.45,36392.0861,108.77,0.0044
+5,near_low + reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,14,25.45,36392.0861,108.77,0.0044
+5,near_low + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,14,25.45,36392.0861,108.77,0.0044
+5,near_low + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,14,25.45,23535.3824,215.46,0.0052
+5,near_low + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,14,25.45,21237.9938,89.51,0.0038
+4,reversal_like + bearish_15m + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,65171.0503,292.51,0.0118
+4,near_low + reversal_like + rsi15_le_35 + rv5_ge_1.0,13,23.64,56403.1781,133.5,0.0055
+4,reversal_like + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,13,23.64,56403.1781,133.5,0.0055
+4,dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,13,23.64,56168.8677,108.52,0.0055
+4,reversal_like + bearish_15m + dump60_le_-1.0 + rv5_ge_1.0,13,23.64,39143.1643,133.5,0.0053
+4,bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,37127.6997,108.52,0.0048
+4,bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,37127.6997,108.52,0.0048
+4,bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,13,23.64,36930.6813,133.5,0.0055
+4,bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,13,23.64,36930.6813,133.5,0.0055
+4,near_low + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,13,23.64,21774.7557,88.33,0.0055
+5,near_low + reversal_like + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,13,23.64,56403.1781,133.5,0.0055
+5,dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,13,23.64,56168.8677,108.52,0.0055
+5,near_low + bearish_15m + bearish_1h + dump60_le_-0.5 + rsi15_le_35,13,23.64,43845.054,260.81,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-0.5 + rsi15_le_35,13,23.64,43845.054,260.81,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,13,23.64,40747.7156,126.85,0.0036
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,13,23.64,40747.7156,126.85,0.0036
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,13,23.64,39143.1643,133.5,0.0053
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,13,23.64,39143.1643,133.5,0.0053
+5,bearish_15m + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,37127.6997,108.52,0.0048
+5,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,37127.6997,108.52,0.0048
+5,bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,37127.6997,108.52,0.0048
+5,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,37127.6997,108.52,0.0048
+5,bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,13,23.64,37127.6997,108.52,0.0048
+5,bearish_15m + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,13,23.64,36930.6813,133.5,0.0055
+5,bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,13,23.64,36930.6813,133.5,0.0055
+5,bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,13,23.64,36930.6813,133.5,0.0055
+5,bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,13,23.64,36930.6813,133.5,0.0055
+5,bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,13,23.64,36930.6813,133.5,0.0055
+5,near_low + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,13,23.64,21774.7557,88.33,0.0055
+4,near_low + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,12,21.82,55975.5935,217.3,0.0086
+4,near_low + bearish_15m + rsi15_le_35 + rv5_ge_1.0,12,21.82,55968.6781,217.3,0.0086
+4,reversal_like + bearish_15m + rsi15_le_35 + rv5_ge_1.0,12,21.82,55968.6781,217.3,0.0086
+4,reversal_like + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,12,21.82,55945.1416,217.3,0.0086
+4,bearish_1h + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,55921.8158,121.01,0.0075
+4,near_low + bearish_1h + dist1h_le_-1.0 + rsi15_le_35,12,21.82,51802.3112,355.96,0.0099
+4,reversal_like + bearish_1h + dist1h_le_-1.0 + rsi15_le_35,12,21.82,51802.3112,355.96,0.0099
+4,reversal_like + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,12,21.82,45095.8105,355.96,0.0099
+4,near_low + bearish_15m + dump60_le_-1.0 + rv5_ge_1.0,12,21.82,35190.7618,130.18,0.0054
+4,dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,33598.5237,98.43,0.0047
+4,near_low + reversal_like + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+4,near_low + bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+4,near_low + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+4,reversal_like + bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+4,reversal_like + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+4,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+4,reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+4,near_low + reversal_like + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+4,near_low + bearish_1h + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+4,reversal_like + bearish_1h + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+4,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+4,reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+4,reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,12,21.82,18672.226,89.51,0.0036
+5,near_low + reversal_like + bearish_15m + rsi15_le_35 + rv5_ge_1.0,12,21.82,55968.6781,217.3,0.0086
+5,near_low + bearish_15m + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,12,21.82,55968.6781,217.3,0.0086
+5,reversal_like + bearish_15m + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,12,21.82,55968.6781,217.3,0.0086
+5,reversal_like + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,12,21.82,55945.1416,217.3,0.0086
+5,bearish_15m + bearish_1h + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,55921.8158,121.01,0.0075
+5,bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,55921.8158,121.01,0.0075
+5,bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,55921.8158,121.01,0.0075
+5,bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,55921.8158,121.01,0.0075
+5,near_low + reversal_like + bearish_1h + dist1h_le_-1.0 + rsi15_le_35,12,21.82,51802.3112,355.96,0.0099
+5,near_low + bearish_15m + bearish_1h + dist1h_le_-1.0 + rsi15_le_35,12,21.82,51802.3112,355.96,0.0099
+5,near_low + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,12,21.82,51802.3112,355.96,0.0099
+5,reversal_like + bearish_15m + bearish_1h + dist1h_le_-1.0 + rsi15_le_35,12,21.82,51802.3112,355.96,0.0099
+5,reversal_like + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,12,21.82,51802.3112,355.96,0.0099
+5,near_low + reversal_like + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,12,21.82,45095.8105,355.96,0.0099
+5,near_low + bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,12,21.82,45095.8105,355.96,0.0099
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,12,21.82,45095.8105,355.96,0.0099
+5,reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,12,21.82,45095.8105,355.96,0.0099
+5,near_low + bearish_15m + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,12,21.82,40531.1156,130.18,0.0046
+5,near_low + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,12,21.82,40531.1156,130.18,0.0046
+5,near_low + reversal_like + bearish_15m + dump60_le_-1.0 + rv5_ge_1.0,12,21.82,35190.7618,130.18,0.0054
+5,near_low + bearish_15m + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,12,21.82,35190.7618,130.18,0.0054
+5,near_low + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,12,21.82,35190.7618,130.18,0.0054
+5,dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,33598.5237,98.43,0.0047
+5,dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,12,21.82,33598.5237,98.43,0.0047
+5,near_low + reversal_like + bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + reversal_like + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + bearish_15m + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,reversal_like + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,reversal_like + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0,12,21.82,22232.3847,217.3,0.0052
+5,near_low + reversal_like + bearish_1h + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,near_low + reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,near_low + reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,near_low + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,near_low + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,reversal_like + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,12,21.82,21290.6611,110.92,0.0045
+5,near_low + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,12,21.82,20277.2195,77.69,0.0047
+5,near_low + reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,12,21.82,18672.226,89.51,0.0036
+5,near_low + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,12,21.82,18672.226,89.51,0.0036
+5,reversal_like + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,12,21.82,18672.226,89.51,0.0036
+5,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,12,21.82,18672.226,89.51,0.0036
+4,near_low + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,11,20.0,55781.6435,301.09,0.0118
+4,near_low + reversal_like + dist1h_le_-1.0 + rv5_ge_1.0,11,20.0,55728.5416,301.09,0.0118
+4,near_low + bearish_15m + dist1h_le_-1.0 + rv5_ge_1.0,11,20.0,55728.5416,301.09,0.0118
+4,reversal_like + bearish_1h + dist1h_le_-1.0 + rv5_ge_1.0,11,20.0,49049.6678,133.5,0.0055
+4,near_low + bearish_1h + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+4,reversal_like + bearish_1h + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+4,reversal_like + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+4,breakout_down + breakout_continuation + dump60_le_-0.5 + rv5_ge_1.0,11,20.0,35675.9036,90.66,0.0077
+4,near_low + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,11,20.0,21725.0722,297.42,0.0055
+4,near_low + bearish_15m + dump60_le_-1.0 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+4,reversal_like + bearish_15m + dump60_le_-1.0 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+5,near_low + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,11,20.0,55781.6435,301.09,0.0118
+5,near_low + reversal_like + bearish_15m + dist1h_le_-1.0 + rv5_ge_1.0,11,20.0,55728.5416,301.09,0.0118
+5,near_low + reversal_like + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,11,20.0,55728.5416,301.09,0.0118
+5,near_low + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,11,20.0,55728.5416,301.09,0.0118
+5,reversal_like + bearish_15m + bearish_1h + dist1h_le_-1.0 + rv5_ge_1.0,11,20.0,49049.6678,133.5,0.0055
+5,near_low + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,11,20.0,43410.9675,301.09,0.0055
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,11,20.0,43410.9675,301.09,0.0055
+5,near_low + reversal_like + bearish_1h + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+5,near_low + reversal_like + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+5,near_low + bearish_1h + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+5,near_low + bearish_1h + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+5,reversal_like + bearish_1h + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+5,reversal_like + bearish_1h + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+5,reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,11,20.0,40281.7956,88.33,0.0055
+5,bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,11,20.0,33351.4718,108.52,0.0055
+5,bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,11,20.0,33351.4718,108.52,0.0055
+5,near_low + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,11,20.0,21725.0722,297.42,0.0055
+5,near_low + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,11,20.0,21725.0722,297.42,0.0055
+5,near_low + reversal_like + bearish_15m + dump60_le_-1.0 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+5,near_low + bearish_15m + bearish_1h + dump60_le_-1.0 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+5,near_low + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+5,near_low + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+5,reversal_like + bearish_15m + bearish_1h + dump60_le_-1.0 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+5,reversal_like + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,11,20.0,20856.1611,133.5,0.0055
+4,reversal_like + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,55534.5916,355.96,0.013
+4,near_low + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,10,18.18,39854.211,130.18,0.0047
+4,reversal_like + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,10,18.18,39823.7591,130.18,0.0046
+4,breakout_down + breakout_continuation + dump60_le_-0.5 + dist15_le_-0.5,10,18.18,35186.375,99.59,0.0068
+4,breakout_down + breakout_continuation + dist15_le_-0.5 + rv5_ge_1.0,10,18.18,35186.375,99.59,0.0068
+4,breakout_down + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,10,18.18,35186.375,99.59,0.0068
+4,breakout_continuation + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,10,18.18,35186.375,99.59,0.0068
+4,breakout_down + breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0,10,18.18,32606.2694,99.59,0.0068
+4,breakout_down + breakout_continuation + dump60_le_-1.0 + rv5_ge_1.0,10,18.18,32606.2694,99.59,0.0068
+4,breakout_down + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,10,18.18,32606.2694,99.59,0.0068
+4,breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,10,18.18,32606.2694,99.59,0.0068
+4,reversal_like + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,17711.4517,77.69,0.0045
+5,near_low + reversal_like + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,55534.5916,355.96,0.013
+5,near_low + bearish_15m + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,55534.5916,355.96,0.013
+5,reversal_like + bearish_15m + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,55534.5916,355.96,0.013
+5,reversal_like + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,55534.5916,355.96,0.013
+5,near_low + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,10,18.18,39854.211,130.18,0.0047
+5,near_low + bearish_15m + bearish_1h + rsi15_le_35 + rv5_ge_1.0,10,18.18,39847.2956,110.92,0.0055
+5,near_low + bearish_15m + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,10,18.18,39847.2956,110.92,0.0055
+5,reversal_like + bearish_15m + bearish_1h + rsi15_le_35 + rv5_ge_1.0,10,18.18,39847.2956,110.92,0.0055
+5,reversal_like + bearish_15m + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,10,18.18,39847.2956,110.92,0.0055
+5,reversal_like + bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,10,18.18,39823.7591,130.18,0.0046
+5,reversal_like + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,10,18.18,39823.7591,130.18,0.0046
+5,reversal_like + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,10,18.18,39823.7591,130.18,0.0046
+5,reversal_like + dump60_le_-0.5 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,10,18.18,39823.7591,130.18,0.0046
+5,breakout_down + breakout_continuation + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,10,18.18,35186.375,99.59,0.0068
+5,breakout_down + breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,10,18.18,32606.2694,99.59,0.0068
+5,near_low + reversal_like + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,17711.4517,77.69,0.0045
+5,near_low + bearish_1h + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,17711.4517,77.69,0.0045
+5,reversal_like + bearish_1h + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,17711.4517,77.69,0.0045
+5,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,10,18.18,17711.4517,77.69,0.0045
+5,reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,10,18.18,17711.4517,77.69,0.0045
+5,near_low + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,10,18.18,17470.9017,107.59,0.0046
+5,reversal_like + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,10,18.18,17470.9017,107.59,0.0046
+4,near_low + bearish_1h + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,39607.1591,133.5,0.0055
+4,breakout_down + breakout_continuation + bearish_15m + dist15_le_-0.5,9,16.36,32332.5862,90.66,0.0077
+4,breakout_down + breakout_continuation + dump60_le_-1.0 + dist15_le_-0.5,9,16.36,32116.7408,108.52,0.0059
+4,breakout_down + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,9,16.36,32116.7408,108.52,0.0059
+4,breakout_down + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,9,16.36,32116.7408,108.52,0.0059
+4,breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,9,16.36,32116.7408,108.52,0.0059
+4,breakout_continuation + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,9,16.36,32116.7408,108.52,0.0059
+4,breakout_down + breakout_continuation + bearish_15m + dump60_le_-0.5,9,16.36,31234.8787,90.66,0.0077
+4,breakout_down + breakout_continuation + bearish_15m + dump60_le_-1.0,9,16.36,31234.8787,90.66,0.0077
+4,breakout_down + breakout_continuation + bearish_15m + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+4,breakout_down + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0,9,16.36,31234.8787,90.66,0.0077
+4,breakout_down + bearish_15m + dump60_le_-0.5 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+4,breakout_down + bearish_15m + dump60_le_-1.0 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+4,breakout_continuation + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0,9,16.36,31234.8787,90.66,0.0077
+4,breakout_continuation + bearish_15m + dump60_le_-0.5 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+4,breakout_continuation + bearish_15m + dump60_le_-1.0 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+4,reversal_like + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+4,near_low + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,17283.867,126.85,0.0039
+5,near_low + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,9,16.36,39660.261,133.5,0.0055
+5,near_low + reversal_like + bearish_1h + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,39607.1591,133.5,0.0055
+5,near_low + reversal_like + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,39607.1591,133.5,0.0055
+5,near_low + bearish_15m + bearish_1h + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,39607.1591,133.5,0.0055
+5,near_low + bearish_15m + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,39607.1591,133.5,0.0055
+5,near_low + bearish_1h + dump60_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,39607.1591,133.5,0.0055
+5,near_low + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,39607.1591,133.5,0.0055
+5,breakout_down + breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,9,16.36,32116.7408,108.52,0.0059
+5,breakout_down + breakout_continuation + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,9,16.36,32116.7408,108.52,0.0059
+5,breakout_down + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,9,16.36,32116.7408,108.52,0.0059
+5,breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,9,16.36,32116.7408,108.52,0.0059
+5,breakout_down + breakout_continuation + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0,9,16.36,31234.8787,90.66,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + dump60_le_-0.5 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + dump60_le_-1.0 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+5,breakout_down + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+5,breakout_continuation + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,9,16.36,31234.8787,90.66,0.0077
+5,near_low + reversal_like + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+5,near_low + bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+5,near_low + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+5,reversal_like + bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+5,reversal_like + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+5,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+5,reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35,9,16.36,20422.0746,301.09,0.0055
+5,near_low + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,17283.867,126.85,0.0039
+5,near_low + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,9,16.36,17283.867,126.85,0.0039
+5,near_low + bearish_15m + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,9,16.36,17276.9517,88.33,0.0055
+5,reversal_like + bearish_15m + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,9,16.36,17276.9517,88.33,0.0055
+4,breakout_down + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+4,breakout_down + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+4,breakout_down + bearish_15m + dist15_le_-0.5 + rv5_ge_1.0,8,14.55,30745.3501,99.59,0.0068
+4,breakout_continuation + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+4,breakout_continuation + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+4,breakout_continuation + bearish_15m + dist15_le_-0.5 + rv5_ge_1.0,8,14.55,30745.3501,99.59,0.0068
+4,breakout_down + breakout_continuation + bearish_15m + bearish_1h,8,14.55,30086.1918,98.98,0.008
+4,breakout_down + breakout_continuation + bearish_1h + dist15_le_-0.5,8,14.55,30086.1918,98.98,0.008
+4,breakout_down + bearish_15m + bearish_1h + dist15_le_-0.5,8,14.55,30086.1918,98.98,0.008
+4,breakout_continuation + bearish_15m + bearish_1h + dist15_le_-0.5,8,14.55,30086.1918,98.98,0.008
+4,breakout_down + breakout_continuation + bearish_15m + rsi15_le_35,8,14.55,28750.3084,99.59,0.008
+4,breakout_down + breakout_continuation + dist15_le_-0.5 + rsi15_le_35,8,14.55,28750.3084,99.59,0.008
+4,breakout_down + bearish_15m + dist15_le_-0.5 + rsi15_le_35,8,14.55,28750.3084,99.59,0.008
+4,breakout_continuation + bearish_15m + dist15_le_-0.5 + rsi15_le_35,8,14.55,28750.3084,99.59,0.008
+4,reversal_like + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+5,near_low + bearish_1h + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,8,14.55,39413.2091,217.3,0.0099
+5,reversal_like + bearish_1h + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,8,14.55,39413.2091,217.3,0.0099
+5,reversal_like + dump60_le_-0.5 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,8,14.55,39413.2091,217.3,0.0099
+5,breakout_down + breakout_continuation + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+5,breakout_down + breakout_continuation + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+5,breakout_down + breakout_continuation + bearish_15m + dist15_le_-0.5 + rv5_ge_1.0,8,14.55,30745.3501,99.59,0.0068
+5,breakout_down + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+5,breakout_down + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,8,14.55,30745.3501,99.59,0.0068
+5,breakout_down + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,8,14.55,30745.3501,99.59,0.0068
+5,breakout_continuation + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,8,14.55,30745.3501,99.59,0.0068
+5,breakout_continuation + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,8,14.55,30745.3501,99.59,0.0068
+5,breakout_continuation + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,8,14.55,30745.3501,99.59,0.0068
+5,breakout_down + breakout_continuation + bearish_15m + bearish_1h + dist15_le_-0.5,8,14.55,30086.1918,98.98,0.008
+5,breakout_down + breakout_continuation + bearish_15m + dist15_le_-0.5 + rsi15_le_35,8,14.55,28750.3084,99.59,0.008
+5,near_low + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,8,14.55,17089.917,110.92,0.0047
+5,near_low + reversal_like + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+5,near_low + bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+5,near_low + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+5,reversal_like + bearish_15m + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+5,reversal_like + bearish_1h + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+5,reversal_like + dump60_le_-0.5 + dump60_le_-1.0 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+5,reversal_like + dump60_le_-1.0 + dist15_le_-0.5 + dist1h_le_-1.0 + rv5_ge_1.0,8,14.55,17036.8151,130.18,0.0046
+4,breakout_down + breakout_continuation + bearish_1h + dump60_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + breakout_continuation + bearish_1h + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + breakout_continuation + bearish_1h + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_15m + bearish_1h + dump60_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_15m + bearish_1h + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_15m + bearish_1h + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_15m + bearish_1h + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_continuation + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+4,breakout_down + breakout_continuation + dump60_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + breakout_continuation + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + breakout_continuation + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + bearish_15m + dump60_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + bearish_15m + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + bearish_15m + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + bearish_15m + dump60_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + bearish_15m + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + bearish_15m + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_continuation + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+4,breakout_down + breakout_continuation + bearish_1h + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+4,breakout_down + bearish_15m + bearish_1h + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+4,breakout_down + bearish_1h + dist15_le_-0.5 + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+4,breakout_continuation + bearish_15m + bearish_1h + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+4,breakout_continuation + bearish_1h + dist15_le_-0.5 + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+5,breakout_down + breakout_continuation + bearish_15m + bearish_1h + dump60_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + bearish_1h + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + bearish_1h + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_15m + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_15m + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_15m + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-1.0 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_15m + bearish_1h + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_continuation + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rv5_ge_1.0,7,12.73,28498.9556,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + dump60_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + bearish_15m + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + bearish_15m + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + bearish_15m + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + bearish_15m + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + bearish_15m + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + bearish_15m + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + bearish_15m + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + bearish_15m + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + bearish_15m + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_continuation + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,7,12.73,27163.0722,108.52,0.0077
+5,breakout_down + breakout_continuation + bearish_15m + bearish_1h + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+5,breakout_down + breakout_continuation + bearish_1h + dist15_le_-0.5 + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+5,breakout_down + bearish_15m + bearish_1h + dist15_le_-0.5 + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+5,breakout_continuation + bearish_15m + bearish_1h + dist15_le_-0.5 + rsi15_le_35,7,12.73,26503.9139,108.52,0.0082
+5,reversal_like + dump60_le_-1.0 + dist1h_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,7,12.73,16842.8651,133.5,0.0055
+4,breakout_down + bearish_1h + dump60_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+4,breakout_down + bearish_1h + dump60_le_-1.0 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+4,breakout_down + bearish_1h + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+4,breakout_continuation + bearish_1h + dump60_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+4,breakout_continuation + bearish_1h + dump60_le_-1.0 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+4,breakout_continuation + bearish_1h + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+4,breakout_down + breakout_continuation + bearish_15m + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_down + breakout_continuation + bearish_1h + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_down + breakout_continuation + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_down + bearish_15m + bearish_1h + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_down + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_down + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_continuation + bearish_15m + bearish_1h + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_continuation + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+4,breakout_continuation + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+5,breakout_down + breakout_continuation + bearish_1h + dump60_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + breakout_continuation + bearish_1h + dump60_le_-1.0 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + breakout_continuation + bearish_1h + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_15m + bearish_1h + dump60_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_15m + bearish_1h + dump60_le_-1.0 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_15m + bearish_1h + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_1h + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_1h + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + bearish_1h + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_15m + bearish_1h + dump60_le_-1.0 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_15m + bearish_1h + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_1h + dump60_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_1h + dump60_le_-1.0 + dist15_le_-0.5 + rsi15_le_35,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_1h + dump60_le_-1.0 + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_continuation + bearish_1h + dist15_le_-0.5 + rsi15_le_35 + rv5_ge_1.0,6,10.91,24916.6778,199.8,0.0081
+5,breakout_down + breakout_continuation + bearish_15m + bearish_1h + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+5,breakout_down + breakout_continuation + bearish_15m + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+5,breakout_down + breakout_continuation + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+5,breakout_down + bearish_15m + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065
+5,breakout_continuation + bearish_15m + bearish_1h + dist15_le_-0.5 + dist1h_le_-1.0,6,10.91,21678.1207,60.03,0.0065

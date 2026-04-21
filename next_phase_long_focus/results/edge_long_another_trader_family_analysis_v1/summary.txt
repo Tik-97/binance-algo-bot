@@ -1,0 +1,43 @@
+EDGE LONG ANOTHER TRADER FAMILY ANALYSIS V1
+===========================================
+
+source = Another Trader real ETHUSDT long trades
+goal = identify the next clean long-family direction outside the exhausted Tier 1.4 residual
+
+reference_trade_count = 55
+reference_win_rate_pct = 100.00
+reference_net_pnl_usd = 179879.8420
+
+headline read:
+- Another Trader ETH longs are not classic bull continuation longs
+- the dominant shape is still a bearish-flush reversal family
+- strongest repeated cluster is near-low + reversal-like + bearish EMA alignment + negative 60m momentum
+
+regime concentration:
+- top trend regime = strong_bear (46 trades)
+- top vol regime = high_vol (33 trades)
+
+context concentration:
+- top context_style = reversal_like (34 trades)
+- top structure_regime = near_low (33 trades)
+
+named family pockets:
+- family_a_flush_reversal: near_low + reversal_like + bearish_15m + bearish_1h + dump60<=-0.5
+  trades = 21, share = 38.18%, net_pnl = 70383.91
+- family_b_deep_flush_reversal: near_low + reversal_like + bearish_15m + dist15<=-0.5 + dist1h<=-1.0
+  trades = 18, share = 32.73%, net_pnl = 71418.85
+- family_c_breakout_down_reclaim: breakout_down + bearish_15m + bearish_1h + dump60<=-1.0
+  trades = 7, share = 12.73%, net_pnl = 28498.96
+
+top simple rule combos:
+- bearish_15m + bearish_1h + dump60_le_-0.5 + dist15_le_-0.5
+  trades = 26, share = 47.27%, median_hold = 142.08m
+- bearish_15m + bearish_1h + dump60_le_-0.5 + dump60_le_-1.0
+  trades = 25, share = 45.45%, median_hold = 183.84m
+- bearish_15m + bearish_1h + dump60_le_-0.5 + rv5_ge_1.0
+  trades = 24, share = 43.64%, median_hold = 130.33m
+
+next practical move:
+- keep Tier 1.4 as the current long baseline
+- build the next long-family search around the flush-reversal family from these Another Trader longs
+- do not search satellite4 inside Tier 1.4 residual anymore

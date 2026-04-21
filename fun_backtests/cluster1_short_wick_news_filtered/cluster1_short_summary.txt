@@ -1,0 +1,40 @@
+CLUSTER 1 SHORT WICK + NEWS-LIKE FILTER BACKTEST
+================================================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Context filter:
+- near 4h high <= 0.25%
+- 60m bounce >= 0.90%
+- stretch above EMA20 5m >= 0.15%
+
+Entry logic:
+- upper wick ratio >= 0.45
+- body ratio <= 0.35
+- current or previous trigger candle = True
+- confirm close below trigger close = True
+- confirm low below trigger low = True
+
+News-like abnormal move filters:
+- max trigger range % = 0.45
+- max confirm range % = 0.45
+- max pre-entry 5m move % = 0.60
+- max pre-entry 15m move % = 1.20
+
+Risk / exit:
+- cooldown between context entries = 240 minutes
+- initial stop above trigger high = 0.20%
+- risk per trade = 1.00% of balance
+- leverage info = 10.0x
+
+Trade count: 539
+Win rate: 48.79%
+Profit factor: 0.736
+Max drawdown: 63.28%
+Expectancy: -0.41 USD
+Ending balance: 177.61 USD
+Average hold: 303.40 min
+Average MFE: 1.04%
+Average MAE: 0.33%
+Skipped news-like setups: 567

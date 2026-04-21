@@ -1,0 +1,57 @@
+BEST EFFORT SANDBOX STRATEGY
+============================
+
+This file describes the best standalone sandbox candidate found in a constrained search.
+It is NOT part of the main research pipeline and it is NOT proof of tradability.
+
+Source used: current practical Cluster 1 short model signals from `eth_cluster1_short_model_signals.csv`.
+Signals file: C:\Users\Tigran\Desktop\Binance\Another Trader\analysis_output\eth_cluster1_short_model_signals.csv
+Candles file: C:\Users\Tigran\Desktop\Binance\.cache\binance_klines\ETHUSDT_1m.csv
+
+Search constraint: minimum trade count = 60
+Starting balance in search = $400.00
+Leverage = 10.0x
+
+BEST CANDIDATE
+--------------
+Time window where we allow the signal: 13:00-17:00 UTC
+Signal filter that works best in this sandbox search: Stronger 5m upper wick
+Filter description: Upper wick ratio 5m >= 0.40.
+Exit / management profile: TP1.0 / SL1.5 with step manager
+Risk mode: tenth_margin (10% of wallet as margin)
+
+How we get the signal:
+- We start from the existing Cluster 1 ETH short proxy signal source.
+- We only keep signals inside the time window `13:00-17:00 UTC`.
+- Then we apply the extra narrowing rule `Stronger 5m upper wick`.
+
+Our entry point:
+- Entry happens at the proxy signal timestamp.
+- Entry price is the proxy signal entry price from the signal file, adjusted by sandbox slippage.
+- One trade at a time only; overlapping later signals are skipped while a trade is open.
+
+Wallet outcome for the best sandbox candidate:
+- Ending balance: $401.43
+- Total return: 0.36%
+- Trade count: 60
+- Win rate: 40.00%
+- Profit factor: 1.014
+- Max drawdown: 8.70%
+
+Top sandbox candidates from this search:
+                                                                    combo_id     time_window_id time_window_label  signal_filter_id      signal_filter_label     signal_filter_description          exit_profile_id                    exit_profile_label      risk_mode  margin_fraction  starting_balance  ending_balance  total_return_pct  trade_count  win_count  loss_count  win_rate  average_win_usd  average_loss_usd  profit_factor  max_drawdown_pct  best_trade_usd  worst_trade_usd  ignored_overlapping_signals  skipped_empty_filter  eligible_min_trade_count
+            afternoon_13_17__strong_upper_wick__step_tp1_sl1p5__tenth_margin    afternoon_13_17   13:00-17:00 UTC strong_upper_wick   Stronger 5m upper wick  Upper wick ratio 5m >= 0.40.           step_tp1_sl1p5       TP1.0 / SL1.5 with step manager   tenth_margin             0.10             400.0      401.433024          0.358256           60         24          36  0.400000         4.183764         -2.749369       1.014478          8.698514        5.627623        -6.564909                           12                     0                      True
+          afternoon_13_17__strong_upper_wick__step_tp1_sl1p5__quarter_margin    afternoon_13_17   13:00-17:00 UTC strong_upper_wick   Stronger 5m upper wick  Upper wick ratio 5m >= 0.40.           step_tp1_sl1p5       TP1.0 / SL1.5 with step manager quarter_margin             0.25             400.0      398.394791         -0.401302           60         24          36  0.400000        10.166220         -6.822069       0.993464         20.828313       14.134984       -16.906692                           12                     0                      True
+            afternoon_13_18__strong_upper_wick__step_tp1_sl1p5__tenth_margin    afternoon_13_18   13:00-18:00 UTC strong_upper_wick   Stronger 5m upper wick  Upper wick ratio 5m >= 0.40.           step_tp1_sl1p5       TP1.0 / SL1.5 with step manager   tenth_margin             0.10             400.0      392.667739         -1.833065           71         27          44  0.380282         4.171740         -2.726574       0.938882         10.295765        5.705992        -6.649341                           13                     0                      True
+              overlap_12_18__strong_upper_wick__step_tp1_sl1p5__tenth_margin      overlap_12_18   12:00-18:00 UTC strong_upper_wick   Stronger 5m upper wick  Upper wick ratio 5m >= 0.40.           step_tp1_sl1p5       TP1.0 / SL1.5 with step manager   tenth_margin             0.10             400.0      384.095523         -3.976119           82         32          50  0.390244         3.884006         -2.803853       0.886553         13.870421        5.802374        -6.788374                           16                     0                      True
+late_overlap_14_19__strict_high_zone__high_winrate_tp0p3_sl1p0__tenth_margin late_overlap_14_19   14:00-19:00 UTC  strict_high_zone Strict 4h high proximity Distance to 4h high <= 0.35%. high_winrate_tp0p3_sl1p0 TP0.3 / SL1.0 with trailing extension   tenth_margin             0.10             400.0      383.478554         -4.130361           64         48          16  0.750000         0.871306         -3.646508       0.716828          6.095377        5.573860        -4.495954                            8                     0                      True
+   afternoon_13_18__strict_high_zone__high_winrate_tp0p3_sl1p0__tenth_margin    afternoon_13_18   13:00-18:00 UTC  strict_high_zone Strict 4h high proximity Distance to 4h high <= 0.35%. high_winrate_tp0p3_sl1p0 TP0.3 / SL1.0 with trailing extension   tenth_margin             0.10             400.0      382.290354         -4.427411           63         46          17  0.730159         0.986670         -3.711557       0.719324          7.494520        5.654049        -4.549814                           12                     0                      True
+                afternoon_13_17__bearish_close__step_tp1_sl1p5__tenth_margin    afternoon_13_17   13:00-17:00 UTC     bearish_close         Bearish 5m close     Last 5m return <= -0.05%.           step_tp1_sl1p5       TP1.0 / SL1.5 with step manager   tenth_margin             0.10             400.0      380.978329         -4.755418           64         26          38  0.406250         4.169205         -3.353184       0.850718          9.536857        5.516761        -6.461011                           10                     0                      True
+         late_overlap_14_19__strong_upper_wick__step_tp1_sl1p5__tenth_margin late_overlap_14_19   14:00-19:00 UTC strong_upper_wick   Stronger 5m upper wick  Upper wick ratio 5m >= 0.40.           step_tp1_sl1p5       TP1.0 / SL1.5 with step manager   tenth_margin             0.10             400.0      380.406584         -4.898354           68         24          44  0.352941         3.912515         -2.579404       0.827361          8.948450        5.520771        -6.440261                           11                     0                      True
+             afternoon_13_17__strong_upper_wick__step_tp1_sl1p5__half_margin    afternoon_13_17   13:00-17:00 UTC strong_upper_wick   Stronger 5m upper wick  Upper wick ratio 5m >= 0.40.           step_tp1_sl1p5       TP1.0 / SL1.5 with step manager    half_margin             0.50             400.0      379.865249         -5.033688           60         24          36  0.400000        19.107743        -13.297794       0.957940         38.600531       28.350957       -35.210116                           12                     0                      True
+  afternoon_13_17__strong_upper_wick__high_winrate_tp0p3_sl1p0__tenth_margin    afternoon_13_17   13:00-17:00 UTC strong_upper_wick   Stronger 5m upper wick  Upper wick ratio 5m >= 0.40. high_winrate_tp0p3_sl1p0 TP0.3 / SL1.0 with trailing extension   tenth_margin             0.10             400.0      378.802600         -5.299350           65         47          18  0.723077         0.969427         -3.708914       0.682486          7.508262        5.581500        -4.508975                            7                     0                      True
+
+Honest interpretation:
+- This is the best sandbox candidate from the tested combinations, not a recovered real strategy.
+- It is only a practical entertainment / exploration candidate built on the existing Cluster 1 short proxy.
+- The signal is still derived from the broad short-family proxy, then narrowed by time + one extra filter + risk/exit management.

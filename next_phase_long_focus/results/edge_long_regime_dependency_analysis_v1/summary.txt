@@ -1,0 +1,40 @@
+EDGE LONG REGIME DEPENDENCY ANALYSIS V1
+=====================================
+
+baseline_source = cluster1_long_climax_push_failure_rr2_reentry_delayed_limit
+trade_count = 19
+net_pnl_usd = 7.3488
+win_rate_pct = 42.11
+profit_factor = 1.133
+
+median_ret_30d_pct = -21.56
+median_ret_60d_pct = -29.81
+median_close_vs_sma60_pct = -19.63
+
+trend_regime_summary:
+- strong_bear: trades=13, net_pnl=7.6635, win_rate=46.15%, pf=1.213
+- weak_bear: trades=1, net_pnl=7.0278, win_rate=100.00%, pf=inf
+- transition: trades=4, net_pnl=-2.7793, win_rate=25.00%, pf=0.813
+- weak_bull: trades=1, net_pnl=-4.5632, win_rate=0.00%, pf=0.0
+
+vol_regime_summary:
+- high_vol: trades=14, net_pnl=15.4664, win_rate=50.00%, pf=1.439
+- low_vol: trades=5, net_pnl=-8.1176, win_rate=20.00%, pf=0.598
+
+entry_hour_summary:
+- hour 21: trades=1, net_pnl=10.0721, win_rate=100.00%, pf=inf
+- hour 7: trades=1, net_pnl=8.8200, win_rate=100.00%, pf=inf
+- hour 3: trades=1, net_pnl=6.8339, win_rate=100.00%, pf=inf
+- hour 17: trades=1, net_pnl=6.6625, win_rate=100.00%, pf=inf
+- hour 5: trades=1, net_pnl=4.5513, win_rate=100.00%, pf=inf
+- hour 15: trades=3, net_pnl=2.4239, win_rate=33.33%, pf=1.251
+- hour 14: trades=2, net_pnl=2.1248, win_rate=50.00%, pf=1.464
+- hour 18: trades=2, net_pnl=1.2550, win_rate=50.00%, pf=1.217
+- hour 11: trades=1, net_pnl=-4.5356, win_rate=0.00%, pf=0.0
+- hour 20: trades=1, net_pnl=-5.1874, win_rate=0.00%, pf=0.0
+- hour 13: trades=1, net_pnl=-5.3541, win_rate=0.00%, pf=0.0
+- hour 16: trades=2, net_pnl=-9.9248, win_rate=0.00%, pf=0.0
+- hour 8: trades=2, net_pnl=-10.3929, win_rate=0.00%, pf=0.0
+
+verdict:
+- high-vol conditions did not kill the setup outright

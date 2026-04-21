@@ -1,0 +1,18 @@
+services:
+  eth-short-demo-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eth-short-demo-bot
+    restart: unless-stopped
+    command: ["python", "-m", "bot", "--config", "/app/.env", "run"]
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./.env:/app/.env:ro
+    healthcheck:
+      test: ["CMD", "python", "-m", "bot.healthcheck", "--db", "/app/data/state.db"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 45s

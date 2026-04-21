@@ -1,0 +1,27 @@
+EDGE LONG TIER1.2 CORE PLUS SATELLITE1 V1
+=========================================
+
+idea = keep the small clean long core and add one adjacent profitable satellite
+router = Tier1 bear-like high_vol long + core route + satellite1 route
+source_engine = wickMick_long.py
+
+core = climax_drop_5m_pct >= 0.85
+core = context_stretch_below_ema20_5m_pct <= 1.30
+
+satellite1 = climax_drop_5m_pct < 0.85
+satellite1 = confirm_range_pct <= 0.25
+satellite1 = rel_volume_1m >= 1.40
+satellite1 = context_dump_60m_pct >= 1.10
+satellite1 = softer flush + clean confirm + healthy local volume
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end = 2026-04-15 04:17:00+00:00
+trade_count = 10
+win_rate_pct = 90.00
+profit_factor = 13.239
+max_drawdown_pct = 1.43
+expectancy_usd = 7.6944
+ending_balance = 476.94
+context_without_trigger_count = 20083
+rejected_entry_count = 0
+expired_limit_count = 8

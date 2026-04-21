@@ -1,0 +1,33 @@
+CLUSTER 1 SHORT MICROSTRUCTURE GATE BACKTEST
+============================================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Entry logic:
+- near 4h high <= 0.25%
+- 60m bounce >= 0.90%
+- stretch above EMA20 5m >= 0.15%
+- upper wick ratio >= 0.45
+- body ratio <= 0.35
+- confirm close below trigger close = True
+- confirm low below trigger low = True
+- confirm close below trigger midpoint = True
+- weaker than prior push = True
+- max relative volume 1m = 1.80
+
+Risk / exit:
+- initial stop above trigger high = 0.20%
+- partial at 0.35%
+- trail tighten at 0.70%
+
+Trade count: 55
+Win rate: 41.82%
+Profit factor: 0.101
+Max drawdown: 32.31%
+Expectancy: -2.66 USD
+Ending balance: 253.63 USD
+Average hold: 60.95 min
+Average MFE: 0.42%
+Average MAE: 0.33%
+Skipped filtered setups: 18973

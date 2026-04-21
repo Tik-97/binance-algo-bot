@@ -1,0 +1,20 @@
+EDGE LONG TIER14 SATELLITE4 SEARCH V1
+=====================================
+
+search_scope = residual after Tier 1.4 (core + satellite1 + satellite2)
+search_style = constrained live-safe filter combinations only
+candidate_requirements = 3-5 trades, positive net pnl, win_rate >= 66.67%, profit_factor >= 2.0
+
+residual_trade_count = 17
+residual_win_count = 2
+residual_loss_count = 15
+residual_net_pnl_usd = -67.2670
+qualified_candidate_count = 0
+
+result = no qualified satellite4 candidate found
+
+honest_read:
+- after Tier 1.4, the residual set is already mostly exhausted
+- only 2 residual winners remained
+- no 3+ trade live-safe pocket met the minimum quality threshold
+- this suggests the next clean step should not be satellite4 from Tier 1.4 residual

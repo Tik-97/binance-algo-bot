@@ -1,0 +1,64 @@
+EDGE LONG TIER1.4 ETH STRESS TEST V1
+====================================
+
+strategy = edge_long_tier14_core_plus_satellite2_v1.py
+market = ETHUSDT
+venue = Binance-style ETH execution assumptions
+
+stress philosophy:
+- fee kept fixed per side
+- pressure only through worse limit touch / fill and worse market/exit slippage
+- designed to be harsher than baseline but still realistic for ETH/Binance
+
+Baseline realistic:
+- trade_count = 12
+- ending_balance = 513.38
+- net_pnl_usd = 113.3804
+- win_rate_pct = 100.00
+- max_drawdown_pct = 0.00
+- market_entry_slippage_pct = 0.025
+- exit_slippage_pct = 0.025
+- limit_touch_buffer_pct = 0.000
+- limit_fill_slippage_pct = 0.000
+
+ETH adverse light:
+- trade_count = 11
+- ending_balance = 494.84
+- net_pnl_usd = 94.8383
+- win_rate_pct = 100.00
+- max_drawdown_pct = 0.00
+- market_entry_slippage_pct = 0.040
+- exit_slippage_pct = 0.040
+- limit_touch_buffer_pct = 0.005
+- limit_fill_slippage_pct = 0.000
+
+ETH adverse medium:
+- trade_count = 11
+- ending_balance = 491.40
+- net_pnl_usd = 91.4008
+- win_rate_pct = 100.00
+- max_drawdown_pct = 0.00
+- market_entry_slippage_pct = 0.060
+- exit_slippage_pct = 0.060
+- limit_touch_buffer_pct = 0.010
+- limit_fill_slippage_pct = 0.005
+
+ETH adverse hard:
+- trade_count = 11
+- ending_balance = 487.62
+- net_pnl_usd = 87.6165
+- win_rate_pct = 100.00
+- max_drawdown_pct = 0.00
+- market_entry_slippage_pct = 0.080
+- exit_slippage_pct = 0.080
+- limit_touch_buffer_pct = 0.015
+- limit_fill_slippage_pct = 0.010
+
+generated_files:
+- C:\Users\Tigran\Desktop\Binance\next_phase_long_focus\results\edge_long_tier14_eth_stress_test_v1\scenario_summary.csv
+- C:\Users\Tigran\Desktop\Binance\next_phase_long_focus\results\edge_long_tier14_eth_stress_test_v1\monthly_summary.csv
+- C:\Users\Tigran\Desktop\Binance\next_phase_long_focus\results\edge_long_tier14_eth_stress_test_v1\route_summary.csv
+- C:\Users\Tigran\Desktop\Binance\next_phase_long_focus\results\edge_long_tier14_eth_stress_test_v1\plots\stress_dashboard.png
+- C:\Users\Tigran\Desktop\Binance\next_phase_long_focus\results\edge_long_tier14_eth_stress_test_v1\plots\equity_curves.png
+- C:\Users\Tigran\Desktop\Binance\next_phase_long_focus\results\edge_long_tier14_eth_stress_test_v1\plots\monthly_net_pnl.png
+- C:\Users\Tigran\Desktop\Binance\next_phase_long_focus\results\edge_long_tier14_eth_stress_test_v1\plots\trade_pnl_boxplot.png

@@ -1,0 +1,18 @@
+CLUSTER 1 SHORT — v2.1 ACCEPTANCE + VOLUME CONFIRMATION
+===================================================
+
+v2.0 + новый фильтр: rel_volume_1m >= 1.30 на trigger candle
+Это напрямую использует лучшее разделение winners/losers из свежих гистограмм.
+
+Trade count: 162
+Win rate: 41.98%
+Profit factor: 0.397
+Max drawdown: 39.01%
+Expectancy: -0.96 USD
+Ending balance: 244.20 USD
+Skipped by basic filters: 16450
+Acceptance rejected: 116
+Volume rejected: 1036
+Soft fast-failed: 55
+
+Ожидаемое улучшение: +4–8% win rate за счёт отбора только объёмно-подтверждённых rejection.

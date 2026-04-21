@@ -1,0 +1,75 @@
+ETH SHORT DAY REGIME SPLIT ANALYSIS
+===================================
+
+trade_count = 17
+small_gap_max_pct = 0.75
+large_gap_min_pct = 1.25
+extra_push_min_pct = 0.15
+
+near_entry_small_gap
+--------------------
+trade_count = 5
+share_pct = 29.41
+median_candidate_abs_minute_distance = 2.35
+median_trader_delay_from_candidate_minutes = -2.35
+median_entry_gap_trader_vs_candidate_pct = 0.5253
+extra_push_share_pct = 0.00
+breakdown_noise_share_pct = 60.00
+median_trader_return_pct = 1.0985
+v1_trade_count = 4
+v1_win_rate_pct = 0.00
+v2_trade_count = 5
+v2_win_rate_pct = 0.00
+v3_trade_count = 4
+v3_win_rate_pct = 0.00
+
+late_entry_extra_push
+---------------------
+trade_count = 4
+share_pct = 23.53
+median_candidate_abs_minute_distance = 1.33
+median_trader_delay_from_candidate_minutes = 1.33
+median_entry_gap_trader_vs_candidate_pct = 1.7474
+extra_push_share_pct = 100.00
+breakdown_noise_share_pct = 25.00
+median_trader_return_pct = 1.2743
+v1_trade_count = 4
+v1_win_rate_pct = 0.00
+v2_trade_count = 4
+v2_win_rate_pct = 0.00
+v3_trade_count = 0
+v3_win_rate_pct = nan
+
+mixed_transition
+----------------
+trade_count = 4
+share_pct = 23.53
+median_candidate_abs_minute_distance = 3.89
+median_trader_delay_from_candidate_minutes = -0.23
+median_entry_gap_trader_vs_candidate_pct = 1.6229
+extra_push_share_pct = 0.00
+breakdown_noise_share_pct = 50.00
+median_trader_return_pct = 0.7588
+v1_trade_count = 3
+v1_win_rate_pct = 66.67
+v2_trade_count = 3
+v2_win_rate_pct = 33.33
+v3_trade_count = 1
+v3_win_rate_pct = 0.00
+
+near_entry_breakdown_noise
+--------------------------
+trade_count = 4
+share_pct = 23.53
+median_candidate_abs_minute_distance = 0.46
+median_trader_delay_from_candidate_minutes = 0.46
+median_entry_gap_trader_vs_candidate_pct = 0.0871
+extra_push_share_pct = 100.00
+breakdown_noise_share_pct = 100.00
+median_trader_return_pct = 1.6674
+v1_trade_count = 3
+v1_win_rate_pct = 33.33
+v2_trade_count = 4
+v2_win_rate_pct = 25.00
+v3_trade_count = 3
+v3_win_rate_pct = 33.33

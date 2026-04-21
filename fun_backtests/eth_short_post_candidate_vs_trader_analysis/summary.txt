@@ -1,0 +1,38 @@
+ETH SHORT POST-CANDIDATE VS TRADER ANALYSIS
+===========================================
+
+trade_count = 17
+median_candidate_abs_minute_distance = 0.78
+median_trader_delay_from_candidate_minutes = 0.01
+median_entry_gap_trader_vs_candidate_pct = 0.7074
+extra_push_before_trader_share = 47.06%
+pre_breakdown_before_trader_share = 58.82%
+
+Candidate Path Medians
+----------------------
+candidate_close_return_after_1m_pct = 0.0676
+candidate_close_return_after_3m_pct = -0.0264
+candidate_close_return_after_5m_pct = 0.0038
+candidate_close_return_after_10m_pct = 0.1854
+candidate_close_return_after_15m_pct = 0.1086
+
+V1 Execution Snapshot
+---------------------
+trade_count = 14
+win_rate_pct = 21.43%
+median_pnl_usd = -3.8155
+median_entry_vs_trader_price_pct = -0.7111
+
+V2 Execution Snapshot
+---------------------
+trade_count = 16
+win_rate_pct = 12.50%
+median_pnl_usd = -10.1520
+median_entry_vs_trader_price_pct = -0.4764
+
+V3 Execution Snapshot
+---------------------
+trade_count = 8
+win_rate_pct = 12.50%
+median_pnl_usd = -10.6045
+median_entry_vs_trader_price_pct = -0.3757

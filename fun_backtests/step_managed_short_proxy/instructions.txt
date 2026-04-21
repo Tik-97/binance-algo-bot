@@ -1,0 +1,71 @@
+MANUAL BACKTEST INSTRUCTIONS
+============================
+
+This folder contains a standalone sandbox backtest. It is separate from the main research pipeline.
+
+Main script:
+- `sandbox_wallet_eth_short_proxy_step_manager.py`
+
+Main files produced here:
+- `step_manager_trades.csv`
+- `step_manager_equity_curve.csv`
+- `step_manager_comparison.csv`
+- `step_manager_summary.txt`
+- `plots/step_manager_wallet_balance.png`
+
+Where to change the rules manually:
+1. Open `sandbox_wallet_eth_short_proxy_step_manager.py`.
+2. Edit the `StepManagerConfig` dataclass near the top of the file.
+
+Most important parameters:
+- `entry_hour_start_utc` / `entry_hour_end_utc`
+  Current: 0 to 24
+- `initial_sl_pct`
+  Current: 1.5
+- `initial_tp_pct`
+  Current: 1.0
+- `first_step_trigger_pct`
+  Current: 0.5
+- `second_step_trigger_pct`
+  Current: 1.0
+- `post_step_tp_pct`
+  Current: 1.5
+- `second_step_locked_profit_pct`
+  Current: 0.5
+- `max_holding_minutes`
+  Current: 720
+- `fee_rate_per_side_pct`
+- `slippage_per_side_pct`
+- `liquidation_buffer_pct`
+
+Where to change wallet aggressiveness:
+- Edit the `RISK_MODES` dictionary near the top of the file.
+- Example:
+  `"full_margin": 1.00`
+  `"half_margin": 0.50`
+  `"quarter_margin": 0.25`
+  `"tenth_margin": 0.10`
+
+How the step-management works:
+- Trade starts with initial SL / TP.
+- After the first favorable move trigger, SL moves to entry and TP extends.
+- After the second favorable move trigger, SL locks profit and TP stays at the extended target.
+
+Where to change the signal source:
+- Edit `DEFAULT_SIGNALS_PATH`
+- Or run:
+  `python sandbox_wallet_eth_short_proxy_step_manager.py --signals "path_to_csv"`
+
+Where to change candle source:
+- Edit `DEFAULT_CANDLES_PATH`
+- Or run:
+  `python sandbox_wallet_eth_short_proxy_step_manager.py --candles "path_to_eth_1m.csv"`
+
+How to run manually:
+- From the project root:
+  `python sandbox_wallet_eth_short_proxy_step_manager.py`
+
+Important note:
+- This is a sandbox wallet simulation only.
+- It is not part of the main reverse-analysis conclusions.
+- It uses approximate liquidation logic and conservative intrabar assumptions.

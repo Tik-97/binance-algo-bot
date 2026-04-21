@@ -1,0 +1,13 @@
+scenario,scenario_title,route,trade_count,net_pnl_usd
+baseline_realistic,Baseline realistic,satellite1_soft_flush_refined,4,40.90733792341021
+baseline_realistic,Baseline realistic,satellite2_reclaim_extension,3,26.417316347620872
+baseline_realistic,Baseline realistic,tier11_core,5,46.05578323773106
+eth_adverse_hard,ETH adverse hard,satellite1_soft_flush_refined,3,23.918946544224156
+eth_adverse_hard,ETH adverse hard,satellite2_reclaim_extension,3,24.510270655610892
+eth_adverse_hard,ETH adverse hard,tier11_core,5,39.18724624602848
+eth_adverse_light,ETH adverse light,satellite1_soft_flush_refined,3,26.248928677136185
+eth_adverse_light,ETH adverse light,satellite2_reclaim_extension,3,25.44493363452979
+eth_adverse_light,ETH adverse light,tier11_core,5,43.14441805908898
+eth_adverse_medium,ETH adverse medium,satellite1_soft_flush_refined,3,25.06242788742995
+eth_adverse_medium,ETH adverse medium,satellite2_reclaim_extension,3,25.22950707439753
+eth_adverse_medium,ETH adverse medium,tier11_core,5,41.10883547471093

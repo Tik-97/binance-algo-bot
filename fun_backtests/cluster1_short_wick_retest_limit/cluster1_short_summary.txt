@@ -1,0 +1,37 @@
+CLUSTER 1 SHORT WICK RETEST LIMIT BACKTEST
+==========================================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Context filter:
+- near 4h high <= 0.25%
+- 60m bounce >= 0.90%
+- stretch above EMA20 5m >= 0.15%
+
+Entry logic:
+- upper wick ratio >= 0.45
+- body ratio <= 0.35
+- current or previous trigger candle = True
+- next bar down confirmation = True
+- limit placed inside upper wick, fraction from top = 0.35
+- max fill wait = 15 minutes
+
+Risk / exit:
+- cooldown between context entries = 240 minutes
+- initial stop above trigger high = 0.05%
+- risk per trade = 1.00% of balance
+- leverage info = 10.0x
+
+Trade count: 463
+Win rate: 20.73%
+Profit factor: 0.122
+Max drawdown: 99.87%
+Expectancy: -0.86 USD
+Ending balance: 0.49 USD
+Average hold: 87.86 min
+Average MFE: 0.36%
+Average MAE: 0.27%
+Current-candle trigger share: 97.84%
+Previous-candle trigger share: 2.16%
+Skipped no-fill setups: 306

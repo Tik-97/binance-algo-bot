@@ -1,0 +1,18 @@
+ETH SHORT EXECUTION BACKTEST V1
+===============================
+
+entry_mode = candidate_limit_retest_15bp_15m
+candidate_count = 17
+filled_trade_count = 14
+skipped_unfilled = 3
+skipped_invalid_stop = 0
+ending_balance = 343.63
+win_rate_pct = 21.43
+profit_factor = 0.240
+expectancy_usd = -4.0265
+median_hold_minutes = 6.00
+median_entry_vs_trader_price_pct = -0.7111
+median_candidate_abs_minute_distance = 0.33
+
+same_result_direction_share = 21.43%
+median_delta_vs_trader_return_pct = -1.5906

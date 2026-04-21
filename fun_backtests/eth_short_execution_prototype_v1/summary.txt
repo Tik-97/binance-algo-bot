@@ -1,0 +1,48 @@
+ETH SHORT EXECUTION PROTOTYPE V1
+================================
+
+session_reference_trade_count = 17
+nearest_candidate_day_count = 17
+baseline_nearest_within_15m_share = 94.12%
+baseline_nearest_within_5m_share = 64.71%
+baseline_nearest_median_abs_minute_distance = 0.78
+
+limit_retest_10bp_10m
+---------------------
+fill_rate_pct = 88.24%
+median_fill_delay_minutes_from_candidate = 1.00
+median_entry_vs_trader_price_pct = -0.6031
+median_net_return_pct_same_exit = 0.0713
+median_delta_vs_trader_return_pct = -0.6906
+within_25bp_of_trader_entry_share = 26.67%
+positive_same_exit_share = 60.00%
+
+limit_retest_15bp_15m
+---------------------
+fill_rate_pct = 94.12%
+median_fill_delay_minutes_from_candidate = 2.00
+median_entry_vs_trader_price_pct = -0.4764
+median_net_return_pct_same_exit = 0.1910
+median_delta_vs_trader_return_pct = -0.6283
+within_25bp_of_trader_entry_share = 18.75%
+positive_same_exit_share = 62.50%
+
+limit_retest_5bp_10m
+--------------------
+fill_rate_pct = 88.24%
+median_fill_delay_minutes_from_candidate = 1.00
+median_entry_vs_trader_price_pct = -0.6528
+median_net_return_pct_same_exit = 0.0214
+median_delta_vs_trader_return_pct = -0.7405
+within_25bp_of_trader_entry_share = 26.67%
+positive_same_exit_share = 53.33%
+
+market_next_open
+----------------
+fill_rate_pct = 100.00%
+median_fill_delay_minutes_from_candidate = 1.00
+median_entry_vs_trader_price_pct = -0.6776
+median_net_return_pct_same_exit = -0.0039
+median_delta_vs_trader_return_pct = -0.7655
+within_25bp_of_trader_entry_share = 23.53%
+positive_same_exit_share = 47.06%

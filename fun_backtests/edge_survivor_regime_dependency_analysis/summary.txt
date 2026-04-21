@@ -1,0 +1,33 @@
+EDGE SURVIVOR REGIME DEPENDENCY ANALYSIS
+=======================================
+
+goal = test whether the survivor edge behaves differently across broad market regimes
+
+trade_count = 12
+history_trade_start = 2024-08-09 14:05:00+00:00
+history_trade_end = 2026-02-06 14:48:00+00:00
+
+Overall Trade Medians
+---------------------
+median_ret_30d_pct = -6.89
+median_ret_60d_pct = -15.25
+median_vol_14d_pct = 4.29
+median_close_vs_sma60_pct = -8.02
+
+Trend Regime Summary
+--------------------
+strong_bear: trade_count=6, win_rate_pct=100.00, net_pnl_usd=32.4522, median_ret_60d_pct=-30.89, median_close_vs_sma60_pct=-20.84
+strong_bull: trade_count=2, win_rate_pct=0.00, net_pnl_usd=-13.6287, median_ret_60d_pct=62.81, median_close_vs_sma60_pct=29.92
+weak_bull: trade_count=2, win_rate_pct=0.00, net_pnl_usd=-10.2645, median_ret_60d_pct=5.81, median_close_vs_sma60_pct=13.84
+transition: trade_count=1, win_rate_pct=0.00, net_pnl_usd=-6.5587, median_ret_60d_pct=-0.22, median_close_vs_sma60_pct=-4.24
+weak_bear: trade_count=1, win_rate_pct=100.00, net_pnl_usd=12.0970, median_ret_60d_pct=-6.72, median_close_vs_sma60_pct=-3.00
+
+Volatility Regime Summary
+-------------------------
+high_vol: trade_count=9, win_rate_pct=66.67, net_pnl_usd=23.4710, median_vol_14d_pct=4.46, median_ret_60d_pct=-23.78
+low_vol: trade_count=3, win_rate_pct=33.33, net_pnl_usd=-9.3736, median_vol_14d_pct=2.81, median_ret_60d_pct=-0.22
+
+Reading
+-------
+best_trend_regime_by_avg_pnl = weak_bear (avg_pnl_usd=12.0970)
+worst_trend_regime_by_avg_pnl = strong_bull (avg_pnl_usd=-6.8144)

@@ -1,0 +1,9 @@
+cluster_id,cluster_label,cluster_description,execution_mode,execution_mode_label,trades,cluster_total_trades,within_cluster_share,eth_trade_share,median_fill_delay_minutes,quality_coverage_share,low_sample_flag
+1,Cluster 1,"short after small bounce, near 4h high, in average volume, while stretched above EMA",immediate_like,Immediate-like,13,36,0.3611111111111111,0.14772727272727273,0.0,1.0,False
+1,Cluster 1,"short after small bounce, near 4h high, in average volume, while stretched above EMA",short_delay,Short-delay,2,36,0.05555555555555555,0.022727272727272728,3.7229833333333335,1.0,True
+1,Cluster 1,"short after small bounce, near 4h high, in average volume, while stretched above EMA",delayed_limit_like,Delayed / limit-like,21,36,0.5833333333333334,0.23863636363636365,82.22375000000001,1.0,False
+1,Cluster 1,"short after small bounce, near 4h high, in average volume, while stretched above EMA",uncertain,Uncertain,0,36,0.0,0.0,,,True
+2,Cluster 2,"long after local flush / reversal, near 4h low, with heated volume, while stretched below EMA",immediate_like,Immediate-like,21,52,0.40384615384615385,0.23863636363636365,0.0,1.0,False
+2,Cluster 2,"long after local flush / reversal, near 4h low, with heated volume, while stretched below EMA",short_delay,Short-delay,5,52,0.09615384615384616,0.056818181818181816,1.3704333333333334,1.0,False
+2,Cluster 2,"long after local flush / reversal, near 4h low, with heated volume, while stretched below EMA",delayed_limit_like,Delayed / limit-like,26,52,0.5,0.29545454545454547,88.54090833333333,1.0,False
+2,Cluster 2,"long after local flush / reversal, near 4h low, with heated volume, while stretched below EMA",uncertain,Uncertain,0,52,0.0,0.0,,,True

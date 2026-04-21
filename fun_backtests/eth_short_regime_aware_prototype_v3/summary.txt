@@ -1,0 +1,31 @@
+ETH SHORT REGIME AWARE PROTOTYPE V3
+===================================
+
+routing = mixed_transition -> v1, near_entry_breakdown_noise -> conditional live-safe micro router
+note = near-noise subtype uses only trigger-bar features; top-level day_regime is still research-tagged
+candidate_count = 17
+filled_trade_count = 5
+skipped_non_target = 9
+skipped_unfilled = 1
+skipped_invalid_stop = 0
+skipped_bad_price = 0
+skipped_far_candidate = 1
+skipped_wide_stop = 0
+skipped_strong_push = 1
+ending_balance = 456.50
+win_rate_pct = 80.00
+profit_factor = 7.915
+expectancy_usd = 11.3005
+median_hold_minutes = 2.00
+median_entry_vs_trader_price_pct = -0.8688
+median_candidate_abs_minute_distance = 0.24
+median_stop_distance_pct = 0.0987
+
+Subtype Split
+------------
+cooling_v3_live: trade_count=1, win_rate_pct=100.00, median_pnl_usd=43.6427
+mild_noise_v1_live: trade_count=1, win_rate_pct=100.00, median_pnl_usd=1.0639
+mixed_transition_v1: trade_count=3, win_rate_pct=66.67, median_pnl_usd=0.5882
+
+same_result_direction_share = 80.00%
+median_delta_vs_trader_return_pct = -0.7781

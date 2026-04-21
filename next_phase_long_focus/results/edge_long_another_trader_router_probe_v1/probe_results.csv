@@ -1,0 +1,11 @@
+name,trade_count,win_rate_pct,profit_factor,ending_balance,max_drawdown_pct
+f2a_core_sb_highvol,14,42.86,1.163,407.05,5.98
+f2a_core_sb_anyvol,17,41.18,1.058,403.11,7.24
+f2a_plus_d15,17,41.18,1.058,403.11,7.24
+f2a_plus_rv5,17,41.18,1.058,403.11,7.24
+f2a_core_sb_lowvol,3,33.33,0.617,396.13,1.34
+f2a_plus_rsi35,13,30.77,0.629,382.54,8.28
+f2a_plus_d1h,14,28.57,0.500,374.56,8.80
+family_c_breakout_down_sb_anyvol,5,40.00,0.957,399.39,1.22
+family_c_breakout_down_sb_highvol,5,40.00,0.957,399.39,1.22
+family_b_deep_flush_sb_anyvol,15,26.67,0.460,370.12,9.88

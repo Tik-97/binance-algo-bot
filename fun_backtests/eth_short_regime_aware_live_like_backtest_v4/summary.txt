@@ -1,0 +1,27 @@
+ETH SHORT REGIME AWARE LIVE-LIKE BACKTEST V4
+============================================
+
+pipeline = candidate_engine_v1 -> near_entry_breakdown_noise -> (mild_noise_v1_live + strict cooling extension) -> v1 execution
+note = strict cooling is intentionally tiny and only includes cooling cases with immediate softness plus moderate bounce
+deduped_candidate_count = 477
+predicted_target_candidates = 5
+filled_trade_count = 4
+accepted_strict_cooling = 1
+skipped_overlap = 1
+skipped_non_target = 471
+skipped_wrong_subtype = 1
+skipped_unfilled = 0
+fallback_market_entries = 1
+skipped_invalid_stop = 0
+ending_balance = 424.28
+win_rate_pct = 100.00
+profit_factor = nan
+expectancy_usd = 6.0697
+median_hold_minutes = 12.50
+median_candidate_score = 0.7916
+median_stop_distance_pct = 0.2519
+
+matches_within_60m = 0
+same_result_direction = 0
+agreement_rate_pct = n/a
+median_time_diff_minutes = 5118.24

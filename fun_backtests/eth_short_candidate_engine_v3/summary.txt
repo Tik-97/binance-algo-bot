@@ -1,0 +1,50 @@
+ETH SHORT CANDIDATE ENGINE V3
+=============================
+
+raw_candidate_count = 15484
+zone_count = 1380
+zone_gap_minutes = 15
+positive_match_max_minutes = 60
+blend_weight_candidate_score = 0.35
+
+reference_trade_count = 33
+positive_anchor_count = 19
+positive_anchor_share = 57.58%
+nearest_raw_within_5m_share = 36.36%
+nearest_raw_within_15m_share = 54.55%
+nearest_raw_within_60m_share = 57.58%
+
+Anchor Ranking Quality
+----------------------
+anchor_top1_share = 21.05%
+anchor_top3_share = 31.58%
+anchor_top5_share = 52.63%
+median_anchor_rank = 5.00
+
+top_1_per_zone_candidate_count = 1380
+top_1_within_5m_share = 9.09%
+top_1_within_15m_share = 30.30%
+top_1_within_60m_share = 57.58%
+top_1_median_abs_minute_distance = 22.65
+top_1_median_abs_price_distance_pct = 1.0173
+
+top_2_per_zone_candidate_count = 2585
+top_2_within_5m_share = 18.18%
+top_2_within_15m_share = 39.39%
+top_2_within_60m_share = 57.58%
+top_2_median_abs_minute_distance = 18.90
+top_2_median_abs_price_distance_pct = 1.1130
+
+Learned Candidate Deltas
+------------------------
+ret_1m_pct: target_delta=0.2414, delta_scale=0.9017, weight=0.80
+ret_3m_pct: target_delta=0.2017, delta_scale=1.2497, weight=1.00
+ret_5m_pct: target_delta=0.0271, delta_scale=1.1267, weight=0.90
+rel_volume_1m: target_delta=0.1186, delta_scale=1.3957, weight=0.80
+upper_wick_ratio: target_delta=0.4787, delta_scale=1.0913, weight=1.10
+body_ratio: target_delta=0.1014, delta_scale=1.0545, weight=1.00
+close_position_in_range: target_delta=-0.1123, delta_scale=1.5195, weight=1.10
+range_pct: target_delta=0.1411, delta_scale=0.8542, weight=0.70
+dist_1h_high_pct: target_delta=-0.0262, delta_scale=1.0667, weight=1.20
+dist_5m_high_pct: target_delta=-0.2376, delta_scale=1.2029, weight=1.10
+close_above_ema20_pct: target_delta=0.0915, delta_scale=0.8069, weight=0.80

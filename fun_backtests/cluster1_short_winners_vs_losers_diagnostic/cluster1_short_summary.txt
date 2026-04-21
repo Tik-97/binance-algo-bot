@@ -1,0 +1,31 @@
+CLUSTER 1 SHORT WINNERS VS LOSERS DIAGNOSTIC
+=============================================
+
+This is a diagnostic stage, not a new strategy.
+Purpose: find what actually separates winning entries from losing entries.
+
+Trade count: 539
+Win rate: 48.79%
+Profit factor: 0.736
+Max drawdown: 63.28%
+Expectancy: -0.41 USD
+Ending balance: 177.61 USD
+Skipped filtered setups: 10000
+
+Winners: 263
+Losers: 276
+
+Top separating features by median difference:
+                                feature  winner_count  loser_count  winner_mean  loser_mean  winner_median  loser_median  mean_diff_win_minus_loss  median_diff_win_minus_loss  abs_median_diff
+                           hold_minutes           263          276   597.741445   22.920290      78.000000      6.500000                574.821155                   71.500000        71.500000
+                                mfe_pct           263          276     2.030655    0.095572       0.725029      0.072974                  1.935083                    0.652055         0.652055
+                                mae_pct           263          276     0.182558    0.469244       0.162015      0.425684                 -0.286687                   -0.263669         0.263669
+                         adverse_5m_pct           263          276     0.122961    0.301175       0.108167      0.245086                 -0.178214                   -0.136920         0.136920
+                       favorable_5m_pct           263          276     0.212033    0.079129       0.160531      0.057795                  0.132904                    0.102736         0.102736
+                       favorable_3m_pct           263          276     0.152412    0.059904       0.114937      0.041910                  0.092508                    0.073027         0.073027
+                         adverse_3m_pct           263          276     0.110012    0.220273       0.092446      0.158503                 -0.110261                   -0.066057         0.066057
+                  preentry_move_15m_pct           263          276     0.510202    0.486156       0.511201      0.451302                  0.024046                    0.059899         0.059899
+     context_stretch_above_ema20_5m_pct           263          276     0.742124    0.757436       0.664297      0.709604                 -0.015312                   -0.045307         0.045307
+                       favorable_1m_pct           263          276     0.068235    0.027763       0.041137      0.013682                  0.040472                    0.027454         0.027454
+confirm_close_location_in_trigger_range           263          276    -0.518949   -0.493966      -0.349020     -0.326725                 -0.024983                   -0.022294         0.022294
+                     confirm_body_ratio           263          276     0.582066    0.552796       0.597325      0.579970                  0.029271                    0.017355         0.017355

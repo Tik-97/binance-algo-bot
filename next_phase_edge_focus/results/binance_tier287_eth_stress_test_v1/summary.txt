@@ -1,0 +1,104 @@
+BINANCE TIER2.87 ETH STRESS TEST V1
+===================================
+
+Goal
+----
+Test Tier 2.87 under ETH/Binance execution friction assumptions that are harsher than baseline but still plausible for a small account on ETHUSDT.
+
+Design choice
+-------------
+Fees are kept fixed at Binance baseline assumptions.
+Stress is applied mainly through moderate slippage and slightly worse limit-touch requirements.
+This is intentionally more realistic for ETHUSDT than the old extreme package.
+
+Quick verdict
+-------------
+Best ending balance scenario: Baseline realistic -> 645.87
+Worst ending balance scenario: ETH adverse hard -> 498.29
+
+Scenario table
+--------------
+Baseline realistic
+  filled_trade_count = 42
+  ending_balance = 645.87
+  net_pnl_usd = 245.87
+  return_on_start_pct = 61.47
+  equiv_2000_balance = 3229.34
+  win_rate_pct = 88.10
+  profit_factor = 7.872
+  max_drawdown_pct = 2.07
+  worst_trade_usd = -11.83
+  maker_fee_pct = 0.020
+  taker_fee_pct = 0.050
+  market_entry_slippage_pct = 0.025
+  exit_slippage_pct = 0.025
+  limit_touch_buffer_pct = 0.000
+
+ETH adverse light
+  filled_trade_count = 43
+  ending_balance = 620.00
+  net_pnl_usd = 220.00
+  return_on_start_pct = 55.00
+  equiv_2000_balance = 3100.00
+  win_rate_pct = 86.05
+  profit_factor = 6.424
+  max_drawdown_pct = 2.37
+  worst_trade_usd = -13.24
+  maker_fee_pct = 0.020
+  taker_fee_pct = 0.050
+  market_entry_slippage_pct = 0.040
+  exit_slippage_pct = 0.040
+  limit_touch_buffer_pct = 0.005
+
+ETH adverse medium
+  filled_trade_count = 43
+  ending_balance = 562.38
+  net_pnl_usd = 162.38
+  return_on_start_pct = 40.60
+  equiv_2000_balance = 2811.91
+  win_rate_pct = 72.09
+  profit_factor = 3.817
+  max_drawdown_pct = 2.62
+  worst_trade_usd = -12.89
+  maker_fee_pct = 0.020
+  taker_fee_pct = 0.050
+  market_entry_slippage_pct = 0.060
+  exit_slippage_pct = 0.060
+  limit_touch_buffer_pct = 0.010
+
+ETH adverse hard
+  filled_trade_count = 43
+  ending_balance = 498.29
+  net_pnl_usd = 98.29
+  return_on_start_pct = 24.57
+  equiv_2000_balance = 2491.47
+  win_rate_pct = 53.49
+  profit_factor = 2.361
+  max_drawdown_pct = 3.85
+  worst_trade_usd = -11.11
+  maker_fee_pct = 0.020
+  taker_fee_pct = 0.050
+  market_entry_slippage_pct = 0.080
+  exit_slippage_pct = 0.080
+  limit_touch_buffer_pct = 0.015
+
+Monthly coverage
+----------------
+2024-08: Baseline realistic=5.74, ETH adverse hard=-8.37, ETH adverse light=2.14, ETH adverse medium=-2.89
+2024-09: Baseline realistic=53.68, ETH adverse hard=39.83, ETH adverse light=49.82, ETH adverse medium=44.79
+2025-01: Baseline realistic=7.27, ETH adverse hard=6.41, ETH adverse light=7.16, ETH adverse medium=6.57
+2025-02: Baseline realistic=3.10, ETH adverse hard=-5.10, ETH adverse light=1.34, ETH adverse medium=-1.72
+2025-03: Baseline realistic=32.86, ETH adverse hard=2.93, ETH adverse light=33.00, ETH adverse medium=29.82
+2025-04: Baseline realistic=-0.27, ETH adverse hard=-3.83, ETH adverse light=-1.37, ETH adverse medium=-2.76
+2025-10: Baseline realistic=16.38, ETH adverse hard=13.30, ETH adverse light=15.59, ETH adverse medium=14.81
+2025-11: Baseline realistic=41.79, ETH adverse hard=28.36, ETH adverse light=37.76, ETH adverse medium=30.44
+2025-12: Baseline realistic=30.36, ETH adverse hard=-0.48, ETH adverse light=24.84, ETH adverse medium=8.52
+2026-02: Baseline realistic=40.11, ETH adverse hard=26.96, ETH adverse light=38.16, ETH adverse medium=33.47
+2026-03: Baseline realistic=14.86, ETH adverse hard=-1.72, ETH adverse light=11.57, ETH adverse medium=1.33
+
+Plot files
+----------
+- C:\Users\Tigran\Desktop\Binance\next_phase_edge_focus\results\binance_tier287_eth_stress_test_v1\plots\stress_dashboard.png
+- C:\Users\Tigran\Desktop\Binance\next_phase_edge_focus\results\binance_tier287_eth_stress_test_v1\plots\equity_curves.png
+- C:\Users\Tigran\Desktop\Binance\next_phase_edge_focus\results\binance_tier287_eth_stress_test_v1\plots\monthly_net_pnl.png
+- C:\Users\Tigran\Desktop\Binance\next_phase_edge_focus\results\binance_tier287_eth_stress_test_v1\plots\trade_pnl_boxplot.png

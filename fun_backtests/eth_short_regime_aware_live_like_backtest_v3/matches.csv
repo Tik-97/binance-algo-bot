@@ -1,0 +1,4 @@
+bt_entry_time,bt_entry_mode,bt_pnl_usd,bt_result,ref_opened_time,ref_result,time_diff_minutes,matched_within_60m,same_result_direction
+2025-11-14 15:48:00+00:00,live_like_mild_noise_v1_live,10.414378681053883,win,2025-11-12 13:30:24.842000+00:00,win,3017.5859666666665,False,True
+2025-11-24 14:35:00+00:00,live_like_mild_noise_v1_live,2.3801269058276384,win,2025-11-26 13:23:59.919000+00:00,win,2808.99865,False,True
+2026-02-06 14:48:00+00:00,live_like_mild_noise_v1_live_market_fallback,4.126763472934801,win,2026-02-25 14:55:46.575000+00:00,win,27367.77625,False,True

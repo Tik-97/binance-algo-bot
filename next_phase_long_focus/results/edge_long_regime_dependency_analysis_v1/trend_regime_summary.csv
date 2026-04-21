@@ -1,0 +1,5 @@
+trend_regime,trade_count,net_pnl_usd,win_rate_pct,profit_factor,expectancy_usd
+strong_bear,13,7.6635,46.15,1.213,0.5895
+weak_bear,1,7.0278,100.0,inf,7.0278
+transition,4,-2.7793,25.0,0.813,-0.6948
+weak_bull,1,-4.5632,0.0,0.0,-4.5632

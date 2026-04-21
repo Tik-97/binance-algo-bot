@@ -1,0 +1,7 @@
+BACKTEST vs JSON TRADE MATCH SUMMARY
+===================================
+
+Total backtest trades: 21
+Matches within 60 min: 2
+Same result direction within matched window: 0
+Result-direction agreement rate: 0.00%

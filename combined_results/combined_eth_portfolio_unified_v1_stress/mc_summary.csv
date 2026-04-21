@@ -1,0 +1,3 @@
+metric,p5,p10,p25,p50,p75,p90,p95,mean,std,prob_profit_pct,prob_double_pct,prob_lose_half_pct
+ending_balance,1846.91,1918.36,2055.33,2223.93,2424.53,2636.15,2785.05,2257.7,290.09,100.0,81.7,0.0
+max_drawdown_pct,1.49,1.49,1.79,2.07,2.84,3.53,3.82,2.33,0.85,,,

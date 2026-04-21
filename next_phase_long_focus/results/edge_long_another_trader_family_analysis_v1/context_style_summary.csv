@@ -1,0 +1,6 @@
+context_style_label,trade_count,win_count,net_pnl_usd,median_holding_minutes,median_return_pct
+reversal_like,34,34,129328.2582,283.92,0.0055
+breakout_continuation,12,12,37263.1398,90.04,0.008
+mid_range_or_mixed,6,6,10466.9147,204.8,0.0216
+pullback,2,2,2319.5278,82.24,0.003
+continuation_like,1,1,502.0015,22.79,0.005

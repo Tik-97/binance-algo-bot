@@ -1,0 +1,82 @@
+COMBINED ETH PORTFOLIO UNIFIED V1 - STRESS TEST
+==================================================
+
+initial_balance    = 1000.00
+n_mc_iterations    = 10,000
+avg_loss_return    = -1.367%  (used for win-flip in adverse scenarios)
+
+SECTION 1 - SCENARIO ANALYSIS
+----------------------------------------
+                         baseline    adv_light   adv_medium     adv_hard
+------------------------------------------------------------------------
+trade_count                     59            58            57            55
+win_rate_pct                 91.53         86.21         59.65          40.0
+profit_factor               12.649         7.956         2.631         0.774
+max_drawdown_pct              2.07          2.49          3.33         13.66
+ending_balance             2243.52       1847.27       1410.83        897.99
+net_pnl_usd                1243.52        847.27        410.83       -102.01
+
+  [baseline]  Exact combined backtest. No modifications.
+  [adverse_light]  +0.05% notional slip each side, 10% limit orders don't fill.
+  [adverse_medium]  +0.10% slip, 10% wins -> avg loss, 20% limit misses.
+  [adverse_hard]  +0.20% slip, 25% wins -> avg loss, 35% limit misses.
+
+SECTION 2 - MONTE CARLO (bootstrap, with replacement)
+----------------------------------------
+  Ending Balance distribution:
+    p5   = 1846.91    (worst 5% of reshuffled outcomes)
+    p25  = 2055.33
+    p50  = 2223.93    (median)
+    p75  = 2424.53
+    p95  = 2785.05    (best 5%)
+    mean = 2257.70   std = 290.09
+
+  Max Drawdown distribution:
+    p25  = 1.79%
+    p50  = 2.07%
+    p75  = 2.84%
+    p95  = 3.82%
+
+  prob_profit    = 100.0%   (end above 1000)
+  prob_double    = 81.7%   (end above 2000)
+  prob_lose_half = 0.0%   (end below 500)
+
+SECTION 3 - ROLLING WINDOW PERFORMANCE
+----------------------------------------
+  3m window (11 windows, step=1m):
+    profitable_windows = 11/11 (100%)
+    best:  2025-11-09 to 2026-02-09  pnl=+27.2%  trades=22
+    worst: 2024-11-09 to 2025-02-09  pnl=+6.0%  trades=5
+  6m window (13 windows, step=1m):
+    profitable_windows = 13/13 (100%)
+    best:  2025-09-09 to 2026-03-09  pnl=+50.5%  trades=31
+    worst: 2025-05-09 to 2025-11-09  pnl=+7.0%  trades=3
+  12m window (8 windows, step=1m):
+    profitable_windows = 8/8 (100%)
+    best:  2025-03-09 to 2026-03-09  pnl=+66.7%  trades=37
+    worst: 2024-10-09 to 2025-10-09  pnl=+24.3%  trades=15
+
+SECTION 4 - SENSITIVITY GRID DIGEST
+----------------------------------------
+  (full grid -> sensitivity_grid.csv)
+
+   slip%   fill%    end_bal   max_dd      pf
+   0.000    100%    2243.52    2.07%  12.649
+   0.000     80%    2166.20    2.07%  12.104
+   0.000     60%    2000.66    2.07%  11.059
+   0.050    100%    1901.67    2.49%   8.230
+   0.050     80%    1817.54    2.49%   7.775
+   0.050     60%    1720.26    2.49%   7.082
+   0.100    100%    1610.92    3.29%   4.123
+   0.100     80%    1569.25    3.29%   3.955
+   0.100     60%    1473.38    3.29%   3.533
+   0.200    100%    1153.83    8.88%   1.405
+   0.200     80%    1109.82    8.88%   1.296
+   0.200     60%    1074.10    8.88%   1.200
+
+honest_interpretation:
+  - MC reshuffles the 59-trade sequence 10,000 times; it does NOT add new trades
+  - small sample size (especially 5 F21 + 12 T14 trades) makes MC wide
+  - adverse_hard scenario is designed as a realistic live-trading worst case
+  - sensitivity grid tests execution quality only (no win-rate degradation)
+  - rolling windows expose which calendar periods drove all the profit

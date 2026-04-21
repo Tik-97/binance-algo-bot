@@ -1,0 +1,51 @@
+EDGE SURVIVOR FULL HISTORY VALIDATION
+====================================
+
+pipeline = candidate_engine_v1 -> near_entry_breakdown_noise -> (mild_noise_v1_live + strict cooling extension) -> v1 execution
+goal = validate whether the current survivor edge exists outside the research reference window
+
+history_start = 2024-04-05 23:15:00+00:00
+history_end = 2026-04-15 04:17:00+00:00
+reference_start = 2025-10-24 12:30:29.499000+00:00
+reference_end = 2026-04-08 14:35:24.605000+00:00
+
+deduped_candidate_count = 2251
+predicted_target_candidates = 17
+filled_trade_count = 12
+accepted_strict_cooling = 3
+skipped_overlap = 1
+skipped_non_target = 2233
+skipped_wrong_subtype = 5
+skipped_unfilled = 0
+fallback_market_entries = 1
+ending_balance = 414.10
+win_rate_pct = 58.33
+profit_factor = 1.463
+expectancy_usd = 1.1748
+median_hold_minutes = 6.00
+median_candidate_score = 0.8044
+median_stop_distance_pct = 0.2375
+
+Period Split
+------------
+pre_reference: trade_count=8, win_rate_pct=37.50, profit_factor=0.685
+pre_reference: net_pnl_usd=-9.5989, median_hold_minutes=5.50
+reference_window: trade_count=4, win_rate_pct=100.00, profit_factor=nan
+reference_window: net_pnl_usd=23.6962, median_hold_minutes=12.50
+
+Monthly Split
+-------------
+2024-08: trade_count=1, win_rate_pct=100.00, net_pnl_usd=5.7228
+2024-09: trade_count=1, win_rate_pct=100.00, net_pnl_usd=3.0331
+2024-10: trade_count=2, win_rate_pct=0.00, net_pnl_usd=-12.4067
+2024-11: trade_count=1, win_rate_pct=0.00, net_pnl_usd=-3.5410
+2025-05: trade_count=1, win_rate_pct=0.00, net_pnl_usd=-4.4164
+2025-08: trade_count=1, win_rate_pct=0.00, net_pnl_usd=-10.0877
+2025-10: trade_count=1, win_rate_pct=100.00, net_pnl_usd=12.0970
+2025-11: trade_count=2, win_rate_pct=100.00, net_pnl_usd=12.4875
+2025-12: trade_count=1, win_rate_pct=100.00, net_pnl_usd=7.1100
+2026-02: trade_count=1, win_rate_pct=100.00, net_pnl_usd=4.0988
+
+reference_matches_within_60m = 0
+reference_same_result_direction = 0
+reference_agreement_rate_pct = n/a

@@ -1,0 +1,30 @@
+ETH SHORT REGIME AWARE PROTOTYPE V4
+===================================
+
+routing = live-safe top-level regime classifier + live-safe near-noise micro router
+note = removed day_regime oracle and removed trader-price pre-entry filter from the v3-style branch
+note = candidate set is still the nearest-candidate research baseline, so this is not yet a full standalone live engine
+candidate_count = 17
+filled_trade_count = 6
+skipped_non_target = 9
+skipped_unfilled = 1
+skipped_invalid_stop = 0
+skipped_wide_stop = 0
+skipped_strong_push = 1
+ending_balance = 449.32
+win_rate_pct = 66.67
+profit_factor = 4.441
+expectancy_usd = 8.2203
+median_hold_minutes = 3.50
+median_entry_vs_trader_price_pct = -1.0095
+median_candidate_abs_minute_distance = 0.25
+median_stop_distance_pct = 0.1186
+
+Engine Split
+------------
+mixed_transition / mixed_transition_v1_live_classifier / v1: trade_count=4, win_rate_pct=50.00, median_pnl_usd=-2.8565
+near_entry_breakdown_noise / cooling_v3_live / v3: trade_count=1, win_rate_pct=100.00, median_pnl_usd=42.9562
+near_entry_breakdown_noise / mild_noise_v1_live / v1: trade_count=1, win_rate_pct=100.00, median_pnl_usd=1.0472
+
+same_result_direction_share = 66.67%
+median_delta_vs_trader_return_pct = -1.1014

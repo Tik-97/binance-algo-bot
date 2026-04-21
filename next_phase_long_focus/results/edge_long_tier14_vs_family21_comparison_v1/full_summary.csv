@@ -1,0 +1,6 @@
+label,trade_count,win_rate_pct,net_pnl_usd,ending_balance,expectancy_usd,median_hold_minutes
+tier14_full,12,100.0,113.3804,513.38,9.4484,27.0
+family21_full,12,100.0,97.3535,497.35,8.1128,23.0
+tier14_unique_full,5,100.0,52.7438,513.38,10.5488,30.0
+family21_unique_full,5,100.0,37.4767,497.35,7.4953,25.0
+overlap_full,7,100.0,60.6366,489.93,8.6624,21.0

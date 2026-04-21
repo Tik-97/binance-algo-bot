@@ -1,0 +1,40 @@
+ETH SHORT CANDIDATE ENGINE V5
+=============================
+
+session_reference_trade_count = 17
+training_candidate_row_count = 575
+blend_weight_candidate_score = 0.30
+
+Leave-One-Day-Out Ranking Quality
+---------------------------------
+anchor_top1_share = 5.88%
+anchor_top3_share = 11.76%
+anchor_top5_share = 23.53%
+best_within_5m_share = 17.65%
+best_within_15m_share = 17.65%
+best_within_60m_share = 64.71%
+top5_contains_within_5m_share = 35.29%
+top5_contains_within_15m_share = 58.82%
+median_anchor_rank = 13.00
+median_best_abs_minute_distance = 20.90
+
+top_1_per_day_trade_count = 17
+top_1_within_5m_share = 17.65%
+top_1_within_15m_share = 17.65%
+top_1_within_60m_share = 64.71%
+top_1_median_abs_minute_distance = 20.90
+top_1_median_abs_price_distance_pct = 0.7816
+
+top_3_per_day_trade_count = 17
+top_3_within_5m_share = 29.41%
+top_3_within_15m_share = 47.06%
+top_3_within_60m_share = 64.71%
+top_3_median_abs_minute_distance = 17.05
+top_3_median_abs_price_distance_pct = 0.7897
+
+top_5_per_day_trade_count = 17
+top_5_within_5m_share = 35.29%
+top_5_within_15m_share = 58.82%
+top_5_within_60m_share = 76.47%
+top_5_median_abs_minute_distance = 9.45
+top_5_median_abs_price_distance_pct = 0.8154

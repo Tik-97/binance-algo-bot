@@ -1,0 +1,7 @@
+strategy,symbol,n,wr,pf,net,end_bal,dd
+long_t14,ETH,12,100.0,inf,113.38,513.38,
+long_t14,BTC,3,100.0,inf,17.07,417.07,
+long_f21,ETH,12,100.0,inf,97.35,497.35,
+long_f21,BTC,0,,,0.0,400.0,
+long_bull_v3,ETH,16,75.0,2.716,41.74,441.74,
+long_bull_v3,BTC,3,33.3,1.117,1.39,401.39,

@@ -1,0 +1,33 @@
+CLUSTER 1 SHORT CLIMAX PUSH FAILURE BACKTEST
+============================================
+
+Idea: short after abnormal upside burst, then failure, with adaptive entry style.
+
+JSON_TRADES_PATH = C:\Users\Tigran\Desktop\Binance\Another Trader\another_trader.json
+ENTRY_WAIT_BARS = 6
+
+BT_START = 2025-10-24 12:30:29.499000+00:00
+BT_END = 2026-04-08 14:35:24.605000+00:00
+
+Context:
+- near 4h high <= 0.35%
+- 60m bounce >= 0.45%
+- stretch above EMA20 5m >= 0.15%
+
+Climax push conditions:
+- move_3m >= 0.45%
+- move_5m >= 0.70%
+- move_5m <= 2.50%
+- green_count_last_5 >= 3
+- bull_body_sum_5m >= 0.35%
+- distance above ema7_1m >= 0.20%
+
+Trade count: 21
+Win rate: 66.67%
+Profit factor: 0.171
+Max drawdown: 7.43%
+Expectancy: -1.30 USD
+Ending balance: 372.76 USD
+Context without trigger count: 13349
+Rejected entry count: 0
+Expired limit count: 11

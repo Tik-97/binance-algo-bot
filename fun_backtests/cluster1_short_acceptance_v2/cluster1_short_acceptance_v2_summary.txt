@@ -1,0 +1,24 @@
+CLUSTER 1 SHORT — v2.0 DOWNSIDE ACCEPTANCE (Direction B)
+===================================================
+
+Новый short-style на базе найденных наблюдений:
+- Context (4h high + 60m bounce + stretch EMA20 5m)
+- Upper wick rejection + confirm candle
+- NEW: Downside acceptance на следующих 2 свечах
+  → close < broken_trigger_low
+  → high ≤ broken_low × (1 + 0.1%)
+- Entry на close последней acceptance-свечи
+- Managed exit (без fixed TP)
+
+Trade count: 434
+Win rate: 41.94%
+Profit factor: 0.497
+Max drawdown: 68.87%
+Expectancy: -0.60 USD
+Ending balance: 141.10 USD
+Skipped by basic filters: 12906
+Acceptance rejected: 480
+Soft fast-failed: 170
+
+Этот фильтр напрямую использует диагностику winners-vs-losers (early post-entry reaction).
+Он не просто режет трейды, а улучшает качество именно тех входов, где sellers сразу берут контроль.

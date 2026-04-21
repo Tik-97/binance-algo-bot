@@ -1,0 +1,28 @@
+CLUSTER 1 LONG CLIMAX DUMP FAILURE BACKTEST
+===========================================
+
+Idea: long after abnormal downside burst, then failure, with adaptive entry style, RR-based exits, and controlled re-entry.
+
+JSON_TRADES_PATH = C:\Users\Tigran\Desktop\Binance\Another Trader\another_trader.json
+ENTRY_WAIT_BARS = 6
+
+BT_START = 2025-10-27 13:30:37.905000+00:00
+BT_END = 2026-03-20 04:27:59.623000+00:00
+
+TAKE_PARTIAL_AT_R = 2.0
+PARTIAL_CLOSE_SIZE = 0.5
+TRAIL_AFTER_R = 2.0
+
+MIN_MINUTES_BETWEEN_ENTRIES = 45
+MAX_LONG_TRADES_PER_UTC_DAY = 3
+MIN_MINUTES_BETWEEN_TRIGGER_TIMES = 20
+
+Trade count: 22
+Win rate: 40.91%
+Profit factor: 0.923
+Max drawdown: 7.25%
+Expectancy: -0.23 USD
+Ending balance: 395.00 USD
+Context without trigger count: 13213
+Rejected entry count: 0
+Expired limit count: 13

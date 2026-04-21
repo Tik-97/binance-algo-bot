@@ -1,0 +1,29 @@
+EDGE LONG BULL CONTINUATION V1
+================================
+
+idea = long on mild intraday pullbacks within confirmed daily bull trend
+regime = strong_bull or weak_bull + high_vol
+trigger = mild 5m dip (0.20-1.20%) with lower wick rejection
+confirm = next candle closes above trigger close and high
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end = 2026-04-15 04:17:00+00:00
+trade_count = 89
+win_rate_pct = 46.07
+profit_factor = 0.910
+max_drawdown_pct = 14.40
+expectancy_usd = -0.2670
+ending_balance = 376.24
+context_without_trigger_count = 32462
+rejected_entry_count = 0
+expired_limit_count = 108
+
+parameters:
+  BULL_MIN_DIST_4H_LOW_PCT = 1.5
+  BULL_MIN_RALLY_60M_PCT = 0.2
+  BULL_MAX_STRETCH_BELOW_EMA20_5M_PCT = 0.5
+  BULL_MIN_PULLBACK_5M_PCT = 0.2
+  BULL_MAX_PULLBACK_5M_PCT = 1.2
+  BULL_MIN_LOWER_WICK_RATIO = 0.28
+  BULL_MAX_BODY_RATIO = 0.55
+  BULL_MAX_RED_COUNT_LAST_5 = 3

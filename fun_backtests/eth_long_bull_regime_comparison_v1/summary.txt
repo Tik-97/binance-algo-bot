@@ -1,0 +1,10 @@
+ETH LONG BULL REGIME COMPARISON V1
+==================================
+
+note = reverse-direction ETH long test using existing climax-dump-failure long engine
+comparison = full-history long vs bull-market-only long
+
+no_filter: trade_count=68, ending_balance=418.62, win_rate_pct=41.18, profit_factor=1.096, max_drawdown_pct=10.11
+no_filter: expectancy_usd=0.2738
+bull_only: trade_count=18, ending_balance=395.37, win_rate_pct=38.89, profit_factor=0.907, max_drawdown_pct=6.79
+bull_only: expectancy_usd=-0.2571

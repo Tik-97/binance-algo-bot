@@ -1,0 +1,89 @@
+SANDBOX WALLET SIMULATION
+========================
+
+This is a standalone entertainment / exploratory wallet simulation.
+It is NOT part of the main reverse-analysis research conclusions.
+It is NOT proof that the proxy is safely tradable.
+It uses an approximate liquidation model, not exact exchange liquidation math.
+The purpose is to compare how wallet behavior changes under different aggressiveness assumptions.
+
+Source used: current practical Cluster 1 short model-signal set from `eth_cluster1_short_model_signals.csv`. This file is already a Stage A-style signal source, so no extra stage filter was applied.
+Candles used: `ETHUSDT_1m.csv`.
+Stage request: `A`.
+Output folder: `C:\Users\Tigran\Desktop\Binance\fun_backtests\sandbox_wallet_multi_risk`.
+
+Core assumptions:
+- Starting balance: $400.00
+- Leverage: 10.0x
+- One trade at a time: True
+- Fee per side: 0.040%
+- Slippage per side: 0.025%
+- Liquidation approximation buffer: 0.50% underlying move below the simple 100/leverage threshold
+- Entry hours filter: 13:00 to 17:00 UTC
+- Breakeven protection enabled: True
+- Breakeven trigger: +0.20% favorable underlying move from entry
+- Ambiguous candles are resolved adverse-first for safety: liquidation > protective stop > take-profit.
+- Liquidation approximation assumes the allocated trade margin is lost; with smaller margin fractions the rest of the wallet survives.
+- After the breakeven trigger, the active protective stop is moved to a near-entry break-even level.
+
+Risk modes:
+- full_margin: 100% of wallet used as margin per trade
+- half_margin: 50% of wallet used as margin per trade
+- quarter_margin: 25% of wallet used as margin per trade
+- tenth_margin: 10% of wallet used as margin per trade
+
+Scenario comparison:
+     risk_mode   scenario_name  margin_fraction  starting_balance  ending_balance  total_return_pct  trade_count  win_count  loss_count  win_rate  average_win_usd  average_loss_usd  profit_factor  max_drawdown_pct  best_trade_usd  worst_trade_usd  ignored_overlapping_signals  skipped_by_time_filter  survived  liquidation_occurred  liquidation_trade_index liquidation_time
+   full_margin tp0p3_sl1p0_12h             1.00             400.0       50.567276        -87.358181          105         46          59  0.438095         3.423995         -8.592144       0.310697         87.600073        7.259112        -44.21000                           18                     421      True                 False                      NaN              NaT
+   half_margin tp0p3_sl1p0_12h             0.50             400.0      147.869973        -63.032507          105         46          59  0.438095         2.535444         -6.250177       0.316277         63.389595        3.770135        -22.10500                           18                     421      True                 False                      NaN              NaT
+quarter_margin tp0p3_sl1p0_12h             0.25             400.0      245.457743        -38.635564          105         46          59  0.438095         1.565307         -3.839769       0.317834         38.933379        1.918480        -11.05250                           18                     421      True                 False                      NaN              NaT
+  tenth_margin tp0p3_sl1p0_12h             0.10             400.0      329.732735        -17.566816          105         46          59  0.438095         0.713759         -1.747460       0.318456         17.727310        0.775191         -4.42100                           18                     421      True                 False                      NaN              NaT
+   full_margin tp0p3_sl1p5_12h             1.00             400.0       47.855516        -88.036121           98         44          54  0.448980         2.803329         -8.805388       0.259409         88.265041        6.719866        -64.21500                           25                     421      True                 False                      NaN              NaT
+   half_margin tp0p3_sl1p5_12h             0.50             400.0      146.387324        -63.403169           98         44          54  0.448980         2.335583         -6.599599       0.288361         63.756677        3.634890        -32.10750                           25                     421      True                 False                      NaN              NaT
+quarter_margin tp0p3_sl1p5_12h             0.25             400.0      245.142536        -38.714366           98         44          54  0.448980         1.509562         -4.097744       0.300168         39.011798        1.884621        -16.05375                           25                     421      True                 False                      NaN              NaT
+  tenth_margin tp0p3_sl1p5_12h             0.10             400.0      329.837959        -17.540510           98         44          54  0.448980         0.704303         -1.873174       0.306366         17.701055        0.769770         -6.42150                           25                     421      True                 False                      NaN              NaT
+   full_margin tp0p5_sl0p5_12h             1.00             400.0       50.445437        -87.388641          114         25          89  0.219298         7.419072         -6.011588       0.346665         87.388641       14.126676        -24.20500                            9                     421      True                 False                      NaN              NaT
+   half_margin tp0p5_sl0p5_12h             0.50             400.0      145.542374        -63.614407          114         25          89  0.219298         5.294011         -4.346156       0.342160         63.614407        7.480150        -12.10250                            9                     421      True                 False                      NaN              NaT
+quarter_margin tp0p5_sl0p5_12h             0.25             400.0      242.721951        -39.319512          114         25          89  0.219298         3.216162         -2.670585       0.338284         39.319512        3.845345         -6.05125                            9                     421      True                 False                      NaN              NaT
+  tenth_margin tp0p5_sl0p5_12h             0.10             400.0      328.014815        -17.996296          114         25          89  0.219298         1.453680         -1.217159       0.335484         17.996296        1.563526         -2.42050                            9                     421      True                 False                      NaN              NaT
+   full_margin tp0p7_sl0p5_12h             1.00             400.0       42.920130        -89.269967          114         16          98  0.140351         8.823131         -5.084183       0.283332         89.269967       17.600954        -24.20500                            9                     421      True                 False                      NaN              NaT
+   half_margin tp0p7_sl0p5_12h             0.50             400.0      134.541891        -66.364527          114         16          98  0.140351         7.081486         -3.864917       0.299142         66.364527       10.255895        -12.10250                            9                     421      True                 False                      NaN              NaT
+quarter_margin tp0p7_sl0p5_12h             0.25             400.0      233.502395        -41.624401          114         16          98  0.140351         4.564344         -2.444154       0.304890         41.624401        5.527240         -6.05125                            9                     421      True                 False                      NaN              NaT
+  tenth_margin tp0p7_sl0p5_12h             0.10             400.0      323.018542        -19.245365          114         16          98  0.140351         2.138006         -1.134587       0.307656         19.245365        2.311536         -2.42050                            9                     421      True                 False                      NaN              NaT
+   full_margin tp1p0_sl0p7_24h             1.00             400.0       45.738496        -88.565376          109         14          95  0.128440        10.969513         -5.345628       0.302408         89.617908       24.291017        -32.20700                           14                     421      True                 False                      NaN              NaT
+   half_margin tp1p0_sl0p7_24h             0.50             400.0      140.874912        -64.781272          109         14          95  0.128440         9.620235         -4.145351       0.342002         66.627508       14.800007        -16.10350                           14                     421      True                 False                      NaN              NaT
+quarter_margin tp1p0_sl0p7_24h             0.25             400.0      239.774981        -40.056255          109         14          95  0.128440         6.518084         -2.647139       0.362867         41.730964        8.146367         -8.05175                           14                     421      True                 False                      NaN              NaT
+  tenth_margin tp1p0_sl0p7_24h             0.10             400.0      326.736028        -18.315993          109         14          95  0.128440         3.149391         -1.235320       0.375709         19.264232        3.449058         -3.22070                           14                     421      True                 False                      NaN              NaT
+
+Scenario `tp0p3_sl1p0_12h`:
+- full_margin: ending balance $50.57, total return -87.36%, trades 105, win rate 43.81%, max drawdown 87.60%, survived=True, liquidation_occurred=False, ignored overlaps=18, skipped by time filter=421
+- half_margin: ending balance $147.87, total return -63.03%, trades 105, win rate 43.81%, max drawdown 63.39%, survived=True, liquidation_occurred=False, ignored overlaps=18, skipped by time filter=421
+- quarter_margin: ending balance $245.46, total return -38.64%, trades 105, win rate 43.81%, max drawdown 38.93%, survived=True, liquidation_occurred=False, ignored overlaps=18, skipped by time filter=421
+- tenth_margin: ending balance $329.73, total return -17.57%, trades 105, win rate 43.81%, max drawdown 17.73%, survived=True, liquidation_occurred=False, ignored overlaps=18, skipped by time filter=421
+
+Scenario `tp0p3_sl1p5_12h`:
+- full_margin: ending balance $47.86, total return -88.04%, trades 98, win rate 44.90%, max drawdown 88.27%, survived=True, liquidation_occurred=False, ignored overlaps=25, skipped by time filter=421
+- half_margin: ending balance $146.39, total return -63.40%, trades 98, win rate 44.90%, max drawdown 63.76%, survived=True, liquidation_occurred=False, ignored overlaps=25, skipped by time filter=421
+- quarter_margin: ending balance $245.14, total return -38.71%, trades 98, win rate 44.90%, max drawdown 39.01%, survived=True, liquidation_occurred=False, ignored overlaps=25, skipped by time filter=421
+- tenth_margin: ending balance $329.84, total return -17.54%, trades 98, win rate 44.90%, max drawdown 17.70%, survived=True, liquidation_occurred=False, ignored overlaps=25, skipped by time filter=421
+
+Scenario `tp0p5_sl0p5_12h`:
+- full_margin: ending balance $50.45, total return -87.39%, trades 114, win rate 21.93%, max drawdown 87.39%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+- half_margin: ending balance $145.54, total return -63.61%, trades 114, win rate 21.93%, max drawdown 63.61%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+- quarter_margin: ending balance $242.72, total return -39.32%, trades 114, win rate 21.93%, max drawdown 39.32%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+- tenth_margin: ending balance $328.01, total return -18.00%, trades 114, win rate 21.93%, max drawdown 18.00%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+
+Scenario `tp0p7_sl0p5_12h`:
+- full_margin: ending balance $42.92, total return -89.27%, trades 114, win rate 14.04%, max drawdown 89.27%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+- half_margin: ending balance $134.54, total return -66.36%, trades 114, win rate 14.04%, max drawdown 66.36%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+- quarter_margin: ending balance $233.50, total return -41.62%, trades 114, win rate 14.04%, max drawdown 41.62%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+- tenth_margin: ending balance $323.02, total return -19.25%, trades 114, win rate 14.04%, max drawdown 19.25%, survived=True, liquidation_occurred=False, ignored overlaps=9, skipped by time filter=421
+
+Scenario `tp1p0_sl0p7_24h`:
+- full_margin: ending balance $45.74, total return -88.57%, trades 109, win rate 12.84%, max drawdown 89.62%, survived=True, liquidation_occurred=False, ignored overlaps=14, skipped by time filter=421
+- half_margin: ending balance $140.87, total return -64.78%, trades 109, win rate 12.84%, max drawdown 66.63%, survived=True, liquidation_occurred=False, ignored overlaps=14, skipped by time filter=421
+- quarter_margin: ending balance $239.77, total return -40.06%, trades 109, win rate 12.84%, max drawdown 41.73%, survived=True, liquidation_occurred=False, ignored overlaps=14, skipped by time filter=421
+- tenth_margin: ending balance $326.74, total return -18.32%, trades 109, win rate 12.84%, max drawdown 19.26%, survived=True, liquidation_occurred=False, ignored overlaps=14, skipped by time filter=421
+
+Signals file used: C:\Users\Tigran\Desktop\Binance\Another Trader\analysis_output\eth_cluster1_short_model_signals.csv
+Candles file used: C:\Users\Tigran\Desktop\Binance\.cache\binance_klines\ETHUSDT_1m.csv

@@ -1,0 +1,936 @@
+REVERSE ANALYSIS OF EXECUTED TRADES
+===================================
+
+This is not a strict strategy backtest on OHLCV candles. It is a trade history reconstruction / behavioral trading analysis built only from executed trades. The replication layer below is a behavioral replication + probabilistic trading model, not a signal-discovery engine.
+
+Data Quality
+------------
+Rows loaded: 131
+Missing symbol: 0
+Missing side: 0
+Missing opened timestamp: 0
+Missing closed timestamp: 0
+Missing PnL: 0
+Missing volume: 0
+Negative holding rows: 0
+Duplicate IDs: 0
+Potentially invalid rows: 0
+
+A. Basic Statistics
+-------------------
+Total trades: 131
+Long trades: 70
+Short trades: 61
+Win rate: 98.47%
+Average PnL: 4,047.32
+Median PnL: 1,497.54
+Total PnL: 530,198.90
+Average holding time: 12.67 h
+Median holding time: 3.07 h
+Average position size: 16,883.29
+Median position size: 40.32
+Average approximate notional: 382,223.95
+Median approximate return: 0.79%
+Volume-weighted average PnL: -1,430.16
+
+Behavioral Profile
+------------------
+Trades per week, mean: 5.46
+Trades per week, median: 4.50
+Trades per week, max: 14.00
+Average concurrent positions: 0.41
+Max concurrent positions: 2.00
+Approximate max drawdown (trade-level equity): 4,161.84
+Mean inter-arrival time between entries: 30.86 h
+Median inter-arrival time between entries: 21.26 h
+Clustered entries share <1h: 9.23%
+Clustered entries share <4h: 21.54%
+Top symbol trade share: 67.18%
+Top symbol pnl share: 79.96%
+
+Symbol Distribution
+-------------------
+    symbol  trades trade_share  total_pnl pnl_share
+   ETHUSDT      88      67.18%  423940.88    79.96%
+   BTCUSDT      30      22.90%   99513.38    18.77%
+   ZECUSDT       4       3.05%    7497.33     1.41%
+GIGGLEUSDT       1       0.76%    2782.41     0.52%
+  EVAAUSDT       1       0.76%     373.11     0.07%
+PIPPINUSDT       1       0.76%     189.01     0.04%
+   BNBUSDT       1       0.76%      39.45     0.01%
+   BCHUSDT       1       0.76%      18.80     0.00%
+   AIAUSDT       1       0.76%       4.15     0.00%
+   ZENUSDT       1       0.76%       2.22     0.00%
+
+B. Symbol Analysis
+------------------
+    symbol  trades  total_pnl  avg_pnl  median_pnl  win_rate  avg_holding_hours  avg_volume  trade_share  pnl_share
+   ETHUSDT      88  423940.88  4817.51     1636.04       1.0              11.49      171.92         0.67       0.80
+   BTCUSDT      30   99513.38  3317.11     1595.73       1.0              19.65        4.94         0.23       0.19
+   ZECUSDT       4    7497.33  1874.33      828.37       1.0               4.79       77.50         0.03       0.01
+GIGGLEUSDT       1    2782.41  2782.41     2782.41       1.0              28.65       50.00         0.01       0.01
+  EVAAUSDT       1     373.11   373.11      373.11       1.0               2.26      700.00         0.01       0.00
+PIPPINUSDT       1     189.01   189.01      189.01       1.0               2.18    16727.00         0.01       0.00
+   BNBUSDT       1      39.45    39.45       39.45       1.0               0.77        5.00         0.01       0.00
+   BCHUSDT       1      18.80    18.80       18.80       1.0               0.66        2.00         0.01       0.00
+   AIAUSDT       1       4.15     4.15        4.15       1.0               0.02      100.00         0.01       0.00
+   ZENUSDT       1       2.22     2.22        2.22       1.0               0.40       20.00         0.01       0.00
+  USTCUSDT       1   -1445.56 -1445.56    -1445.56       0.0               2.26  1991829.00         0.01      -0.00
+ LUNA2USDT       1   -2716.29 -2716.29    -2716.29       0.0               2.16   186690.00         0.01      -0.01
+
+C. Side Analysis
+----------------
+ side  trades  total_pnl  avg_pnl  median_pnl  win_rate  avg_holding_hours  avg_volume  avg_notional  median_return_pct
+Short      61  322615.82  5288.78     1523.34      1.00              19.06      417.02     409046.18               0.01
+ Long      70  207583.07  2965.47     1491.08      0.97               7.09    31232.46     358850.29               0.01
+
+D. Time Analysis (UTC)
+-----------------------------
+Open hour:
+ bucket  trades  total_pnl  avg_pnl     dimension
+      0       2   37913.30 18956.65 open_hour_utc
+      1       3   11689.41  3896.47 open_hour_utc
+      2       2    4420.93  2210.46 open_hour_utc
+      4       3   77819.55 25939.85 open_hour_utc
+      5       3    5335.33  1778.44 open_hour_utc
+      6       2    1903.18   951.59 open_hour_utc
+      7       3   10261.30  3420.43 open_hour_utc
+      8       2    3008.11  1504.05 open_hour_utc
+      9       4   23989.34  5997.34 open_hour_utc
+     10       2    8714.65  4357.33 open_hour_utc
+     11       8   23600.26  2950.03 open_hour_utc
+     12       7    7241.73  1034.53 open_hour_utc
+     13      16   37922.45  2370.15 open_hour_utc
+     14      26  107450.72  4132.72 open_hour_utc
+     15      16   52820.66  3301.29 open_hour_utc
+     16      10   22257.16  2225.72 open_hour_utc
+     17      11   12013.76  1092.16 open_hour_utc
+     18       2    8880.87  4440.44 open_hour_utc
+     19       2    2579.53  1289.76 open_hour_utc
+     20       2    8280.62  4140.31 open_hour_utc
+     21       1   16967.34 16967.34 open_hour_utc
+     22       2    1235.56   617.78 open_hour_utc
+     23       2   43893.13 21946.56 open_hour_utc
+
+Open weekday:
+   bucket  trades  total_pnl  avg_pnl        dimension
+   Monday      26  149511.43  5750.44 open_weekday_utc
+  Tuesday      29  152706.49  5265.74 open_weekday_utc
+Wednesday      20  107548.04  5377.40 open_weekday_utc
+ Thursday      14   31450.16  2246.44 open_weekday_utc
+   Friday      19   51031.25  2685.86 open_weekday_utc
+ Saturday      11   10921.02   992.82 open_weekday_utc
+   Sunday      12   27030.50  2252.54 open_weekday_utc
+
+Open month:
+   bucket  trades  total_pnl  avg_pnl      dimension
+  January      13   67077.46  5159.80 open_month_utc
+ February      14  112322.54  8023.04 open_month_utc
+    March      14  153062.97 10933.07 open_month_utc
+    April       5   77130.11 15426.02 open_month_utc
+      May       0       0.00      NaN open_month_utc
+     June       0       0.00      NaN open_month_utc
+     July       0       0.00      NaN open_month_utc
+   August       0       0.00      NaN open_month_utc
+September       0       0.00      NaN open_month_utc
+  October      16   20452.07  1278.25 open_month_utc
+ November      44   59291.75  1347.54 open_month_utc
+ December      25   40862.01  1634.48 open_month_utc
+
+Holding buckets:
+   bucket  trades  total_pnl  avg_pnl  median_pnl  win_rate  avg_holding_hours      dimension
+   <5 min       8   13596.63  1699.58      531.30      1.00               0.05 holding_bucket
+ 5-15 min       4    2285.65   571.41      402.66      1.00               0.14 holding_bucket
+15-60 min      18   22354.04  1241.89      603.89      1.00               0.52 holding_bucket
+    1-4 h      38   47682.04  1254.79      728.11      0.95               2.04 holding_bucket
+   4-12 h      26   83476.70  3210.64     1465.15      1.00               6.72 holding_bucket
+  12-24 h      15  158582.26 10572.15     8221.06      1.00              17.94 holding_bucket
+     24h+      22  202221.56  9191.89     3928.45      1.00              51.27 holding_bucket
+
+E. Profit Concentration
+-----------------------
+Top 5 trades:
+ trade_number  symbol  side                    opened_dt_utc                    closed_dt_utc  closingPnl  holding_hours
+          119 ETHUSDT Short 2026-03-16 04:13:19.608000+00:00 2026-03-18 11:38:31.164000+00:00    55204.96          55.42
+          130 ETHUSDT Short 2026-04-07 23:15:01.723000+00:00 2026-04-08 14:35:24.605000+00:00    34667.22          15.34
+          128 ETHUSDT Short 2026-04-06 00:01:28.621000+00:00 2026-04-06 23:07:15.225000+00:00    31563.96          23.10
+          118 ETHUSDT Short 2026-03-11 14:36:27.617000+00:00 2026-03-13 15:00:27.990000+00:00    30126.51          48.40
+          109 ETHUSDT  Long 2026-02-24 04:20:17.903000+00:00 2026-02-25 13:03:18.097000+00:00    22570.34          32.72
+
+Worst 5 trades:
+ trade_number    symbol  side                    opened_dt_utc                    closed_dt_utc  closingPnl  holding_hours
+           64 LUNA2USDT  Long 2025-12-06 17:22:16.960000+00:00 2025-12-06 19:31:47.777000+00:00    -2716.29           2.16
+           63  USTCUSDT  Long 2025-12-06 17:16:09.589000+00:00 2025-12-06 19:31:46.878000+00:00    -1445.56           2.26
+           17   ZENUSDT  Long 2025-11-01 13:00:56.022000+00:00 2025-11-01 13:24:46.585000+00:00        2.22           0.40
+           52   AIAUSDT  Long 2025-11-22 14:27:33.332000+00:00 2025-11-22 14:28:49.979000+00:00        4.15           0.02
+            3   ETHUSDT Short 2025-10-26 12:49:52.234000+00:00 2025-10-26 16:17:06.710000+00:00       18.40           3.45
+
+Top-5 total PnL: 174,133.00
+Top-5 as % of total PnL: 32.84%
+Top-5 as % of positive PnL: 32.59%
+95th percentile to median PnL ratio: 10.65
+Fat-tail signal: True
+
+F. Position Size Behavior
+-------------------------
+Max win streak: 67
+Max loss streak: 2
+Average notional after win: 385,353.70
+Average notional after loss: 261,443.73
+Average volume after win: 15,818.73
+Average volume after loss: 93,428.66
+Average size change ratio after win: 22.44
+Average size change ratio after loss: 9.58
+Average next-trade notional after loss / after win: 0.68
+Martingale-like signal: False
+
+G. Holding Efficiency
+---------------------
+Average holding winners: 12.83 h
+Average holding losers: 2.21 h
+Median holding winners: 3.45 h
+Median holding losers: 2.21 h
+Most profitable holding bucket: 24h+
+Highest average PnL holding bucket: 12-24 h
+
+I. Edge Checks
+--------------
+                         scenario  trades  total_pnl  avg_pnl  median_pnl  win_rate  approx_max_drawdown
+                         baseline     131  530198.90  4047.32     1497.54      0.98              4161.84
+             without_top_5_trades     126  356065.90  2825.92     1440.87      0.98              4161.84
+loss_capped_at_75pct_loss_2398.61     131  530516.58  4049.74     1497.54      0.98              3844.16
+     only_trades_held_24h_or_less     109  327977.34  3008.97     1208.14      0.98              4161.84
+
+J. Monte Carlo Replication
+--------------------------
+Simulation runs: 1,000
+Median simulated total PnL: 731,450.14
+Share of profitable runs: 100.00%
+Median simulated max drawdown: 29,449.70
+
+Monte Carlo summary:
+             metric  count      mean       std       min       25%       50%       75%        max
+             run_id 1000.0    500.50    288.82      1.00    250.75    500.50    750.25    1000.00
+             trades 1000.0    131.46     11.17     93.00    124.00    131.00    139.00     162.00
+          total_pnl 1000.0 767651.77 245261.85 151042.78 604665.17 731450.14 892366.05 1786658.56
+           win_rate 1000.0      0.98      0.01      0.94      0.98      0.99      0.99       1.00
+approx_max_drawdown 1000.0  38727.52  37519.13      0.00   5758.37  29449.70  65361.64  204509.04
+
+K. EMA50 Trend Filter
+---------------------
+EMA50 filter uses hourly Binance UM futures candles; Long requires close >= EMA50 and rising EMA50, Short requires close <= EMA50 and falling EMA50.
+
+             scenario  trades  total_pnl  avg_pnl  win_rate  avg_holding_hours
+             baseline     131  530198.90  4047.32      0.98              12.67
+   trend_aligned_only      18   14629.41   812.75      0.89               5.03
+trend_misaligned_only     113  515569.49  4562.56      1.00              13.88
+
+ENTRY QUALITY VS HOLDING EDGE
+-----------------------------
+Overall entry-quality summary:
+   group_type             group_name  trade_count  median_MAE_pct  median_MFE_pct  median_realized_return_pct  median_captured_share_of_MFE  median_time_to_first_profit_minutes  median_time_to_MFE_minutes  avg_holding_hours  pct_positive_1m  median_return_1m_pct  pct_positive_5m  median_return_5m_pct  pct_positive_15m  median_return_15m_pct  pct_positive_30m  median_return_30m_pct  pct_positive_60m  median_return_60m_pct  pct_positive_240m  median_return_240m_pct  pct_positive_720m  median_return_720m_pct  pct_positive_1440m  median_return_1440m_pct
+summary_group                overall          131            0.89            1.87                        0.78                          0.72                                 0.54                       54.13              12.67             0.83                  0.48             0.77                  0.40              0.83                   0.57              0.84                   0.53              0.72                   0.57               0.67                    0.69               0.69                    0.86                0.63                     0.69
+summary_group                winners          129            0.87            1.81                        0.79                          0.73                                 0.53                       54.13              12.83             0.84                  0.48             0.77                  0.40              0.83                   0.57              0.84                   0.53              0.72                   0.57               0.68                    0.71               0.70                    0.87                0.64                     0.79
+summary_group                 losers            2            8.87            9.31                       -7.88                         -1.07                                 8.28                       54.28               2.21             0.50                 -2.12             0.50                 -2.06              1.00                   1.96              0.50                   1.13              0.50                   3.08               0.00                   -3.83               0.00                  -12.02                0.00                   -27.75
+summary_group fast_positive_reaction          128            0.88            1.84                        0.78                          0.72                                 0.54                       52.13              12.94             0.84                  0.48             0.78                  0.42              0.83                   0.57              0.84                   0.53              0.71                   0.57               0.67                    0.69               0.70                    0.87                0.64                     0.79
+summary_group       slow_development            2             NaN             NaN                        1.26                           NaN                                  NaN                         NaN               0.02             1.00                  1.24             0.00                 -0.62              1.00                   0.93              1.00                   1.33              1.00                   0.29               1.00                    1.40               1.00                    0.70                0.00                    -3.84
+
+By symbol:
+group_type group_name  trade_count  median_MAE_pct  median_MFE_pct  median_realized_return_pct  median_captured_share_of_MFE  median_time_to_first_profit_minutes  median_time_to_MFE_minutes  avg_holding_hours  pct_positive_1m  median_return_1m_pct  pct_positive_5m  median_return_5m_pct  pct_positive_15m  median_return_15m_pct  pct_positive_30m  median_return_30m_pct  pct_positive_60m  median_return_60m_pct  pct_positive_240m  median_return_240m_pct  pct_positive_720m  median_return_720m_pct  pct_positive_1440m  median_return_1440m_pct
+    symbol    ETHUSDT           88            0.86            1.99                        0.78                          0.65                                 0.54                       47.77              11.49             0.89                  0.63             0.82                  0.57              0.86                   0.68              0.84                   0.56              0.70                   0.57               0.67                    0.66               0.70                    0.88                0.62                     0.94
+    symbol    BTCUSDT           30            0.69            0.97                        0.70                          0.78                                 0.51                       58.17              19.65             0.70                  0.20             0.70                  0.30              0.80                   0.43              0.87                   0.51              0.77                   0.49               0.63                    0.44               0.77                    1.37                0.70                     0.69
+    symbol    ZECUSDT            4            1.49            6.32                        5.25                          0.87                                 0.56                      291.81               4.79             0.75                  0.81             1.00                  0.58              0.75                   0.48              0.50                   0.01              0.50                  -0.16               1.00                    2.17               0.00                   -3.12                0.25                    -5.34
+    symbol    AIAUSDT            1             NaN             NaN                         NaN                           NaN                                  NaN                         NaN               0.02              NaN                   NaN              NaN                   NaN               NaN                    NaN               NaN                    NaN               NaN                    NaN                NaN                     NaN                NaN                     NaN                 NaN                      NaN
+    symbol    BNBUSDT            1            0.00            1.04                        0.70                          0.67                                 0.41                       36.41               0.77             1.00                  0.23             1.00                  0.28              1.00                   0.71              1.00                   0.85              1.00                   0.97               1.00                    1.39               1.00                    0.12                1.00                     0.39
+    symbol    BCHUSDT            1            0.77            2.26                        1.68                          0.74                                 0.66                       37.66               0.66             1.00                  0.04             0.00                 -0.09              1.00                   1.13              1.00                   1.31              1.00                   1.56               1.00                    3.88               1.00                    0.49                1.00                     2.09
+    symbol GIGGLEUSDT            1            2.71           20.11                       22.08                          1.10                                 1.14                      199.14              28.65             1.00                  1.22             0.00                 -0.27              0.00                  -1.33              1.00                   1.38              1.00                   2.40               1.00                    9.58               1.00                    5.31                1.00                    12.90
+    symbol   EVAAUSDT            1            2.59            7.00                        6.51                          0.93                                 0.28                      135.28               2.26             1.00                  0.11             0.00                 -0.55              0.00                  -1.22              1.00                   0.43              1.00                   2.77               1.00                   11.10               1.00                   21.91                1.00                    24.16
+    symbol  LUNA2USDT            1            9.50            5.89                       -9.90                         -1.68                                 0.72                       12.72               2.16             1.00                  2.21             1.00                  1.99              1.00                   3.73              1.00                   2.45              0.00                  -0.88               0.00                   -7.35               0.00                  -13.90                0.00                   -26.31
+    symbol PIPPINUSDT            1            4.54           14.65                       15.97                          1.09                                 0.95                      129.95               2.18             1.00                  0.55             1.00                  2.35              1.00                   2.19              1.00                   5.14              1.00                   4.51               1.00                   14.58               1.00                    8.38                1.00                     6.89
+    symbol   USTCUSDT            1            8.24           12.73                       -5.87                         -0.46                                15.84                       95.84               2.26             0.00                 -6.46             0.00                 -6.12              1.00                   0.20              0.00                  -0.19              1.00                   7.03               0.00                   -0.32               0.00                  -10.14                0.00                   -29.18
+    symbol    ZENUSDT            1            1.05            0.87                        0.55                          0.64                                 0.07                       23.07               0.40             0.00                 -0.09             0.00                 -0.21              0.00                  -0.91              1.00                   3.35              0.00                  -2.46               0.00                   -4.82               0.00                   -1.68                0.00                    -8.14
+
+By side:
+group_type group_name  trade_count  median_MAE_pct  median_MFE_pct  median_realized_return_pct  median_captured_share_of_MFE  median_time_to_first_profit_minutes  median_time_to_MFE_minutes  avg_holding_hours  pct_positive_1m  median_return_1m_pct  pct_positive_5m  median_return_5m_pct  pct_positive_15m  median_return_15m_pct  pct_positive_30m  median_return_30m_pct  pct_positive_60m  median_return_60m_pct  pct_positive_240m  median_return_240m_pct  pct_positive_720m  median_return_720m_pct  pct_positive_1440m  median_return_1440m_pct
+      side       Long           70             0.9            1.78                        0.58                          0.57                                 0.42                       26.03               7.09             0.84                  0.52             0.77                  0.49              0.86                   0.71              0.83                   0.60              0.71                   0.66               0.61                    0.23               0.65                    0.70                0.58                     0.44
+      side      Short           61             0.7            2.04                        1.10                          0.80                                 0.63                       99.53              19.06             0.82                  0.40             0.77                  0.32              0.80                   0.29              0.85                   0.43              0.72                   0.52               0.74                    1.02               0.74                    1.14                0.69                     1.00
+
+Interpretation:
+- Trades in profit after 1m: 83.08%; after 5m: 76.92%; after 15m: 83.08%; after 1h: 71.54%; after 24h: 63.08%.
+- Median MAE: 0.89%.
+- Median MFE: 1.87%.
+- Median realized return: 0.78%.
+- Median captured share of MFE: 0.72.
+- Median time to first profit: 0.54 minutes.
+- Median time to MFE: 54.13 minutes.
+
+Human read:
+- Do trades usually move in the trader's favor quickly: yes.
+- Entry timing strength: strong.
+- Holding strength: medium.
+- Dominant edge appears to come more from: a mixed or unclear combination.
+- ETHUSDT vs BTCUSDT: ETH immediate reaction looks similar/weaker, while holding efficiency on ETH looks similar/weaker.
+- Short side vs Long side: short side looks not materially better immediately, and holding on shorts looks stronger.
+- Winners vs losers: winners median MAE 0.87% vs losers 8.87%; winners median time to first profit 0.53 min vs losers 8.28 min.
+- Confidence level: high.
+
+Method note:
+- Reaction metrics use post-entry 1-minute closes for maximal temporal precision.
+- Excursion metrics use 1-minute candles to estimate favorable and adverse movement until the recorded exit time.
+- This section evaluates how the market behaved after entry; it does not infer strategy indicators or exact signal logic.
+
+EXECUTION MODE SPLIT - IMMEDIATE VS DELAYED / LIMIT-LIKE FILLS
+---------------------------------------------------------------
+This section checks whether the trade history is more compatible with one execution style or with at least two execution modes: near-immediate fills and delayed / limit-like fill proxies.
+
+ETH focus:
+- Immediate-like share: 38.64%.
+- Short-delay share: 7.95%.
+- Delayed / limit-like share: 53.41%.
+- Uncertain share: 0.00%.
+- Naive immediate-fill inconsistency share: 64.77%.
+- Median fill-delay proxy: 6.02 minutes.
+
+ETH mode comparison:
+- Immediate-like ETH trades: 34, win rate 100.00%, median MAE 0.37%, median MFE 1.54%.
+- Delayed / limit-like ETH trades: 47, win rate 100.00%, median MAE 1.15%, median MFE 2.54%.
+- Side mix and timing: immediate-like short share 35.29% vs delayed 40.43%; median open hour 14.0 vs 14.0 UTC.
+- Cluster mix: immediate-like Cluster 1 / Cluster 2 shares = 38.24% / 61.76%; delayed = 44.68% / 55.32%.
+
+Secondary summary:
+- All symbols delayed / limit-like share: 48.85%.
+- BTC delayed / limit-like share: 40.00%.
+- Confidence level: high.
+
+Final verdict:
+- ETH data is compatible with at least two execution modes, and this likely weakens naive immediate-fill assumptions in earlier proxy tests.
+- This split is worth carrying forward into later analysis, because single-mode proxy models likely understate execution-sensitive parts of the trader's edge.
+
+
+MARKET CONTEXT AT ENTRY
+=======================
+
+This section evaluates the market state at the moment of entry. It does not infer exact strategy rules; it only describes what the market looked like when strong and weak entries occurred.
+
+Entry strength counts:
+- Strong entries: 31
+- Medium entries: 89
+- Weak entries: 11
+
+Overall context observations:
+- Most common context style among strong entries: reversal_like (54.84% of strong entries).
+- Strong entries vs weak entries show breakout/continuation tendency: about as often.
+- Strong entries vs weak entries show pullback tendency: about as often.
+- Strong entries vs weak entries show reversal-like tendency: about as often.
+- Strong entries median RSI 15m: 44.79; weak entries median RSI 15m: 59.63.
+- Strong entries median pre-entry 15m move: -0.19%; weak entries: 0.13%.
+- Strong entries median ATR% 15m: 0.50; weak entries: 0.34.
+- Strong entries median relative volume 1m: 1.18; weak entries: 2.00.
+
+By side:
+- Strong long entries most often occur in contexts tagged as: reversal_like.
+- Strong short entries most often occur in contexts tagged as: reversal_like.
+- Long strong entries breakout share vs weak longs: 22.22% vs 20.00%.
+- Short strong entries breakout share vs weak shorts: 15.38% vs 33.33%.
+
+By symbol:
+- ETHUSDT strong entries breakout share vs weak ETH entries: 17.39% vs 33.33%.
+- BTCUSDT strong entries breakout share vs weak BTC entries: 28.57% vs 16.67%.
+- ETHUSDT strong entries pullback share vs weak ETH entries: 13.04% vs 33.33%.
+- BTCUSDT strong entries pullback share vs weak BTC entries: 0.00% vs 0.00%.
+
+Human summary:
+- The strongest entries occur more often in market regimes labeled: reversal_like.
+- Based on the simple regime labels, the profile looks more reversal-oriented than purely random.
+- Long and short entries do not appear in identical contexts: long strong entries skew toward reversal_like, while short strong entries skew toward reversal_like.
+- These conclusions are about market context after aligning indicators to the last completed candle before entry; they do not imply a specific indicator-based strategy.
+
+
+ETH CONTEXT ANALYSIS
+====================
+
+This section narrows the market-context analysis to ETHUSDT only. It does not infer a secret strategy. It only checks which pre-entry conditions appear more often before strong versus weak ETH entries.
+
+ETH sample:
+- Total ETH trades: 88
+- Strong ETH entries: 23
+- Medium ETH entries: 62
+- Weak ETH entries: 3
+- ETH Long strong/weak counts: 15 / 2
+- ETH Short strong/weak counts: 8 / 1
+
+ETH strong vs weak:
+- RSI 15m: strong 37.35 vs weak 67.65 (diff -30.30, p 0.138, overlap 39.43%, signal medium)
+- Pre-entry return 15m: strong -0.41 vs weak 0.53 (diff -0.94, p 0.245, overlap 39.59%, signal weak)
+- Relative volume 5m: strong 1.57 vs weak 2.75 (diff -1.18, p 0.100, overlap 24.27%, signal strong)
+- Abs distance to EMA20 15m: strong 0.70 vs weak 0.89 (diff -0.19, p 0.779, overlap 42.73%, signal minimal)
+- Pullback/Reversal context share: strong 69.57% vs weak 66.67% (diff 2.90 pp, signal minimal)
+- Breakout/Impulse context share: strong 17.39% vs weak 33.33% (diff -15.94 pp, signal weak)
+- Strongest separating ETH features: EMA20 slope 15m % (-0.07 vs 0.09, strong_lower); Distance to EMA20 15m % (-0.68 vs 0.89, strong_lower); Distance to EMA50 15m % (-1.00 vs 1.06, strong_lower); Relative volume 5m (1.57 vs 2.75, strong_lower)
+- Overall ETH reading: The ETH-only sample leans toward stronger entries appearing in calmer or slightly pulled-back contexts.
+- Overall confidence: low
+
+ETH Long strong vs weak:
+- RSI 15m: strong 35.97 vs weak 51.84 (diff -15.87, p 0.233, overlap 18.15%, signal weak)
+- Pre-entry return 15m: strong -0.52 vs weak 0.41 (diff -0.93, p 0.297, overlap 8.55%, signal weak)
+- Relative volume 5m: strong 1.57 vs weak 2.76 (diff -1.19, p 0.101, overlap 0.55%, signal medium)
+- Abs distance to EMA20 15m: strong 0.75 vs weak 0.63 (diff 0.12, p 0.371, overlap 18.62%, signal weak)
+- Pullback/Reversal context share: strong 73.33% vs weak 100.00% (diff -26.67 pp, signal weak)
+- Breakout/Impulse context share: strong 20.00% vs weak 0.00% (diff 20.00 pp, signal weak)
+- Strongest separating ETH Long features: Distance to EMA20 15m % (-0.75 vs 0.26, strong_lower); EMA20 slope 15m % (-0.08 vs 0.03, strong_lower); Distance to EMA50 15m % (-1.43 vs 0.52, strong_lower)
+- ETH Long reading: The ETH-only sample leans toward stronger entries appearing in calmer or slightly pulled-back contexts.
+- ETH Long confidence: low
+
+ETH Short strong vs weak:
+- RSI 15m: strong 55.93 vs weak 85.07 (diff -29.14, p n/a, overlap n/a, signal insufficient_data)
+- Pre-entry return 15m: strong 0.28 vs weak 0.53 (diff -0.24, p n/a, overlap n/a, signal insufficient_data)
+- Relative volume 5m: strong 1.75 vs weak 2.00 (diff -0.25, p n/a, overlap n/a, signal insufficient_data)
+- Abs distance to EMA20 15m: strong 0.33 vs weak 1.22 (diff -0.89, p n/a, overlap n/a, signal insufficient_data)
+- Pullback/Reversal context share: strong 62.50% vs weak 0.00% (diff 62.50 pp, signal strong)
+- Breakout/Impulse context share: strong 12.50% vs weak 100.00% (diff -87.50 pp, signal strong)
+- Strongest separating ETH Short features: Breakout/Impulse context share (12.50% vs 100.00%, strong_lower); Context label: breakout/continuation (12.50% vs 100.00%, strong_lower); 15m bearish EMA alignment share (12.50% vs 100.00%, strong_lower)
+- ETH Short reading: The ETH-only sample leans toward stronger entries appearing in calmer or slightly pulled-back contexts.
+- ETH Short confidence: low
+
+Interpretation:
+- The main question was whether strong ETH entries tend to appear after mild cooling or pullback rather than after overheated impulse. The data leans toward strong ETH entries happening more often after some cooling, pullback, or lower-overheat conditions than after pure breakout chase.
+- Where the strongest separation shows up: no single side clearly dominates.
+- The most useful features in this sample are: Relative volume 5m, RSI 15m, Pre-entry return 15m %, Abs distance to EMA20 5m %.
+- Side symmetry is limited: Long and Short do not separate in exactly the same way. Long differences concentrate more in Relative volume 5m, Pre-entry return 60m %, RSI 15m, Pre-entry return 15m %, while Short differences concentrate more in Breakout/Impulse context share, Pullback/Reversal context share, Near-high structure share.
+- Confidence is capped by sample size because weak ETH entries are only 3 trades in total.
+
+Candidate context filter
+------------------------
+Hypothesis for future testing only, not a strategy:
+- No candidate context filter is justified yet from this ETH-only sample.
+
+
+BOLLINGER COMPATIBILITY TEST
+----------------------------
+This section checks whether the ETH archetypes are meaningfully compatible with a Bollinger-type stretch / reversion / return-inside-bands framework on standard 20/2 bands, rather than trying to claim indicator-level reconstruction.
+
+Short family:
+- Best short hypothesis: Near upper band 15m.
+- Definition: BB position 15m >= 0.85.
+- Frequency in real Cluster 1 shorts vs candidate pool: 59.38% vs 43.73%.
+- Lift: 1.36. Similarity to real short profile: 0.61. Compatibility verdict: weak.
+
+Long family:
+- Best long hypothesis: Near lower band 15m.
+- Definition: BB position 15m <= 0.15.
+- Frequency in real Cluster 2 longs vs candidate pool: 68.63% vs 67.37%.
+- Lift: 1.02. Similarity to real long profile: 0.55. Compatibility verdict: weak.
+
+Overall read:
+- Bollinger framing does not improve the explanation of the ETH archetypes in a meaningful way.
+- Confidence level: low.
+
+Final verdict:
+- Behavior is not meaningfully improved by Bollinger framing; the match looks weak or mostly coincidental.
+
+
+ETH SETUP CLUSTERING
+====================
+
+This section groups ETHUSDT entries by repeated market context, using unsupervised clustering on pre-entry features only. Final PnL is used only after clustering to judge which setup archetypes matter most.
+
+Selected clustering model:
+- Chosen k: 2
+- Silhouette score: 0.331
+- Bootstrap stability: 0.945
+- Interpretability score: 1.000
+
+Cluster takeaways:
+- Estimated number of reasonably stable ETH setup archetypes: 2
+- Highest-PnL cluster: Cluster 1 with 251,488.58 total PnL across 36 trades, or 59.32% of ETH PnL.
+- Most reproducible cluster candidate: Cluster 1 with description: short after small bounce, near 4h high, in average volume, while stretched above EMA.
+- Top 2 clusters account for 100.00% of ETH PnL.
+- One or two ETH setup clusters account for most ETH profits.
+- The best cluster is largely side-specific.
+
+Replication hypothesis:
+- The cluster that best looks like a replication archetype is Cluster 1.
+- Candidate setup archetype: short after small bounce, near 4h high, in average volume, while stretched above EMA.
+- Most characteristic features versus ETH baseline: Short side (cluster_higher, z 2.07); Stoch RSI 15m (cluster_higher, z 1.38); RSI 15m (cluster_higher, z 1.25); RSI 5m (cluster_higher, z 1.11); Dist 4h low (cluster_higher, z 1.06).
+- This is a context-based replication hypothesis, not a claim that the trader uses any specific indicator rule.
+
+Human answer:
+- ETH entries naturally group into a small number of recurring context types rather than looking fully random.
+- The setup that gives the most useful replication lead is Cluster 1, because it combines positive PnL contribution with non-trivial trade count and decent early trade behavior.
+- This cluster is the best basis for further replication work, but it should still be tested as a context archetype rather than treated as a finished strategy.
+- Confidence level: high
+
+
+ETH EXECUTION-AWARE ARCHETYPE ANALYSIS - CLUSTERS x EXECUTION MODE x ENTRY QUALITY
+-------------------------------------------------------------------------------
+This section joins ETH archetypes, execution-mode proxies, and entry-quality metrics to check whether part of the proxy-original mismatch may come from mixing different execution families inside the same archetype.
+
+ETH joined coverage:
+- ETH trades with cluster labels: 88.
+- Execution coverage share: 100.00%.
+- Entry-quality coverage share: 100.00%.
+- Cluster 1 is 88.89% short and Cluster 2 is 98.08% long, so cluster effects and side effects are not fully separable.
+
+Cluster composition by execution mode:
+- Cluster 1 immediate-like / short-delay / delayed / uncertain shares: 36.11%, 5.56%, 58.33%, 0.00%.
+- Cluster 2 immediate-like / short-delay / delayed / uncertain shares: 40.38%, 9.62%, 50.00%, 0.00%.
+- Delayed-family share is 63.89% in Cluster 1 versus 59.62% in Cluster 2.
+
+Entry quality inside Cluster 1:
+- Immediate-like: 13 trades, median MAE 0.31%, median MFE 0.53%, median return after 5m 0.12%, median time to first profit 0.94 minutes.
+- Delayed-family: 23 trades, median MAE 1.15%, median MFE 2.54%, median return after 5m 1.26%, median time to first profit 0.53 minutes.
+
+Entry quality inside Cluster 2:
+- Immediate-like: 21 trades, median MAE 0.43%, median MFE 2.00%, median return after 5m 0.10%, median time to first profit 0.55 minutes.
+- Delayed-family: 31 trades, median MAE 0.97%, median MFE 1.87%, median return after 5m 1.17%, median time to first profit 0.42 minutes.
+
+Interpretation:
+- Execution mode is present across both clusters without a strong cluster-specific dominance.
+- Within-cluster execution effect looks strongest in both clusters in a fairly similar way.
+- Overall ETH immediate-like vs delayed-family effect score: 2.33.
+- Future ETH imitation likely should become execution-aware, especially if the goal is to close part of the gap between broad context families and the original trader behavior.
+- Confidence level: medium.
+- Short-delay subgroups are small, so any finer-grained conclusions there should be treated as low-confidence.
+
+PRACTICAL INTERPRETATION - SHOULD ETH IMITATION BECOME EXECUTION-AWARE?
+------------------------------------------------------------------------
+- Cluster 1 does show a material execution-sensitive quality split, so separate execution-aware imitation variants for the short family look justified.
+- Cluster 2 also shows a meaningful execution-sensitive split.
+- Earlier ETH proxy conclusions should be revisited through an execution-aware lens.
+- The next most logical step is to build separate execution-aware proxy variants for Cluster 1 immediate-like versus delayed-family behavior.
+
+
+EXECUTION-REANCHORED ENTRY QUALITY - ETH EARLY REACTION FROM PROXY FILL TIME
+--------------------------------------------------------------------------
+This section recomputes short-horizon ETH early-reaction metrics from a proxy fill moment: the earliest post-open market touch of `avgCost`. It does not claim an exact fill timestamp. It is a timing-corrected comparison that reduces naive opened-time distortion for delayed-fill compatible trades.
+
+Coverage:
+- ETH trades considered: 88.
+- Strict execution-comparison coverage: 100.00%.
+- Delayed-family median proxy fill delay: 53.82 minutes.
+- Re-anchored timing used 1m candles for 100.00% of delayed-family ETH trades and 5m fallback for 0.00%.
+
+Overall ETH distortion check:
+- Delayed-family delta after re-anchoring: return 1m -1.30%, return 5m -1.24%, return 15m -1.22%, time to first profit 1.34 minutes.
+- Opened-time anchoring looks material for delayed-family ETH early reaction metrics.
+- After re-anchoring, delayed-family vs immediate-like return after 5m is -0.04% vs 0.11%.
+- After re-anchoring, delayed-family vs immediate-like return after 15m is -0.05% vs 0.28%.
+- Re-anchored time to first positive is 2.00 minutes for delayed-family versus 0.64 for immediate-like.
+
+Cluster 1:
+- Immediate-like current vs re-anchored return after 5m: 0.12% -> 0.12%.
+- Delayed-family current vs re-anchored return after 5m: 1.26% -> -0.11%.
+- Delayed-family current vs re-anchored time to first positive: 0.53 -> 2.00 minutes.
+- Cluster 1 execution-sensitive split is mixed after re-anchoring.
+
+Cluster 2:
+- Immediate-like current vs re-anchored return after 5m: 0.10% -> 0.10%.
+- Delayed-family current vs re-anchored return after 5m: 1.17% -> 0.01%.
+- Delayed-family current vs re-anchored time to first positive: 0.42 -> 1.00 minutes.
+- Cluster 2 execution-sensitive split is mixed after re-anchoring.
+
+Interpretation:
+- Previous execution-aware conclusions should be partially softened.
+- The re-anchoring correction does not yet fully justify moving toward execution-aware proxy branching for Cluster 1.
+- Confidence level: medium.
+
+PRACTICAL INTERPRETATION - IS EXECUTION-AWARE BRANCHING READY YET?
+------------------------------------------------------------------
+- Separate Cluster 1 proxy branches for immediate-like vs delayed-family still need one more validation step before they look justified.
+- The earlier conclusions that survived the correction are: immediate-like ETH trades remain stable under re-anchoring, while delayed-family ETH trades do not clearly preserve their earlier short-horizon edge once the timing anchor is corrected.
+- The most logical next step is to run one extra validation step on re-anchored Cluster 1 behavior before branching the proxy model.
+
+
+REANCHORED CLUSTER 1 SHORT VALIDATION - PRACTICAL ENTRY QUALITY, OVERLAP, AND IMITATION READINESS
+-----------------------------------------------------------------------------------------------
+This stage checks whether the current Cluster 1 short imitation candidate lands near the trader's real re-anchored ETH Cluster 1 short trades in time, price, and narrow post-entry behavior. It does not claim exact execution recovery.
+
+Coverage:
+- Real Cluster 1 short trades: 32.
+- Broad Cluster 1 family Stage A signals: 3,160.
+- Current practical Cluster 1 short proxy Stage A signals: 544.
+- Proxy signals per real Cluster 1 short trade: 17.00.
+
+Time overlap:
+- Real trades with a proxy signal within 5m / 15m / 30m / 60m: 9.38% / 46.88% / 53.12% / 68.75%.
+- Unique assigned match share inside the 60m overlap window: 68.75%.
+- Median matched timing distance: 12.00 minutes.
+
+Time + price overlap:
+- Share within 15m and 0.25%: 31.25%.
+- Share within 30m and 0.50%: 43.75%.
+- Share within 60m and 1.00%: 53.12%.
+- Median matched price distance to real avgCost: 0.21%.
+
+Narrow-window entry quality:
+- Real Cluster 1 short trades median return after 15m / 30m / 60m: 0.02% / 0.04% / 0.20%.
+- Matched model signals median return after 15m / 30m / 60m: -0.03% / -0.21% / -0.15%.
+- All model Stage A signals median return after 15m / 30m / 60m: 0.04% / 0.04% / 0.06%.
+- Matched-case same-short-move share at 30m / 60m: 27.27% / 36.36%.
+- Matched-case median absolute gap in 30m return: 0.33%.
+
+Interpretation:
+- Current Cluster 1 short proxy shows mostly broad-family overlap rather than close practical entry alignment.
+- Main failure mode at current precision: proxy signals often appear too early relative to the real entry.
+- In narrow practical move terms relevant to roughly 10x leverage, current evidence looks partly aligned, but still not tight enough for strong imitation confidence.
+- Confidence level: medium.
+
+PRACTICAL INTERPRETATION - IS CLUSTER 1 SHORT NOW CLOSE ENOUGH TO IMITATE?
+---------------------------------------------------------------------------
+- The current Cluster 1 short proxy still looks more like broad-family capture than practical entry replication.
+- One more refinement step is still preferable before execution-aware branching.
+- The main remaining weakness is proxy signals often appear too early relative to the real entry.
+- The next logical step is to tighten practical timing or zone selection specifically around the matched and near-missed Cluster 1 short trades.
+
+
+CLUSTER 1 SHORT PRECISION REFINEMENT - REDUCE SIGNAL DENSITY, IMPROVE OVERLAP PRECISION, PRESERVE REAL-TRADE COVERAGE
+---------------------------------------------------------------------------------------------------------------
+This stage narrows the current Cluster 1 short imitation candidate with a small set of interpretable refinement variants. The goal is not to recover exact execution, but to reduce signal density while preserving meaningful overlap with the trader's real Cluster 1 short trades.
+
+Base proxy:
+- Signals: 544.
+- Recall within 15m / 30m / 60m: 46.88% / 53.12% / 68.75%.
+- Median matched time distance: 12.00 minutes.
+- Median matched price distance: 0.21%.
+- Same-short-move share at 30m / 60m: 27.27% / 36.36%.
+
+Best refinement variant:
+- Variant: Stronger 60m bounce context.
+- Family: context_tightening.
+- Definition: Pre-entry 60m return >= 0.60%..
+- Signals: 393 (27.76% reduction vs base).
+- Recall within 15m / 30m / 60m: 46.88% / 53.12% / 62.50%.
+- Time + price overlap within 30m and 0.50%: 43.75%.
+- Median matched time distance: 11.60 minutes.
+- Median matched price distance: 0.21%.
+- Same-short-move share at 30m / 60m: 30.00% / 40.00%.
+- Balanced imitation score: 0.55.
+
+Trade-off read:
+- Precision improvement vs base at 30m + 0.50%: 0.00.
+- Same-short-move improvement vs base at 30m: 0.03.
+- Time-distance improvement vs base: 0.40 minutes.
+- Recall retention vs base at 30m / 60m: 1.00 / 0.91.
+
+Interpretation:
+- No refinement variant produced a clean material precision jump without meaningful trade-offs.
+- The refinement family that helped most in this sample was: context_tightening.
+- The main remaining limiting factor is: timing precision is still the biggest weakness.
+- Confidence level: low.
+
+PRACTICAL INTERPRETATION - IS CLUSTER 1 SHORT NOW TIGHT ENOUGH FOR IMITATION WORK?
+-----------------------------------------------------------------------------------
+- The refined Cluster 1 short proxy is still only a partial imitation candidate, not yet a tight practical replication base.
+- One more refinement or validation step is still preferable before paper testing.
+- The biggest remaining weakness is timing precision is still the biggest weakness.
+
+
+CLUSTER 1 SHORT TIMING ERROR ANATOMY - WHY THE PROXY MISSES THE MOMENT
+---------------------------------------------------------------------
+This stage diagnoses the remaining timing mismatch between the current Cluster 1 short imitation candidate and the trader's real Cluster 1 short trades. It does not claim exact execution recovery. The focus is on matched cases where the proxy lands near the same zone, but may still miss the practical short moment.
+
+Base proxy matched cases:
+- Matched cases inside the overlap window: 22.
+- Early / near-synchronous / late matched share: 40.91% / 13.64% / 45.45%.
+- Median signed timing delta: 4.75 minutes (negative = proxy earlier).
+- Median matched price distance: 0.21%.
+
+Timing vs same-move quality:
+- Same-short-move share at 30m for early vs near-synchronous vs late matched cases: 0.00% / 33.33% / 50.00%.
+- Median absolute 30m return gap for early vs late matched cases: 0.40% vs 0.29%.
+- Share of early matched cases where the proxy still looked like zone-arrival while the real trade already showed local failure clues: 0.00%.
+
+Mismatch taxonomy:
+- Dominant matched-case mismatch type: late near-zone miss (27.27% of matched cases).
+- Same-zone but wrong-moment issue looks secondary in this sample.
+- Overall timing mode: mixed_but_harmfully_early.
+Secondary comparison with best refined variant (Stronger 60m bounce context):
+- Early / late matched share: 40.00% / 45.00%.
+- Same-short-move share at 30m for early vs late matched cases: 0.00% vs 55.56%.
+- This suggests the best refined variant does not materially change the base timing-mismatch anatomy.
+
+
+Interpretation:
+- The proxy tends to fire in mixed ways overall, but the damaging misses are more often early.
+- A single missing local-failure cue is not strongly confirmed by this sample.
+- The remaining gap still looks structured enough to justify one more narrow timing test.
+- Confidence level: medium.
+
+PRACTICAL INTERPRETATION - IS ONE MORE TIMING LAYER EVEN PLAUSIBLE?
+-------------------------------------------------------------------
+- One final narrow timing refinement still looks plausible.
+- The most plausible next refinement direction is: delay after zone arrival.
+- If one more refinement is attempted, it should be framed as a small wait-for-failure / confirmation-after-weakening test, not as recovered execution logic.
+
+
+FINAL NARROW TIMING TEST - DELAY AFTER ZONE ARRIVAL + WEAKENING CONFIRMATION FOR CLUSTER 1 SHORT
+--------------------------------------------------------------------------------------------------
+This is one final narrow timing refinement test. The goal is not to recover exact execution logic, but to check whether a very small delay-after-zone-arrival layer plus simple weakening confirmation can improve practical imitation precision for the Cluster 1 short family.
+
+Base proxy:
+- Signals: 544.
+- Recall within 15m / 30m / 60m: 46.88% / 53.12% / 68.75%.
+- Combined overlap within 15m + 0.25% / 30m + 0.50%: 31.25% / 43.75%.
+- Median matched time distance: 12.00 minutes.
+- Median matched price distance: 0.21%.
+- Same-short-move share at 30m / 60m: 27.27% / 36.36%.
+
+Best final timing variant:
+- Variant: Base proxy.
+- Definition: Current practical Cluster 1 short proxy without extra timing delay..
+- Signals: 544 (0.00% reduction vs base).
+- Recall within 15m / 30m / 60m: 46.88% / 53.12% / 68.75%.
+- Combined overlap within 15m + 0.25% / 30m + 0.50%: 31.25% / 43.75%.
+- Median matched time distance: 12.00 minutes.
+- Median matched price distance: 0.21%.
+- Same-short-move share at 30m / 60m: 27.27% / 36.36%.
+
+Interpretation:
+- A small delay-after-zone-arrival layer did not produce a material practical jump.
+- Weakening confirmation did not clearly solve the remaining timing gap on its own.
+- Same-short-move capture did not improve enough to call this a clean timing fix.
+- No variant improved overlap precision enough while keeping recall comfortably intact.
+- The remaining gap now looks closer to a practical ceiling than to one clearly missing simple timing layer.
+- The timing mismatch remains too mixed for one simple delay rule to explain fully.
+- Confidence level: low.
+
+PRACTICAL INTERPRETATION - FINAL TIMING TEST: DID IT ACTUALLY HELP?
+-------------------------------------------------------------------
+- This final timing layer did not help enough; reverse-engineering refinement should likely stop here.
+- The next move should probably shift away from further trigger recovery and toward sandbox / paper-style imitation work.
+- This now looks more like a practical ceiling than one more hidden trigger waiting to be recovered.
+
+
+ETH CLUSTER RULE EXTRACTION
+===========================
+
+This section turns the ETH setup clusters into approximate candidate context filters. The goal is not to recover a secret signal, but to create rough rule-based approximations of the ETH archetypes.
+
+Cluster answers:
+- Cluster 1: Cluster 1 can be described by a reasonably simple filter without collapsing into noise.
+- Cluster 2: Cluster 2 can also be approximated with a small set of broad context conditions.
+- Cluster 1 quality: precision 100.00%, recall 69.44%, covered trades 25.
+- Cluster 2 quality: precision 100.00%, recall 63.46%, covered trades 33.
+
+Replication read:
+- The cluster that is easier to replicate with simple conditions is Cluster 1.
+- The better first replication candidate is Cluster 1, because it gives the strongest balance of precision, recall, and covered PnL.
+- The rules stay broad enough to remain interpretable.
+- Confidence level: high
+
+
+ETH REPLICATION HYPOTHESIS TEST
+-------------------------------
+This stage scans ETHUSDT market history independently of the trader's actual entries. It checks whether the rough context filters catch post-entry reactions that resemble the trader's real ETH clusters. It is still not a full strategy backtest.
+
+Stage-by-stage results:
+- short after small bounce, near 4h high, in average volume, while stretched above EMA / Stage A: 3,160 signals, 55.98% positive after 5m, median MAE 1.85%, median 4h move 0.09%, similarity 0.63 (moderate).
+- short after small bounce, near 4h high, in average volume, while stretched above EMA / Stage B: 7,383 signals, 54.00% positive after 5m, median MAE 2.14%, median 4h move 0.04%, similarity 0.56 (moderate).
+- short after small bounce, near 4h high, in average volume, while stretched above EMA / Stage C: 15,348 signals, 54.18% positive after 5m, median MAE 2.05%, median 4h move 0.03%, similarity 0.57 (moderate).
+- long after local flush / reversal, near 4h low, with heated volume, while stretched below EMA / Stage A: 1,477 signals, 56.06% positive after 5m, median MAE 3.05%, median 4h move 0.16%, similarity 0.55 (weak).
+- long after local flush / reversal, near 4h low, with heated volume, while stretched below EMA / Stage B: 2,888 signals, 56.61% positive after 5m, median MAE 2.51%, median 4h move 0.16%, similarity 0.60 (moderate).
+- long after local flush / reversal, near 4h low, with heated volume, while stretched below EMA / Stage C: 5,907 signals, 55.10% positive after 5m, median MAE 2.56%, median 4h move 0.15%, similarity 0.60 (moderate).
+
+Interpretation:
+- Cluster 1 filter similarity is strongest in Stage A.
+- Cluster 2 filter similarity is strongest in Stage B.
+- The strongest overall similarity appears in Stage A.
+- Stage A is the main anchor because it matches the trader's original ETH trading window.
+- Outside the exact trading period, filter behavior holds up reasonably, so external robustness should be treated with caution.
+- Confidence level: low.
+
+Exploratory verdict:
+- Stage A does not yet look strong enough for a confident TP/SL backtest; the safer next step is more filter validation first.
+
+
+ETH FILTER TIGHTENING / TIMING LAYER
+------------------------------------
+This stage keeps the broad ETH context filters and adds only a light timing layer on top. Feature selection is done on Stage A only, then the chosen tightened filters are checked across Stage A, Stage B, and Stage C.
+
+Main findings:
+- Cluster 1: top timing features = 1m short rejection candle, 5m return last candle %, 1m momentum deceleration; best tightened filter = 5m return last candle % >= -0.00; Stage A signals 3,160 -> 2,038; similarity 0.64 -> 0.65; positive after 5m 55.98% -> 56.82%; median MAE 1.85% -> 1.82%.
+- Cluster 2: top timing features = Close back inside 15m range, Distance to last 15m low %, Relative volume 1m; best tightened filter = 5m momentum deceleration <= 3.17; Stage A signals 1,477 -> 1,090; similarity 0.55 -> 0.56; positive after 5m 56.06% -> 56.97%; median MAE 3.05% -> 2.95%.
+
+Interpretation:
+- The most useful timing features are the ones that reduce signal density while nudging early reaction and MAE toward the real cluster trades.
+- The tightened filters should be treated as timing layer approximations, not as the trader's exact entry signal.
+- Confidence level: low.
+
+Final verdict:
+- The tightened filters are better timing approximations, but they still do not look close enough to the trader's real entry profile for a confident backtest.
+
+
+ETH CLUSTER 1 MICRO-STRUCTURE TRIGGER ANALYSIS
+----------------------------------------------
+This section tests whether a repeatable micro-trigger exists inside the Cluster 1 short context family. It compares real Cluster 1 short trades against broad Stage A replication signals and against the current tightened Stage A pool.
+
+Key findings:
+- Most useful micro-features: Outside reversal bar, Bearish close after push, Close below midpoint after upper push, Last 1m weaker than prior push, Small candle body.
+- Best candidate micro-trigger: Close below midpoint after upper push = True AND Small candle body = True.
+- Broad Stage A signals: 3,160. Current tightened Stage A signals: 2,004. Best micro-trigger signals: 74.
+- Positive after 5m: broad 55.98%, tightened 56.99%, micro-trigger 51.35%.
+- Median MAE: broad 1.85%, tightened 1.82%, micro-trigger 1.27%.
+- Similarity to real Cluster 1 profile: micro-trigger 0.65 (moderate).
+- Confidence level: medium.
+
+Final verdict:
+- The trigger evidence is still too weak or too discretionary for a confident backtest.
+
+
+ETH CLUSTER 1 FINAL STRUCTURAL CONFIRMATION TEST
+-------------------------------------------------
+This stage keeps the current best Cluster 1 short micro-trigger fixed and adds exactly one extra structural confirmation. The goal is to see whether one simple confirmation can make the short execution layer meaningfully closer to the trader's real Cluster 1 short entries.
+
+Current base execution layer:
+- Close below midpoint after upper push = True AND Small candle body = True
+
+Main findings:
+- Real Cluster 1 short trades: 32. Real trades matching the current base trigger: 2.
+- Structural confirmations tested: Failed breakout wick over 5m high, Close back below 5m high, Return inside prior micro-range, Break above range then re-entry.
+- Most useful structural confirmation: Failed breakout wick over 5m high.
+- Final Cluster 1 short replication candidate: Close below midpoint after upper push = True AND Small candle body = True AND Failed breakout wick over 5m high = True.
+- Signal count: broad 3,160, base trigger 74, final candidate 57.
+- Positive after 5m: base 51.35%, final candidate 49.12%.
+- Median MAE: base 1.27%, final candidate 1.33%.
+- Similarity to real Cluster 1 profile: base 0.65, final candidate 0.61 (moderate).
+- Confidence level: low.
+
+Final verdict:
+- The extra structural confirmation did not deliver a meaningful jump over the current best micro-trigger.
+- This looks close to the practical ceiling of rule-based reverse engineering from public trade history alone.
+
+
+ETH CLUSTER 1 EFFORT VS RESULT HYPOTHESIS TEST
+-----------------------------------------------
+This section tests whether a high-volume / weak-price-progress pattern is statistically more common before real Cluster 1 short entries than inside the broader Cluster 1 short context family.
+
+Key findings:
+- Best candidate hypothesis: High 1m volume + small 1m body.
+- Candidate definition: Relative volume 1m >= 1.88 AND body % 1m <= 0.06.
+- Frequency in real trades: 9.38%; broad Stage A signals: 2.69%; tightened Stage A signals: 3.64%.
+- Coverage note: this pattern appears in only 9.38% of real Cluster 1 short entries, so it looks like a narrow clue rather than a dominant execution layer.
+- Lift vs broad pool: 3.49. Broad Stage A signals: 3,160; tightened Stage A signals: 2,004; filtered signals: 85.
+- Positive after 5m: broad 55.98%, tightened 56.99%, effort/result filter 60.00%.
+- Median MAE: broad 1.85%, tightened 1.82%, effort/result filter 1.43%.
+- Similarity to real Cluster 1 profile: 0.67 (moderate).
+- Confidence level: medium.
+
+Final verdict:
+- The best effort-vs-result definition looks like a meaningful possible execution clue, but still not a full execution rule.
+
+
+PRACTICAL IMITATION MODEL
+-------------------------
+This stage stops trying to reconstruct the trader's exact execution and instead builds two honest proxy setups inspired by the ETH archetypes that were recovered earlier.
+
+Proxy setups:
+- ETH Short proxy: near upper structure after a 60m bounce, then a simple 5m failed-continuation candle.
+- ETH Long proxy: near lower structure below EMA20 5m, then a simple 5m stabilization candle.
+
+Recommended proxy exits:
+- Short proxy: Fixed horizon 12h.
+- Long proxy: TP 1 ATR / SL 1 ATR / time 24h.
+
+Stage A snapshot:
+- Short proxy: 185 trades, win rate 56.22%, expectancy 0.24%, rough drawdown 23.96%, archetype similarity 0.64.
+- Long proxy: 319 trades, win rate 53.29%, expectancy 0.03%, rough drawdown 6.14%, archetype similarity 0.53.
+
+Interpretation:
+- Better setup by current evidence: Short proxy.
+- The proxy models are style-inspired setup approximations, not a reconstruction of the trader's exact rules.
+- Confidence level: medium.
+
+Final verdict:
+- At this point it is more practical to test simplified imitation models than to keep reverse engineering exact execution.
+
+
+ETH SHORT PROXY VALIDATION
+--------------------------
+This section validates the ETH short proxy as a standalone style-inspired setup, with realistic friction, simple position sizing, parameter drift checks, and stage-by-stage robustness.
+
+    Representative validation scenario:
+- Cost scenario: normal_fee + moderate_slippage.
+- Recommended risk model: Fixed notional / max 1 open trade.
+
+Stage results after friction:
+- Stage A: 185 trades, win rate 53.51%, net expectancy 0.11%, net PnL proxy 1,995.35, max drawdown proxy 2,993.67.
+- Stage B: 410 trades, win rate 46.83%, net expectancy -0.14%, net PnL proxy -5,869.48, max drawdown proxy 9,006.92.
+- Stage C: 827 trades, win rate 47.16%, net expectancy -0.12%, net PnL proxy -9,829.82, max drawdown proxy 16,390.00.
+
+Robustness read:
+- Positive share across nearby Stage A parameter variants: 64.81%.
+- Edge outside Stage A: mostly Stage-A dependent.
+- Confidence level: medium.
+
+Final verdict:
+- The ETH short proxy is best treated as a candidate tradable model for further paper trading / forward testing, not as a robust tradable system yet.
+
+
+CORE VS NOISE ANALYSIS
+----------------------
+Flagged extreme losers: 2
+Flagged possible faith-trades: 0
+
+Scenario comparison:
+         scenario  trade_count  total_pnl  avg_pnl  median_pnl  win_rate  long_pnl  short_pnl  long_win_rate  short_win_rate  avg_holding_time  avg_holding_winners  avg_holding_losers  top_5_pnl_concentration  approx_max_drawdown  symbol_concentration  side_concentration
+         baseline          131  530198.90  4047.32     1497.54      0.98 207583.07  322615.82           0.97             1.0             12.67                12.83                2.21                     0.33              4161.84                  0.67                0.53
+no_extreme_losers          129  534360.74  4142.33     1523.34      1.00 211744.92  322615.82           1.00             1.0             12.83                12.83                 NaN                     0.33                 0.00                  0.68                0.53
+  no_faith_trades          131  530198.90  4047.32     1497.54      0.98 207583.07  322615.82           0.97             1.0             12.67                12.83                2.21                     0.33              4161.84                  0.67                0.53
+
+Flagged extreme losers sample:
+ trade_number    symbol side  closingPnl  holding_hours extreme_loser_reasons
+           64 LUNA2USDT Long    -2716.29           2.16   worst_5pct_pnl_tail
+           63  USTCUSDT Long    -1445.56           2.26   worst_5pct_pnl_tail
+
+Flagged possible faith-trades sample:
+n/a
+
+Core-vs-noise interpretation:
+- Profit after removing extreme losers: yes (534,360.74).
+- Profit after removing possible faith-trades: yes (530,198.90).
+- Profile looks smoother after removing extreme losers: yes.
+- Profile looks smoother after removing possible faith-trades: no.
+- Strong short edge remains after removing extreme losers: yes.
+- Strong short edge remains after removing possible faith-trades: yes.
+- Long side looks more normal after removing extreme losers: yes.
+- Long side looks more normal after removing possible faith-trades: yes.
+- Fat-tail dependence decreases after removing extreme losers: yes.
+- Fat-tail dependence decreases after removing possible faith-trades: yes.
+- Most plausible cleaned profile for further replication work: no_extreme_losers.
+
+Human read:
+- What looks like the core strategy: repeated short-side profitability, faster/cleaner holding behavior, and the part of the profile that remains profitable after removing likely outlier losers.
+- What looks like noise or possible emotional contamination: likely emotional outliers with unusually long holding times, especially trades inconsistent with the dominant profitable side profile.
+- Should the cleaned profile be analyzed further as a replication base: yes.
+
+H. Edge Without Fantasy
+-----------------------
+Confirmed by data:
+- Trade history reconstruction points to a intraday trader profile.
+- Best symbol by total PnL: ETHUSDT. Worst symbol by total PnL: LUNA2USDT.
+- Best side by total PnL: Short. Worst side by total PnL: Long.
+- Average holding time: 12.67 h; median: 3.07 h.
+- Top-5 trades contributed 32.84% of total PnL and 32.59% of all profitable PnL.
+- Removing the top-5 trades leaves total PnL at 356,065.90, versus baseline 530,198.90.
+- Monte Carlo median total PnL is 731,450.14 with 100.00% profitable runs.
+
+Reasonable hypotheses:
+- Instrument selection looks like high concentration in a few instruments.
+- Directionality looks balanced.
+- PnL stability assessment: returns appear concentrated in a few outsized trades.
+- No strong martingale signal was detected from sequential position sizing alone.
+- If a simple EMA50 regime filter materially improves the aligned subset, the edge may be partly in market regime selection rather than entry timing alone.
+
+Cannot be concluded from this dataset alone:
+- Without candles, order-level history, and market context, exact entry logic cannot be reconstructed.
+- Trend-following vs counter-trend behavior can only be inferred weakly from holding patterns and side concentration.
+- We cannot know whether exits were discretionary, signal-driven, liquidation-driven, or copied from partial fills.
+- We still cannot claim exact reproducibility because entry location inside the candle, leverage handling, and copy-trading slippage remain unknown.
+
+Human Summary
+-------------
+This trader most likely behaves like a intraday trader. The strongest earnings come from ETHUSDT and the strongest directional contribution comes from Short. Weak spots are concentrated in LUNA2USDT and on the Long side. The main question for robustness is whether performance survives after removing a handful of exceptional trades; here the top-5 trades account for 32.84% of total PnL.
+
+On the skill-versus-luck question, the answer is mixed. There is evidence of repeatable behavior in symbol selection, side asymmetry, and holding pattern, so this is not pure randomness. But the PnL distribution is fat-tailed, and the Monte Carlo section shows how sensitive total outcome can be to the sampling of a few large trades. That means the profile is behaviorally consistent, but the realized payoff still depends heavily on outsized wins and on avoiding a few oversized losses.
+
+The most reproducible components appear to be behavioral rather than signal-based: entry frequency, preferred symbols, side bias, and holding-time profile. The least reproducible components are precise timing, large winner capture, and risk compression on the rare but very costly trades. If top-trade concentration stays high or long-duration losers dominate drawdown, copying this profile without tighter risk controls would be difficult to justify as a low-risk replication.

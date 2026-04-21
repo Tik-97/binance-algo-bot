@@ -1,0 +1,43 @@
+CLUSTER 1 SHORT FAILED ACCEPTANCE LADDER BACKTEST
+=================================================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Context filter:
+- near 4h high <= 0.25%
+- 60m bounce >= 0.90%
+- stretch above EMA20 5m >= 0.15%
+
+Failed acceptance logic:
+- acceptance window = 6 minutes
+- min window range = 0.20%
+- max top-close-share threshold = 0.34
+- min return below highs = 0.10%
+- require weak last close = True
+
+Staggered ladder entry:
+- L1/L2/L3 weights = 0.30/0.40/0.30
+- L1/L2/L3 range fractions = 0.60/0.78/0.92
+- max fill wait = 12 minutes
+- min filled fraction to trade = 0.30
+
+Risk / exit:
+- cooldown between context entries = 240 minutes
+- initial stop above window high = 0.08%
+- risk per trade = 1.00% of balance
+- leverage info = 10.0x
+
+Trade count: 855
+Win rate: 48.30%
+Profit factor: 0.388
+Max drawdown: 97.32%
+Expectancy: -0.45 USD
+Ending balance: 11.82 USD
+Average hold: 190.75 min
+Average MFE: 0.78%
+Average MAE: 0.27%
+Average filled fraction: 0.77
+Average fills count: 2.31
+Skipped no failed-acceptance setups: 1513
+Skipped no-fill setups: 422

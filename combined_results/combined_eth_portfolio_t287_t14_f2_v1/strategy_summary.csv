@@ -1,0 +1,4 @@
+strategy,trade_count,win_count,loss_count,win_rate_pct,net_pnl_usd,profit_factor,avg_return_pct
+short_t287,25,22,3,88.0,303.874,7.408,1.0146
+long_t14,7,7,0,100.0,163.4262,inf,1.8969
+long_f2,2,2,0,100.0,45.6699,inf,1.607

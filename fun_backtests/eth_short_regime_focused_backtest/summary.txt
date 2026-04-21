@@ -1,0 +1,40 @@
+ETH SHORT REGIME FOCUSED BACKTEST
+=================================
+
+target_regimes = mixed_transition, near_entry_breakdown_noise
+
+target_regimes_combined
+-----------------------
+v1: candidate_scope_count=8, filled_trade_count=6, ending_balance=389.70, win_rate_pct=50.00, profit_factor=0.661
+median_entry_vs_trader_price_pct=-0.6234, same_result_direction_share_pct=50.00, median_delta_vs_trader_return_pct=-1.0230
+v2: candidate_scope_count=8, filled_trade_count=7, ending_balance=401.12, win_rate_pct=28.57, profit_factor=1.017
+median_entry_vs_trader_price_pct=-0.3779, same_result_direction_share_pct=28.57, median_delta_vs_trader_return_pct=-1.1009
+v3: candidate_scope_count=8, filled_trade_count=4, ending_balance=395.70, win_rate_pct=25.00, profit_factor=0.901
+median_entry_vs_trader_price_pct=-0.1768, same_result_direction_share_pct=25.00, median_delta_vs_trader_return_pct=-1.2628
+
+mixed_transition
+----------------
+v1: candidate_scope_count=4, filled_trade_count=3, ending_balance=411.71, win_rate_pct=66.67, profit_factor=2.437
+median_entry_vs_trader_price_pct=-1.6914, same_result_direction_share_pct=66.67, median_delta_vs_trader_return_pct=-0.4278
+v2: candidate_scope_count=4, filled_trade_count=3, ending_balance=402.26, win_rate_pct=33.33, profit_factor=1.083
+median_entry_vs_trader_price_pct=-1.6914, same_result_direction_share_pct=33.33, median_delta_vs_trader_return_pct=-0.7570
+v3: candidate_scope_count=4, filled_trade_count=1, ending_balance=387.54, win_rate_pct=0.00, profit_factor=0.000
+median_entry_vs_trader_price_pct=-0.8688, same_result_direction_share_pct=0.00, median_delta_vs_trader_return_pct=-0.7570
+
+near_entry_breakdown_noise
+--------------------------
+v1: candidate_scope_count=4, filled_trade_count=3, ending_balance=378.62, win_rate_pct=33.33, profit_factor=0.046
+median_entry_vs_trader_price_pct=0.0243, same_result_direction_share_pct=33.33, median_delta_vs_trader_return_pct=-1.6171
+v2: candidate_scope_count=4, filled_trade_count=4, ending_balance=398.87, win_rate_pct=25.00, profit_factor=0.971
+median_entry_vs_trader_price_pct=0.0629, same_result_direction_share_pct=25.00, median_delta_vs_trader_return_pct=-1.6574
+v3: candidate_scope_count=4, filled_trade_count=3, ending_balance=408.42, win_rate_pct=33.33, profit_factor=1.275
+median_entry_vs_trader_price_pct=0.0243, same_result_direction_share_pct=33.33, median_delta_vs_trader_return_pct=-1.4246
+
+other_regimes_combined
+----------------------
+v1: candidate_scope_count=9, filled_trade_count=8, ending_balance=352.71, win_rate_pct=0.00, profit_factor=0.000
+median_entry_vs_trader_price_pct=-0.8518, same_result_direction_share_pct=0.00, median_delta_vs_trader_return_pct=-1.6831
+v2: candidate_scope_count=9, filled_trade_count=9, ending_balance=253.31, win_rate_pct=0.00, profit_factor=0.000
+median_entry_vs_trader_price_pct=-0.5535, same_result_direction_share_pct=0.00, median_delta_vs_trader_return_pct=-1.7577
+v3: candidate_scope_count=9, filled_trade_count=4, ending_balance=353.73, win_rate_pct=0.00, profit_factor=0.000
+median_entry_vs_trader_price_pct=-0.3864, same_result_direction_share_pct=0.00, median_delta_vs_trader_return_pct=-1.1982

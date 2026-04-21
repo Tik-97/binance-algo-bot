@@ -1,0 +1,4 @@
+entry_strength_group,trade_count,win_count,net_pnl_usd,median_holding_minutes,median_return_pct
+medium_entry,38,38,147603.8489,294.96,0.0106
+strong_entry,15,15,28244.2115,90.69,0.0036
+weak_entry,2,2,4031.7816,25.38,0.0043

@@ -1,0 +1,30 @@
+EDGE LONG TIER1.4 VS FAMILY2.1 COMPARISON V1
+=============================================
+
+goal = compare the current main long baseline against the expanded Family 2 branch
+full_window_start = 2024-08-21 13:46:00+00:00
+full_window_end = 2026-03-09 00:40:00+00:00
+recent_1y_start = 2025-03-09 00:40:00+00:00
+
+headline full-history comparison:
+- Tier 1.4: trades=12, net_pnl=113.38, ending_balance=513.38
+- Family 2.1: trades=12, net_pnl=97.35, ending_balance=497.35
+
+headline recent-1y comparison:
+- Tier 1.4 recent 1y: trades=7, net_pnl=63.25
+- Family 2.1 recent 1y: trades=8, net_pnl=58.13
+
+overlap truth:
+- exact same-trade overlaps = 7
+- Tier 1.4 unique trades = 5
+- Family 2.1 unique trades = 5
+
+honest read:
+- Tier 1.4 is stronger on raw full-history PnL.
+- The branches are not independent; they share a meaningful set of exact same long trades.
+- Tier 1.4 is stronger in the most recent one-year slice.
+- Practical interpretation should focus on unique trade contribution, not only raw standalone curves.
+
+decision framing:
+- Tier 1.4 = cleaner original long baseline family
+- Family 2.1 = newer flush-reversal family with stronger full-history curve but overlap with Tier 1.4

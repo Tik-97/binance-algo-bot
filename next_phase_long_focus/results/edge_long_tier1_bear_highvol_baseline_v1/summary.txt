@@ -1,0 +1,18 @@
+EDGE LONG TIER1 BEAR HIGH-VOL BASELINE V1
+=========================================
+
+idea = reuse the best old long climax-dump-failure engine, but make it independent
+router = old long context + bear-like daily regime + high_vol
+source_engine = wickMick_long.py
+
+bt_start = 2024-04-05 23:15:00+00:00
+bt_end = 2026-04-15 04:17:00+00:00
+trade_count = 29
+win_rate_pct = 48.28
+profit_factor = 1.473
+max_drawdown_pct = 7.25
+expectancy_usd = 1.3125
+ending_balance = 438.06
+context_without_trigger_count = 19781
+rejected_entry_count = 0
+expired_limit_count = 18

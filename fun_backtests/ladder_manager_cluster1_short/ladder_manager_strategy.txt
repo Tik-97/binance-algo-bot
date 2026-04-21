@@ -1,0 +1,46 @@
+BEST LADDER MANAGER STRATEGY
+============================
+
+This is the best standalone sandbox result from the ladder-manager comparison.
+It is NOT part of the main research pipeline and it is NOT proof of tradability.
+
+Source used: current practical Cluster 1 short model signals from `eth_cluster1_short_model_signals.csv`.
+Signal subset: current Cluster 1 short proxy, entries only 13:00-17:00 UTC, and upper_wick_ratio_5m >= 0.40.
+Signals file: C:\Users\Tigran\Desktop\Binance\Another Trader\analysis_output\eth_cluster1_short_model_signals.csv
+Candles file: C:\Users\Tigran\Desktop\Binance\.cache\binance_klines\ETHUSDT_1m.csv
+
+WHAT WORKS BEST IN THIS SANDBOX
+-------------------------------
+Manager: 0.5% ladder (SL=TP=0.5%, shift 0.5%)
+Risk mode: tenth_margin (10% of wallet as margin)
+
+HOW WE GET THE SIGNAL
+---------------------
+- We start from the existing Cluster 1 ETH short proxy signal source.
+- We only keep signals inside 13:00-17:00 UTC.
+- We only keep signals where upper_wick_ratio_5m >= 0.40.
+
+OUR ENTRY POINT
+---------------
+- Entry happens at the proxy signal timestamp.
+- Entry price is the proxy signal entry price adjusted by sandbox slippage.
+- One trade at a time only.
+
+RESULT
+------
+Ending balance: $382.78
+Total return: -4.30%
+Trade count: 69
+Win rate: 28.99%
+Profit factor: 0.791
+Max drawdown: 9.30%
+Take-profit share: 0.00%
+Managed-stop share: 52.17%
+Plain stop-loss share: 47.83%
+
+INTERPRETATION
+--------------
+- This is the best ladder-manager sandbox candidate in this comparison.
+- It is still only a sandbox candidate, not a recovered real strategy.
+- The whole point of this test was to reduce too many breakeven-style managed stops after fees.
+

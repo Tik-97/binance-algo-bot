@@ -1,0 +1,30 @@
+scenario,scenario_title,month,net_pnl_usd,trade_count
+baseline_realistic,Baseline realistic,2024-08,10.080621548150312,1
+baseline_realistic,Baseline realistic,2025-01,13.135052235332362,1
+baseline_realistic,Baseline realistic,2025-02,26.916434975188768,3
+baseline_realistic,Baseline realistic,2025-04,10.037424210013866,1
+baseline_realistic,Baseline realistic,2025-11,15.737294060966846,2
+baseline_realistic,Baseline realistic,2026-01,8.509421374443422,1
+baseline_realistic,Baseline realistic,2026-02,17.848308421142743,2
+baseline_realistic,Baseline realistic,2026-03,11.115880683523839,1
+eth_adverse_light,ETH adverse light,2024-08,9.987701253505115,1
+eth_adverse_light,ETH adverse light,2025-02,25.34129085985058,3
+eth_adverse_light,ETH adverse light,2025-04,9.550908825316947,1
+eth_adverse_light,ETH adverse light,2025-11,14.962117675529448,2
+eth_adverse_light,ETH adverse light,2026-01,8.029591916946455,1
+eth_adverse_light,ETH adverse light,2026-02,16.730594204434333,2
+eth_adverse_light,ETH adverse light,2026-03,10.23607563517207,1
+eth_adverse_medium,ETH adverse medium,2024-08,9.804340164552416,1
+eth_adverse_medium,ETH adverse medium,2025-02,24.15498820571117,3
+eth_adverse_medium,ETH adverse medium,2025-04,9.229142664633809,1
+eth_adverse_medium,ETH adverse medium,2025-11,14.477427183262343,2
+eth_adverse_medium,ETH adverse medium,2026-01,8.261184927153092,1
+eth_adverse_medium,ETH adverse medium,2026-02,15.89129735701195,2
+eth_adverse_medium,ETH adverse medium,2026-03,9.582389934213634,1
+eth_adverse_hard,ETH adverse hard,2024-08,9.623710847370065,1
+eth_adverse_hard,ETH adverse hard,2025-02,23.02051781083848,3
+eth_adverse_hard,ETH adverse hard,2025-04,8.917049304433414,1
+eth_adverse_hard,ETH adverse hard,2025-11,14.005945620743791,2
+eth_adverse_hard,ETH adverse hard,2026-01,7.978656438995539,1
+eth_adverse_hard,ETH adverse hard,2026-02,15.089466190149272,2
+eth_adverse_hard,ETH adverse hard,2026-03,8.981117233332965,1

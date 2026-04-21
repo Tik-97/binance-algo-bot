@@ -1,0 +1,112 @@
+STANDALONE FUN BACKTEST - ETH SHORT PROXY WALLET SIMULATION
+=====================================================
+This is a standalone entertainment / exploratory wallet simulation.
+It is NOT part of the main reverse-analysis research conclusions.
+It is NOT proof that the ETH short proxy is safely tradable with full-balance 10x leverage.
+It uses an approximate liquidation model, not exact Binance liquidation math.
+
+Signal source used:
+- Existing file: C:\Users\Tigran\Desktop\Binance\Another Trader\analysis_output\eth_proxy_short_results.csv
+- Selection: unique `eth_short_proxy` signals only, deduplicated by `signal_id`
+- Stage: `stage_a`
+- Side: `Short`
+
+Market data source used:
+- Cached local candles only: C:\Users\Tigran\Desktop\Binance\.cache\binance_klines\ETHUSDT_1m.csv
+- No new market data downloads
+
+Standalone output folder:
+- C:\Users\Tigran\Desktop\Binance\fun_backtests
+
+Scenario: tp0p5_sl0p5_12h
+----------------------------------------
+Starting balance: $400.00
+Ending balance: $1.32
+Total return: -99.67%
+Trade count: 465
+Win count: 230
+Loss count: 235
+Win rate: 49.46%
+Average win: 1.95
+Average loss: -3.60
+Profit factor: 0.53
+Max drawdown: 99.67%
+Best trade: $14.50
+Worst trade: $-24.21
+Ignored overlapping signals: 50
+Account survived: Yes
+Liquidation occurred: No.
+
+Assumptions:
+- leverage = 10.0x
+- full_balance_margin = True
+- one_trade_at_a_time = True
+- TP = 0.50% underlying move
+- SL = 0.50% underlying move
+- max_hold = 720 minutes
+- fee_per_side = 0.040%
+- slippage_per_side = 0.025%
+- liquidation approximation = adverse move of (100/leverage - buffer)%, with buffer 0.50%
+- ambiguous candle ordering = adverse-first for safety (liquidation > SL > TP)
+
+Scenario: tp0p7_sl0p5_12h
+----------------------------------------
+Starting balance: $400.00
+Ending balance: $0.83
+Total return: -99.79%
+Trade count: 458
+Win count: 186
+Loss count: 272
+Win rate: 40.61%
+Average win: 2.47
+Average loss: -3.16
+Profit factor: 0.53
+Max drawdown: 99.79%
+Best trade: $19.74
+Worst trade: $-24.21
+Ignored overlapping signals: 57
+Account survived: Yes
+Liquidation occurred: No.
+
+Assumptions:
+- leverage = 10.0x
+- full_balance_margin = True
+- one_trade_at_a_time = True
+- TP = 0.70% underlying move
+- SL = 0.50% underlying move
+- max_hold = 720 minutes
+- fee_per_side = 0.040%
+- slippage_per_side = 0.025%
+- liquidation approximation = adverse move of (100/leverage - buffer)%, with buffer 0.50%
+- ambiguous candle ordering = adverse-first for safety (liquidation > SL > TP)
+
+Scenario: tp1p0_sl0p7_24h
+----------------------------------------
+Starting balance: $400.00
+Ending balance: $0.65
+Total return: -99.84%
+Trade count: 404
+Win count: 162
+Loss count: 242
+Win rate: 40.10%
+Average win: 5.30
+Average loss: -5.20
+Profit factor: 0.68
+Max drawdown: 99.84%
+Best trade: $29.59
+Worst trade: $-32.21
+Ignored overlapping signals: 111
+Account survived: Yes
+Liquidation occurred: No.
+
+Assumptions:
+- leverage = 10.0x
+- full_balance_margin = True
+- one_trade_at_a_time = True
+- TP = 1.00% underlying move
+- SL = 0.70% underlying move
+- max_hold = 1440 minutes
+- fee_per_side = 0.040%
+- slippage_per_side = 0.025%
+- liquidation approximation = adverse move of (100/leverage - buffer)%, with buffer 0.50%
+- ambiguous candle ordering = adverse-first for safety (liquidation > SL > TP)

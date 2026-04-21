@@ -1,0 +1,26 @@
+CLUSTER 1 SHORT BACKTEST
+========================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Context filter:
+- near 4h high <= 0.60%
+- 60m bounce >= 0.45%
+- stretch above EMA20 5m >= 0.15%
+
+Trigger mode: close_back_down
+Trigger window: 5 minutes
+Initial stop: 0.70%
+Risk per trade: 1.00% of balance
+Leverage info: 10.0x
+
+Trade count: 3359
+Win rate: 55.46%
+Profit factor: 0.546
+Max drawdown: 99.91%
+Expectancy: -0.12 USD
+Ending balance: 0.38 USD
+Average hold: 252.86 min
+Average MFE: 0.88%
+Average MAE: 0.44%

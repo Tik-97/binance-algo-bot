@@ -1,0 +1,38 @@
+STEP-MANAGED SANDBOX BACKTEST
+============================
+
+This is a standalone entertainment / exploratory wallet simulation.
+It is NOT part of the main reverse-analysis research conclusions.
+It is NOT proof that the proxy is safely tradable.
+It uses an approximate liquidation model, not exact exchange liquidation math.
+
+Source used: current practical Cluster 1 short model signals from `eth_cluster1_short_model_signals.csv`.
+Signals file used: C:\Users\Tigran\Desktop\Binance\Another Trader\analysis_output\eth_cluster1_short_model_signals.csv
+Candles file used: C:\Users\Tigran\Desktop\Binance\.cache\binance_klines\ETHUSDT_1m.csv
+
+Backtest settings:
+- Starting balance: $400.00
+- Leverage: 10.0x
+- One trade at a time: True
+- Entry hours filter: 00:00 to 24:00 UTC
+- Max holding time: 720 minutes
+- Initial SL: 1.50%
+- Initial TP: 1.00%
+- First step trigger: +0.50% favorable move -> SL to entry, TP to 1.50%
+- Second step trigger: +1.00% favorable move -> SL to +0.50%, TP stays 1.50%
+- Fee per side: 0.040%
+- Slippage per side: 0.025%
+- Liquidation buffer: 0.50%
+- Intrabar ordering is conservative: liquidation / stop first, then step advancement, then take profit.
+
+Comparison by risk mode:
+     risk_mode  margin_fraction  starting_balance  ending_balance  total_return_pct  trade_count  win_count  loss_count  win_rate  average_win_usd  average_loss_usd  profit_factor  max_drawdown_pct  best_trade_usd  worst_trade_usd  ignored_overlapping_signals  skipped_by_time_filter  survived  liquidation_occurred
+   full_margin             1.00             400.0        0.384632        -99.903842          354        126         228  0.355932         4.739620         -4.371963       0.599105         99.903842       36.682428       -58.902928                          190                       0      True                 False
+   half_margin             0.50             400.0       20.519344        -94.870164          354        126         228  0.355932         5.806535         -4.873263       0.658465         94.870164       23.443090       -30.768036                          190                       0      True                 False
+quarter_margin             0.25             400.0      102.222108        -74.444473          354        126         228  0.355932         4.981374         -4.058908       0.678228         74.444473       12.899180       -15.717448                          190                       0      True                 False
+  tenth_margin             0.10             400.0      238.457849        -40.385538          354        126         228  0.355932         2.836881         -2.276268       0.688737         40.385538        5.419756        -6.367554                          190                       0      True                 False
+
+- full_margin: ending balance $0.38, total return -99.90%, trades 354, win rate 35.59%, max drawdown 99.90%, ignored overlaps=190, skipped by time filter=0, survived=True, liquidation_occurred=False
+- half_margin: ending balance $20.52, total return -94.87%, trades 354, win rate 35.59%, max drawdown 94.87%, ignored overlaps=190, skipped by time filter=0, survived=True, liquidation_occurred=False
+- quarter_margin: ending balance $102.22, total return -74.44%, trades 354, win rate 35.59%, max drawdown 74.44%, ignored overlaps=190, skipped by time filter=0, survived=True, liquidation_occurred=False
+- tenth_margin: ending balance $238.46, total return -40.39%, trades 354, win rate 35.59%, max drawdown 40.39%, ignored overlaps=190, skipped by time filter=0, survived=True, liquidation_occurred=False

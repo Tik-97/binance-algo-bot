@@ -1,0 +1,30 @@
+CLUSTER 1 SHORT FIXED TP TEST
+=============================
+
+Standalone rule-based backtest inspired by recovered Cluster 1 short family.
+This is NOT the copy trader exact strategy.
+
+Entry logic kept constant:
+- near 4h high <= 0.25%
+- 60m bounce >= 0.90%
+- stretch above EMA20 5m >= 0.15%
+- upper wick ratio >= 0.45
+- body ratio <= 0.35
+- confirm close below trigger close = True
+- confirm low below trigger low = True
+
+Compared exit scenarios:
+        scenario  trade_count  win_rate_pct  profit_factor  max_drawdown_pct  expectancy_usd  ending_balance  avg_hold_minutes  avg_mfe_pct  avg_mae_pct  skipped_news_like
+managed_baseline          539     48.794063       0.736046         63.278217       -0.412593      177.612386        303.398887     1.039778     0.329358                567
+   tp0p50_sl0p20          598     41.304348       0.547576         86.563391       -0.576177       55.446252         35.269231     0.318693     0.354287                621
+   tp0p35_sl0p20          598     48.996656       0.466345         86.789051       -0.578848       53.848619         24.060201     0.254672     0.323325                621
+   tp0p70_sl0p20          598     33.277592       0.583307         87.913436       -0.584755       50.316325         47.867893     0.389336     0.390110                621
+
+Best scenario:
+- scenario = managed_baseline
+- trade_count = 539
+- win_rate = 48.79%
+- profit_factor = 0.736
+- max_drawdown = 63.28%
+- expectancy = -0.41 USD
+- ending_balance = 177.61 USD

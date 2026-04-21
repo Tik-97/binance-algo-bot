@@ -1,0 +1,53 @@
+ETH SHORT CANDIDATE ENGINE V4
+=============================
+
+session_reference_trade_count = 17
+candidate_trade_day_count = 17
+train_positive_max_minutes = 15
+blend_weight_candidate_score = 0.40
+
+Day Ranking Quality
+-------------------
+anchor_top1_share = 11.76%
+anchor_top3_share = 11.76%
+anchor_top5_share = 17.65%
+best_within_5m_share = 29.41%
+best_within_15m_share = 29.41%
+best_within_60m_share = 58.82%
+median_anchor_rank = 10.00
+median_best_abs_minute_distance = 22.65
+
+top_1_per_day_candidate_count = 17
+top_1_within_5m_share = 29.41%
+top_1_within_15m_share = 29.41%
+top_1_within_60m_share = 58.82%
+top_1_median_abs_minute_distance = 22.65
+top_1_median_abs_price_distance_pct = 0.7897
+
+top_3_per_day_candidate_count = 17
+top_3_within_5m_share = 29.41%
+top_3_within_15m_share = 47.06%
+top_3_within_60m_share = 76.47%
+top_3_median_abs_minute_distance = 17.05
+top_3_median_abs_price_distance_pct = 0.7897
+
+top_5_per_day_candidate_count = 17
+top_5_within_5m_share = 29.41%
+top_5_within_15m_share = 64.71%
+top_5_within_60m_share = 76.47%
+top_5_median_abs_minute_distance = 9.86
+top_5_median_abs_price_distance_pct = 0.7897
+
+Learned Day Deltas
+------------------
+ret_1m_pct: target_delta=0.1353, delta_scale=1.0898, weight=0.80
+ret_3m_pct: target_delta=0.1549, delta_scale=1.7418, weight=1.00
+ret_5m_pct: target_delta=-0.1227, delta_scale=2.7106, weight=0.90
+rel_volume_1m: target_delta=0.4961, delta_scale=2.3485, weight=0.80
+upper_wick_ratio: target_delta=0.3637, delta_scale=0.9873, weight=1.10
+body_ratio: target_delta=0.1997, delta_scale=1.2274, weight=1.00
+close_position_in_range: target_delta=-0.1590, delta_scale=0.9419, weight=1.10
+range_pct: target_delta=0.1983, delta_scale=0.9527, weight=0.70
+dist_1h_high_pct: target_delta=-0.3503, delta_scale=1.0690, weight=1.20
+dist_5m_high_pct: target_delta=-0.0107, delta_scale=0.9426, weight=1.10
+close_above_ema20_pct: target_delta=0.1917, delta_scale=1.3822, weight=0.80

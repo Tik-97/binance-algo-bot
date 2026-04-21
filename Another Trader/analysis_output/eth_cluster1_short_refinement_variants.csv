@@ -1,0 +1,11 @@
+variant_id,variant_label,family,definition_text,signal_count,balanced_imitation_score,is_best_variant
+base_proxy,Base proxy,base,Current practical Cluster 1 short proxy without extra narrowing.,544,0.5284090909090909,False
+strict_high_zone,Strict 4h high proximity,price_location_tightening,Distance to 4h high <= 0.35%.,314,0.3816109625668449,False
+stronger_bounce,Stronger 60m bounce context,context_tightening,Pre-entry 60m return >= 0.60%.,393,0.5499318272365322,True
+stronger_upper_wick_5m,Stronger 5m upper wick,micro_rejection,Upper wick ratio 5m >= 0.40.,338,0.47260472370766493,False
+bearish_close_5m,Stricter 5m non-continuation,timing_refinement,Last 5m return <= -0.05%.,307,0.4375835561497326,False
+micro_rejection_5m,5m weak-close rejection,micro_rejection,Close back in lower half of 5m candle and 5m body/range <= 0.35.,326,0.42693850267379685,False
+hv1m_small_body,1m effort-vs-result clue,effort_vs_result,Relative volume 1m >= 1.88 and 1m body <= 0.06% of price.,3,0.2494485294117647,False
+strict_zone_plus_bearish_close,Strict zone + bearish 5m close,two_filter_combo,Distance to 4h high <= 0.35% and last 5m return <= -0.05%.,165,0.31976938502673796,False
+strict_zone_plus_micro_rejection,Strict zone + 5m weak-close rejection,two_filter_combo,Distance to 4h high <= 0.35% and close back in lower half with small 5m body.,196,0.3140708556149732,False
+strict_zone_plus_hv1m_small_body,Strict zone + 1m effort-result clue,two_filter_combo,Distance to 4h high <= 0.35% and relative volume 1m >= 1.88 with 1m body <= 0.06%.,3,0.2494485294117647,False

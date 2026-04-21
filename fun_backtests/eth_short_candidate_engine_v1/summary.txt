@@ -1,0 +1,13 @@
+ETH SHORT CANDIDATE ENGINE V1
+=============================
+
+raw_candidate_count = 15484
+deduped_candidate_count = 2251
+dedup_cooldown_minutes = 15
+
+reference_trade_count = 33
+within_5m_share = 21.21%
+within_15m_share = 54.55%
+within_60m_share = 57.58%
+median_abs_minute_distance = 11.54
+median_abs_price_distance_pct = 1.1130

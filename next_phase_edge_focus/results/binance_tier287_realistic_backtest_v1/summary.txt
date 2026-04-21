@@ -1,0 +1,36 @@
+BINANCE TIER2.87 REALISTIC BACKTEST V1
+======================================
+
+pipeline = Binance ETHUSDT 1m -> candidate_engine_v1 -> bear regime router -> Tier 2.85 core + refined other_non_target mild strong_bear expansion -> conservative Binance execution
+
+Refinement added on top of Tier 2.86 refined
+---------------------------------------------
+rel_volume_1m <= 1.50
+move_5m_pct <= 0.55
+move_3m_pct <= 0.28
+
+filled_trade_count = 61
+ending_balance = 657.66
+accepted_other_non_target_expansion = 27
+win_rate_pct = 80.33
+profit_factor = 3.836
+expectancy_usd = 4.2240
+median_hold_minutes = 14.00
+
+Engine Split
+------------
+tier286_other_non_target: trade_count=27, win_rate_pct=74.07, net_pnl_usd=119.1893
+tier2p5_core: trade_count=15, win_rate_pct=86.67, net_pnl_usd=84.7896
+tier5_satellite_body05_not13: trade_count=7, win_rate_pct=85.71, net_pnl_usd=33.4763
+tier5_satellite_rv08: trade_count=12, win_rate_pct=83.33, net_pnl_usd=20.2067
+
+Period Split
+------------
+pre_reference: trade_count=37, win_rate_pct=72.97, net_pnl_usd=125.9348, profit_factor=2.817
+reference_window: trade_count=24, win_rate_pct=91.67, net_pnl_usd=131.7272, profit_factor=7.110
+
+Reference Comparison
+--------------------
+match_rows = 61
+same_result_direction_share = 80.33%
+within_60m_share = 3.28%

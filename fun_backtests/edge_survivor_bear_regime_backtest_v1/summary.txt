@@ -1,0 +1,47 @@
+EDGE SURVIVOR BEAR REGIME BACKTEST V1
+=====================================
+
+pipeline = candidate_engine_v1 -> market_regime_filter(weak_bear|strong_bear + high_vol) -> near_entry_breakdown_noise -> (mild_noise_v1_live + strict cooling extension) -> v1 execution
+goal = keep the survivor edge only in the market regimes where it actually showed edge on full-history analysis
+
+history_start = 2024-04-05 23:15:00+00:00
+history_end = 2026-04-15 04:17:00+00:00
+reference_start = 2025-10-24 12:30:29.499000+00:00
+reference_end = 2026-04-08 14:35:24.605000+00:00
+
+deduped_candidate_count = 2251
+predicted_target_candidates = 11
+filled_trade_count = 6
+accepted_strict_cooling = 3
+skipped_overlap = 1
+skipped_wrong_market_regime = 1719
+skipped_non_target = 520
+skipped_wrong_subtype = 5
+skipped_unfilled = 0
+fallback_market_entries = 1
+ending_balance = 444.11
+win_rate_pct = 100.00
+profit_factor = nan
+expectancy_usd = 7.3517
+median_hold_minutes = 8.50
+median_candidate_score = 0.7025
+median_stop_distance_pct = 0.2519
+
+Period Split
+------------
+pre_reference: trade_count=2, win_rate_pct=100.00, profit_factor=nan
+pre_reference: net_pnl_usd=18.6967, median_hold_minutes=8.50
+reference_window: trade_count=4, win_rate_pct=100.00, profit_factor=nan
+reference_window: net_pnl_usd=25.4137, median_hold_minutes=12.50
+
+Monthly Split
+-------------
+2024-08: trade_count=1, win_rate_pct=100.00, net_pnl_usd=5.7228
+2025-10: trade_count=1, win_rate_pct=100.00, net_pnl_usd=12.9738
+2025-11: trade_count=2, win_rate_pct=100.00, net_pnl_usd=13.3925
+2025-12: trade_count=1, win_rate_pct=100.00, net_pnl_usd=7.6253
+2026-02: trade_count=1, win_rate_pct=100.00, net_pnl_usd=4.3959
+
+reference_matches_within_60m = 0
+reference_same_result_direction = 0
+reference_agreement_rate_pct = n/a

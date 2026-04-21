@@ -1,0 +1,29 @@
+CLUSTER 1 SHORT CLIMAX PUSH FAILURE BACKTEST
+============================================
+
+Idea: short after abnormal upside burst, then failure, with adaptive entry style, RR-based exits, controlled re-entry, and delayed limit fills.
+
+JSON_TRADES_PATH = C:\Users\Tigran\Desktop\Binance\Another Trader\another_trader.json
+ENTRY_WAIT_BARS = 6
+LIMIT_CAN_FILL_SAME_BAR = False
+
+BT_START = 2025-10-24 12:30:29.499000+00:00
+BT_END = 2026-04-08 14:35:24.605000+00:00
+
+TAKE_PARTIAL_AT_R = 2.0
+PARTIAL_CLOSE_SIZE = 0.5
+TRAIL_AFTER_R = 2.0
+
+MIN_MINUTES_BETWEEN_ENTRIES = 45
+MAX_SHORT_TRADES_PER_UTC_DAY = 3
+MIN_MINUTES_BETWEEN_TRIGGER_TIMES = 20
+
+Trade count: 20
+Win rate: 35.00%
+Profit factor: 0.953
+Max drawdown: 4.71%
+Expectancy: -0.15 USD
+Ending balance: 397.02 USD
+Context without trigger count: 13759
+Rejected entry count: 0
+Expired limit count: 12

@@ -1,0 +1,44 @@
+ETH SHORT LIVE-SAFE REGIME CLASSIFIER
+=====================================
+
+predictions = mixed_transition / near_entry_breakdown_noise / other_non_target
+note = top-level regime prediction uses only candidate-bar features, no trader-gap oracle fields
+trade_count = 17
+overall_accuracy_pct = 88.24
+target_precision_pct = 87.50
+target_recall_pct = 87.50
+predicted_target_count = 8
+oracle_target_count = 8
+
+Rules
+-----
+near_entry_breakdown_noise if rel_volume >= 1.35, move_5m >= 0.55, bull_body_sum_5m >= 0.65, stretch_ema20_5m >= 0.90, green_count_last_5 >= 4
+mixed_transition if rel_volume <= 1.20, bounce_60m <= 1.50, stretch_ema20_5m <= 1.40, green_count_last_5 <= 3, dist_1h_high >= 0.10
+
+Confusion
+---------
+mixed_transition -> mixed_transition: 4
+near_entry_breakdown_noise -> near_entry_breakdown_noise: 3
+near_entry_breakdown_noise -> other_non_target: 1
+other_non_target -> mixed_transition: 1
+other_non_target -> other_non_target: 8
+
+Predictions
+-----------
+2025-10-28: oracle=other_non_target predicted=other_non_target candidate_score=0.8888
+2025-11-12: oracle=other_non_target predicted=other_non_target candidate_score=0.8455
+2025-11-18: oracle=other_non_target predicted=mixed_transition candidate_score=0.7163
+2025-11-20: oracle=near_entry_breakdown_noise predicted=other_non_target candidate_score=0.8593
+2025-11-26: oracle=other_non_target predicted=other_non_target candidate_score=0.8614
+2025-12-09: oracle=other_non_target predicted=other_non_target candidate_score=0.7806
+2026-01-09: oracle=near_entry_breakdown_noise predicted=near_entry_breakdown_noise candidate_score=0.8529
+2026-01-13: oracle=near_entry_breakdown_noise predicted=near_entry_breakdown_noise candidate_score=0.7060
+2026-02-25: oracle=mixed_transition predicted=mixed_transition candidate_score=0.8144
+2026-03-02: oracle=other_non_target predicted=other_non_target candidate_score=0.7733
+2026-03-09: oracle=other_non_target predicted=other_non_target candidate_score=0.6955
+2026-03-10: oracle=other_non_target predicted=other_non_target candidate_score=0.7673
+2026-03-11: oracle=mixed_transition predicted=mixed_transition candidate_score=0.8469
+2026-03-23: oracle=near_entry_breakdown_noise predicted=near_entry_breakdown_noise candidate_score=0.7392
+2026-03-25: oracle=other_non_target predicted=other_non_target candidate_score=0.8865
+2026-03-30: oracle=mixed_transition predicted=mixed_transition candidate_score=0.6987
+2026-04-02: oracle=mixed_transition predicted=mixed_transition candidate_score=0.9164

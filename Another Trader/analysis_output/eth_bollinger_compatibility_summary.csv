@@ -1,0 +1,3 @@
+family_label,side,compatible_with_bollinger_framework,best_hypothesis_label,definition_text,lift,similarity_to_real_cluster_profile,similarity_improvement_vs_candidate_pool,signal_count_after_filter,confidence_level
+short_family,Short,False,Near upper band 15m,BB position 15m >= 0.85,1.3576338639652676,0.6120453599288561,-0.0023949436828306636,1382,low
+long_family,Long,False,Near lower band 15m,BB position 15m <= 0.15,1.0187210562617006,0.5501056083355136,-0.0013145362827988727,995,low

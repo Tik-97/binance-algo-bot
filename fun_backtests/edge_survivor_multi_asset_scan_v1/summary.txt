@@ -1,0 +1,10 @@
+EDGE SURVIVOR MULTI ASSET SCAN V1
+=================================
+
+note = ETH-trained bear-regime survivor logic applied out-of-sample to BTCUSDT and SOLUSDT
+warning = portability test only
+
+Results
+-------
+BTCUSDT: filled_trade_count=2, ending_balance=405.28, net_pnl_usd=5.2756, win_rate_pct=50.00, profit_factor=1.894, median_hold_minutes=7.00
+SOLUSDT: filled_trade_count=6, ending_balance=406.41, net_pnl_usd=6.4115, win_rate_pct=50.00, profit_factor=1.358, median_hold_minutes=5.50
