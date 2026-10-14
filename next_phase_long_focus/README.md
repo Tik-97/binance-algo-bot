@@ -8,9 +8,9 @@ We are not starting from zero.
 
 Best old long candidate found so far:
 
-- source script: [wickMick_long.py](/C:/Users/Tigran/Desktop/Binance/wickMick_long.py)
-- result folder: [cluster1_long_climax_push_failure_rr2_reentry_delayed_limit](/C:/Users/Tigran/Desktop/Binance/fun_backtests/cluster1_long_climax_push_failure_rr2_reentry_delayed_limit)
-- old summary: [cluster1_long_summary.txt](/C:/Users/Tigran/Desktop/Binance/fun_backtests/cluster1_long_climax_push_failure_rr2_reentry_delayed_limit/cluster1_long_summary.txt)
+- source script: [wickMick_long.py](/wickMick_long.py)
+- result folder: [cluster1_long_climax_push_failure_rr2_reentry_delayed_limit](/fun_backtests/cluster1_long_climax_push_failure_rr2_reentry_delayed_limit)
+- old summary: [cluster1_long_summary.txt](/fun_backtests/cluster1_long_climax_push_failure_rr2_reentry_delayed_limit/cluster1_long_summary.txt)
 
 Why this one:
 
@@ -34,33 +34,33 @@ Use the same honest process we used for the short branch:
 
 First script in this branch:
 
-- [edge_long_regime_dependency_analysis_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_regime_dependency_analysis_v1.py)
-- [edge_long_tier1_bear_highvol_baseline_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier1_bear_highvol_baseline_v1.py)
-- [edge_long_tier11_core_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier11_core_v1.py)
-- [edge_long_tier12_core_plus_satellite1_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier12_core_plus_satellite1_v1.py)
-- [edge_long_tier13_core_plus_satellite1_refined_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier13_core_plus_satellite1_refined_v1.py)
-- [edge_long_tier14_core_plus_satellite2_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_core_plus_satellite2_v1.py)
-- [edge_long_tier15_core_plus_satellite3_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier15_core_plus_satellite3_v1.py)
-- [edge_long_tier15_sanity_check_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier15_sanity_check_v1.py)
-- [edge_long_tier14_vs_tier15_comparison_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_vs_tier15_comparison_v1.py)
-- [edge_long_tier14_satellite4_search_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_satellite4_search_v1.py)
-- [edge_long_tier14_eth_stress_test_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_eth_stress_test_v1.py)
-- [edge_long_another_trader_family_analysis_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_another_trader_family_analysis_v1.py)
+- [edge_long_regime_dependency_analysis_v1.py](/next_phase_long_focus/edge_long_regime_dependency_analysis_v1.py)
+- [edge_long_tier1_bear_highvol_baseline_v1.py](/next_phase_long_focus/edge_long_tier1_bear_highvol_baseline_v1.py)
+- [edge_long_tier11_core_v1.py](/next_phase_long_focus/edge_long_tier11_core_v1.py)
+- [edge_long_tier12_core_plus_satellite1_v1.py](/next_phase_long_focus/edge_long_tier12_core_plus_satellite1_v1.py)
+- [edge_long_tier13_core_plus_satellite1_refined_v1.py](/next_phase_long_focus/edge_long_tier13_core_plus_satellite1_refined_v1.py)
+- [edge_long_tier14_core_plus_satellite2_v1.py](/next_phase_long_focus/edge_long_tier14_core_plus_satellite2_v1.py)
+- [edge_long_tier15_core_plus_satellite3_v1.py](/next_phase_long_focus/edge_long_tier15_core_plus_satellite3_v1.py)
+- [edge_long_tier15_sanity_check_v1.py](/next_phase_long_focus/edge_long_tier15_sanity_check_v1.py)
+- [edge_long_tier14_vs_tier15_comparison_v1.py](/next_phase_long_focus/edge_long_tier14_vs_tier15_comparison_v1.py)
+- [edge_long_tier14_satellite4_search_v1.py](/next_phase_long_focus/edge_long_tier14_satellite4_search_v1.py)
+- [edge_long_tier14_eth_stress_test_v1.py](/next_phase_long_focus/edge_long_tier14_eth_stress_test_v1.py)
+- [edge_long_another_trader_family_analysis_v1.py](/next_phase_long_focus/edge_long_another_trader_family_analysis_v1.py)
 
 First output folder:
 
-- [edge_long_regime_dependency_analysis_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_regime_dependency_analysis_v1)
-- [edge_long_tier1_bear_highvol_baseline_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier1_bear_highvol_baseline_v1)
-- [edge_long_tier11_core_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier11_core_v1)
-- [edge_long_tier12_core_plus_satellite1_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier12_core_plus_satellite1_v1)
-- [edge_long_tier13_core_plus_satellite1_refined_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier13_core_plus_satellite1_refined_v1)
-- [edge_long_tier14_core_plus_satellite2_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier14_core_plus_satellite2_v1)
-- [edge_long_tier15_core_plus_satellite3_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier15_core_plus_satellite3_v1)
-- [edge_long_tier15_sanity_check_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier15_sanity_check_v1)
-- [edge_long_tier14_vs_tier15_comparison_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier14_vs_tier15_comparison_v1)
-- [edge_long_tier14_satellite4_search_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier14_satellite4_search_v1)
-- [edge_long_tier14_eth_stress_test_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_tier14_eth_stress_test_v1)
-- [edge_long_another_trader_family_analysis_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_another_trader_family_analysis_v1)
+- [edge_long_regime_dependency_analysis_v1](/next_phase_long_focus/results/edge_long_regime_dependency_analysis_v1)
+- [edge_long_tier1_bear_highvol_baseline_v1](/next_phase_long_focus/results/edge_long_tier1_bear_highvol_baseline_v1)
+- [edge_long_tier11_core_v1](/next_phase_long_focus/results/edge_long_tier11_core_v1)
+- [edge_long_tier12_core_plus_satellite1_v1](/next_phase_long_focus/results/edge_long_tier12_core_plus_satellite1_v1)
+- [edge_long_tier13_core_plus_satellite1_refined_v1](/next_phase_long_focus/results/edge_long_tier13_core_plus_satellite1_refined_v1)
+- [edge_long_tier14_core_plus_satellite2_v1](/next_phase_long_focus/results/edge_long_tier14_core_plus_satellite2_v1)
+- [edge_long_tier15_core_plus_satellite3_v1](/next_phase_long_focus/results/edge_long_tier15_core_plus_satellite3_v1)
+- [edge_long_tier15_sanity_check_v1](/next_phase_long_focus/results/edge_long_tier15_sanity_check_v1)
+- [edge_long_tier14_vs_tier15_comparison_v1](/next_phase_long_focus/results/edge_long_tier14_vs_tier15_comparison_v1)
+- [edge_long_tier14_satellite4_search_v1](/next_phase_long_focus/results/edge_long_tier14_satellite4_search_v1)
+- [edge_long_tier14_eth_stress_test_v1](/next_phase_long_focus/results/edge_long_tier14_eth_stress_test_v1)
+- [edge_long_another_trader_family_analysis_v1](/next_phase_long_focus/results/edge_long_another_trader_family_analysis_v1)
 
 First key result:
 
@@ -83,7 +83,7 @@ So the first practical direction is already clear:
 
 The first independent long baseline is now:
 
-- [edge_long_tier1_bear_highvol_baseline_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier1_bear_highvol_baseline_v1.py)
+- [edge_long_tier1_bear_highvol_baseline_v1.py](/next_phase_long_focus/edge_long_tier1_bear_highvol_baseline_v1.py)
 
 It is not a post-filter over old trades.
 
@@ -109,7 +109,7 @@ This is materially better than the old delayed-limit survivor.
 
 The first small high-purity long core is now:
 
-- [edge_long_tier11_core_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier11_core_v1.py)
+- [edge_long_tier11_core_v1.py](/next_phase_long_focus/edge_long_tier11_core_v1.py)
 
 It is built from the new Tier 1 baseline, not from old clutter.
 
@@ -140,7 +140,7 @@ Interpretation:
 
 The first honest satellite search produced:
 
-- [edge_long_tier12_core_plus_satellite1_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier12_core_plus_satellite1_v1.py)
+- [edge_long_tier12_core_plus_satellite1_v1.py](/next_phase_long_focus/edge_long_tier12_core_plus_satellite1_v1.py)
 
 Important lesson:
 
@@ -150,7 +150,7 @@ Important lesson:
 
 Then we refined it one step:
 
-- [edge_long_tier13_core_plus_satellite1_refined_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier13_core_plus_satellite1_refined_v1.py)
+- [edge_long_tier13_core_plus_satellite1_refined_v1.py](/next_phase_long_focus/edge_long_tier13_core_plus_satellite1_refined_v1.py)
 
 Refined structure:
 
@@ -186,7 +186,7 @@ Route split:
 
 The next step produced:
 
-- [edge_long_tier14_core_plus_satellite2_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_core_plus_satellite2_v1.py)
+- [edge_long_tier14_core_plus_satellite2_v1.py](/next_phase_long_focus/edge_long_tier14_core_plus_satellite2_v1.py)
 
 Satellite 2 idea:
 
@@ -221,7 +221,7 @@ There was no broad clean pocket left after `Tier 1.4`.
 
 Only `2` winners remained in the residual set, so the next addition is explicitly a micro-satellite:
 
-- [edge_long_tier15_core_plus_satellite3_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier15_core_plus_satellite3_v1.py)
+- [edge_long_tier15_core_plus_satellite3_v1.py](/next_phase_long_focus/edge_long_tier15_core_plus_satellite3_v1.py)
 
 Satellite 3 idea:
 
@@ -254,7 +254,7 @@ Route split:
 
 We already ran a dedicated time-split sanity package:
 
-- [edge_long_tier15_sanity_check_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier15_sanity_check_v1.py)
+- [edge_long_tier15_sanity_check_v1.py](/next_phase_long_focus/edge_long_tier15_sanity_check_v1.py)
 
 Main result:
 
@@ -278,7 +278,7 @@ So the honest read is:
 
 Direct comparison package:
 
-- [edge_long_tier14_vs_tier15_comparison_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_vs_tier15_comparison_v1.py)
+- [edge_long_tier14_vs_tier15_comparison_v1.py](/next_phase_long_focus/edge_long_tier14_vs_tier15_comparison_v1.py)
 
 Headline result:
 
@@ -297,7 +297,7 @@ Honest verdict:
 
 Residual-search package:
 
-- [edge_long_tier14_satellite4_search_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_satellite4_search_v1.py)
+- [edge_long_tier14_satellite4_search_v1.py](/next_phase_long_focus/edge_long_tier14_satellite4_search_v1.py)
 
 Result:
 
@@ -316,7 +316,7 @@ Honest read:
 
 Execution-stress package:
 
-- [edge_long_tier14_eth_stress_test_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_tier14_eth_stress_test_v1.py)
+- [edge_long_tier14_eth_stress_test_v1.py](/next_phase_long_focus/edge_long_tier14_eth_stress_test_v1.py)
 
 Purpose:
 
@@ -358,7 +358,7 @@ Honest verdict:
 
 New external-source analysis package:
 
-- [edge_long_another_trader_family_analysis_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_another_trader_family_analysis_v1.py)
+- [edge_long_another_trader_family_analysis_v1.py](/next_phase_long_focus/edge_long_another_trader_family_analysis_v1.py)
 
 Purpose:
 
@@ -404,7 +404,7 @@ Honest read:
 
 Router probe package:
 
-- [edge_long_another_trader_router_probe_v1/summary.txt](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_another_trader_router_probe_v1/summary.txt)
+- [edge_long_another_trader_router_probe_v1/summary.txt](/next_phase_long_focus/results/edge_long_another_trader_router_probe_v1/summary.txt)
 
 Purpose:
 
@@ -448,9 +448,9 @@ Practical implication:
 
 New seed branch:
 
-- [edge_long_family2_flush_reversal_seed_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_family2_flush_reversal_seed_v1.py)
-- [summary.txt](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_family2_flush_reversal_seed_v1/summary.txt)
-- [trades.csv](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_family2_flush_reversal_seed_v1/trades.csv)
+- [edge_long_family2_flush_reversal_seed_v1.py](/next_phase_long_focus/edge_long_family2_flush_reversal_seed_v1.py)
+- [summary.txt](/next_phase_long_focus/results/edge_long_family2_flush_reversal_seed_v1/summary.txt)
+- [trades.csv](/next_phase_long_focus/results/edge_long_family2_flush_reversal_seed_v1/trades.csv)
 
 Purpose:
 
@@ -500,10 +500,10 @@ Honest read:
 
 New expansion package:
 
-- [edge_long_family21_seed_plus_satellites_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/edge_long_family21_seed_plus_satellites_v1.py)
-- [summary.txt](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_family21_seed_plus_satellites_v1/summary.txt)
-- [trades.csv](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_family21_seed_plus_satellites_v1/trades.csv)
-- [route_summary.csv](/C:/Users/Tigran/Desktop/Binance/next_phase_long_focus/results/edge_long_family21_seed_plus_satellites_v1/route_summary.csv)
+- [edge_long_family21_seed_plus_satellites_v1.py](/next_phase_long_focus/edge_long_family21_seed_plus_satellites_v1.py)
+- [summary.txt](/next_phase_long_focus/results/edge_long_family21_seed_plus_satellites_v1/summary.txt)
+- [trades.csv](/next_phase_long_focus/results/edge_long_family21_seed_plus_satellites_v1/trades.csv)
+- [route_summary.csv](/next_phase_long_focus/results/edge_long_family21_seed_plus_satellites_v1/route_summary.csv)
 
 Purpose:
 

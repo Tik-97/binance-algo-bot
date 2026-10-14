@@ -120,14 +120,14 @@ docker inspect -f '{{.RestartCount}}' eth-unified-bot
 
 Live template:
 
-- [.env.live.example](/C:/Users/Tigran/Desktop/Binance/eth_unified_live_bot/.env.live.example)
+- [.env.live.example](/eth_unified_live_bot/.env.live.example)
 
 Detailed operational steps:
 
-- see [SERVER_RUNBOOK.md](/C:/Users/Tigran/Desktop/Binance/eth_unified_live_bot/SERVER_RUNBOOK.md)
+- see [SERVER_RUNBOOK.md](/eth_unified_live_bot/SERVER_RUNBOOK.md)
 
 ## Trading Guides
 
-- [HOW_TO_TRADE_SHORT_T287.md](/C:/Users/Tigran/Desktop/Binance/eth_unified_live_bot/HOW_TO_TRADE_SHORT_T287.md)
-- [HOW_TO_TRADE_LONG_T14.md](/C:/Users/Tigran/Desktop/Binance/eth_unified_live_bot/HOW_TO_TRADE_LONG_T14.md)
-- [HOW_TO_TRADE_LONG_F21.md](/C:/Users/Tigran/Desktop/Binance/eth_unified_live_bot/HOW_TO_TRADE_LONG_F21.md)
+- [HOW_TO_TRADE_SHORT_T287.md](/eth_unified_live_bot/HOW_TO_TRADE_SHORT_T287.md)
+- [HOW_TO_TRADE_LONG_T14.md](/eth_unified_live_bot/HOW_TO_TRADE_LONG_T14.md)
+- [HOW_TO_TRADE_LONG_F21.md](/eth_unified_live_bot/HOW_TO_TRADE_LONG_F21.md)

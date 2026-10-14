@@ -8,7 +8,7 @@ Expected server path:
 
 Live config template:
 
-- [.env.live.example](/C:/Users/Tigran/Desktop/Binance/eth_unified_live_bot/.env.live.example)
+- [.env.live.example](/eth_unified_live_bot/.env.live.example)
 
 ## Quick Ops
 

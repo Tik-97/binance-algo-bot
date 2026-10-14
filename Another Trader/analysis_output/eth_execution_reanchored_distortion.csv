@@ -1,7 +1,0 @@
-scope,group_name,group_label,trades,median_fill_delay_minutes,delta_return_after_1m_pct,delta_return_after_5m_pct,delta_return_after_15m_pct,delta_return_after_30m_pct,delta_time_to_first_positive_minutes
-ETH overall,immediate_like,Immediate-like,34,0.0,0.0,0.0,0.0,0.0,0.0
-ETH overall,delayed_family,Delayed-family,54,53.81596666666667,-1.3034280131814473,-1.2382072546934313,-1.2248835937569251,-0.6602073449858259,1.3399416666666666
-Cluster 1,immediate_like,Immediate-like,13,0.0,0.0,0.0,0.0,0.0,0.0
-Cluster 1,delayed_family,Delayed-family,23,51.74786666666667,-1.1127121008234684,-1.1612616245866423,-1.1385542942673568,-0.8095739766497674,1.9986499999999998
-Cluster 2,immediate_like,Immediate-like,21,0.0,0.0,0.0,0.0,0.0,0.0
-Cluster 2,delayed_family,Delayed-family,31,55.88406666666666,-1.4727410755056325,-1.31515288480022,-1.2275218513975827,-0.38547782000645237,0.9296333333333333

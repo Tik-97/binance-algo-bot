@@ -1,5 +1,0 @@
-variant_id,variant_label,family,definition_text,signal_count,balanced_timing_score,is_best_variant
-base_proxy,Base proxy,base,Current practical Cluster 1 short proxy without extra timing delay.,544,0.5565909090909091,True
-delay_5m_zone_hold,Delay 5m if zone still valid,delay_after_zone_arrival,Wait one completed 5m candle after the base signal and enter only if the Cluster 1 short zone still looks valid.,0,0.2,False
-delay_10m_no_continuation,Delay + no meaningful continuation,delay_plus_no_continuation,Wait up to two completed 5m candles and enter only if there is no meaningful continuation above the signal high while the zone still looks valid.,0,0.2,False
-delay_10m_weakening,Delay + simple weakening candle,delay_plus_weakening_confirmation,Wait up to two completed 5m candles and enter only on a simple weakening / failed-continuation style candle while the zone still looks valid.,0,0.2,False

@@ -1,5 +1,0 @@
-variant_id,variant_label,family,signal_count,reduction_vs_base,recall_within_15m,recall_within_30m,recall_within_60m,share_within_15m_and_0p25pct,share_within_30m_and_0p50pct,median_time_distance_minutes,median_price_distance_pct,same_short_move_30m_share,same_short_move_60m_share,balanced_timing_score,is_best_variant
-base_proxy,Base proxy,base,544,0.0,0.46875,0.53125,0.6875,0.3125,0.4375,11.999983333333335,0.21102052074872257,0.2727272727272727,0.36363636363636365,0.5565909090909091,True
-delay_5m_zone_hold,Delay 5m if zone still valid,delay_after_zone_arrival,0,1.0,,,,,,,,,,0.2,False
-delay_10m_no_continuation,Delay + no meaningful continuation,delay_plus_no_continuation,0,1.0,,,,,,,,,,0.2,False
-delay_10m_weakening,Delay + simple weakening candle,delay_plus_weakening_confirmation,0,1.0,,,,,,,,,,0.2,False

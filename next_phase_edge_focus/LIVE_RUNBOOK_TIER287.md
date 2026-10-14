@@ -4,17 +4,17 @@ This is the active working set.
 
 ## Active files
 
-- [edge_survivor_baseline.py](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/edge_survivor_baseline.py)
-- [binance_tier287_realistic_backtest_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/binance_tier287_realistic_backtest_v1.py)
-- [binance_tier287_eth_stress_test_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/binance_tier287_eth_stress_test_v1.py)
-- [live_helpers.py](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/live_helpers.py)
-- [HOW_TO_TRADE_TIER287_REALISTIC.md](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/HOW_TO_TRADE_TIER287_REALISTIC.md)
-- [ETH Short Demo.txt](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/ETH%20Short%20Demo.txt)
+- [edge_survivor_baseline.py](/next_phase_edge_focus/edge_survivor_baseline.py)
+- [binance_tier287_realistic_backtest_v1.py](/next_phase_edge_focus/binance_tier287_realistic_backtest_v1.py)
+- [binance_tier287_eth_stress_test_v1.py](/next_phase_edge_focus/binance_tier287_eth_stress_test_v1.py)
+- [live_helpers.py](/next_phase_edge_focus/live_helpers.py)
+- [HOW_TO_TRADE_TIER287_REALISTIC.md](/next_phase_edge_focus/HOW_TO_TRADE_TIER287_REALISTIC.md)
+- [ETH Short Demo.txt](/next_phase_edge_focus/ETH%20Short%20Demo.txt)
 
 ## Active result folders
 
-- [binance_tier287_realistic_backtest_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/results/binance_tier287_realistic_backtest_v1)
-- [binance_tier287_eth_stress_test_v1](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/results/binance_tier287_eth_stress_test_v1)
+- [binance_tier287_realistic_backtest_v1](/next_phase_edge_focus/results/binance_tier287_realistic_backtest_v1)
+- [binance_tier287_eth_stress_test_v1](/next_phase_edge_focus/results/binance_tier287_eth_stress_test_v1)
 
 ## Default commands
 

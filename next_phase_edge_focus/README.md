@@ -10,12 +10,12 @@ This is now the source of truth for the Binance ETH short branch.
 
 Main files:
 
-- baseline runner: [edge_survivor_baseline.py](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/edge_survivor_baseline.py)
-- baseline strategy: [binance_tier287_realistic_backtest_v1.py](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/binance_tier287_realistic_backtest_v1.py)
-- realistic summary: [summary.txt](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/results/binance_tier287_realistic_backtest_v1/summary.txt)
-- ETH/Binance stress summary: [summary.txt](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/results/binance_tier287_eth_stress_test_v1/summary.txt)
-- manual Binance playbook: [HOW_TO_TRADE_TIER287_REALISTIC.md](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/HOW_TO_TRADE_TIER287_REALISTIC.md)
-- live runbook: [LIVE_RUNBOOK_TIER287.md](/C:/Users/Tigran/Desktop/Binance/next_phase_edge_focus/LIVE_RUNBOOK_TIER287.md)
+- baseline runner: [edge_survivor_baseline.py](/next_phase_edge_focus/edge_survivor_baseline.py)
+- baseline strategy: [binance_tier287_realistic_backtest_v1.py](/next_phase_edge_focus/binance_tier287_realistic_backtest_v1.py)
+- realistic summary: [summary.txt](/next_phase_edge_focus/results/binance_tier287_realistic_backtest_v1/summary.txt)
+- ETH/Binance stress summary: [summary.txt](/next_phase_edge_focus/results/binance_tier287_eth_stress_test_v1/summary.txt)
+- manual Binance playbook: [HOW_TO_TRADE_TIER287_REALISTIC.md](/next_phase_edge_focus/HOW_TO_TRADE_TIER287_REALISTIC.md)
+- live runbook: [LIVE_RUNBOOK_TIER287.md](/next_phase_edge_focus/LIVE_RUNBOOK_TIER287.md)
 
 ## Why Tier 2.87
 
